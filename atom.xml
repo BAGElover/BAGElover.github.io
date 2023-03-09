@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-03-09T05:47:02.786Z</updated>
+  <updated>2023-03-09T15:33:49.816Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>一个命令获取树莓派IP地址.md</title>
+    <link href="http://example.com/2023/03/09/%E4%B8%80%E4%B8%AA%E5%91%BD%E4%BB%A4%E8%8E%B7%E5%8F%96%E6%A0%91%E8%8E%93%E6%B4%BEIP%E5%9C%B0%E5%9D%80-md/"/>
+    <id>http://example.com/2023/03/09/%E4%B8%80%E4%B8%AA%E5%91%BD%E4%BB%A4%E8%8E%B7%E5%8F%96%E6%A0%91%E8%8E%93%E6%B4%BEIP%E5%9C%B0%E5%9D%80-md/</id>
+    <published>2023-03-09T14:51:22.000Z</published>
+    <updated>2023-03-09T15:33:49.816Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="打开“运行”窗口（快捷键：win-R）"><a href="#打开“运行”窗口（快捷键：win-R）" class="headerlink" title="打开“运行”窗口（快捷键：win+R）"></a>打开“运行”窗口（快捷键：win+R）</h2><p><img src="https://pic.imgdb.cn/item/63c795e6be43e0d30e1acfe7.png" alt="chuankou"></p><h2 id="在窗口中输入cmd，点击确认"><a href="#在窗口中输入cmd，点击确认" class="headerlink" title="在窗口中输入cmd，点击确认"></a>在窗口中输入cmd，点击确认</h2><p><img src="https://pic.imgdb.cn/item/63c795e8be43e0d30e1ad2a3.png" alt="cmd"></p><h2 id="在cmd命令窗口输入“ipconfig”命令，回车"><a href="#在cmd命令窗口输入“ipconfig”命令，回车" class="headerlink" title="在cmd命令窗口输入“ipconfig”命令，回车"></a>在cmd命令窗口输入“ipconfig”命令，回车</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ping -4 raspberrypi.local</span><br></pre></td></tr></table></figure><p>这样就可以获得IP地址</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;打开“运行”窗口（快捷键：win-R）&quot;&gt;&lt;a href=&quot;#打开“运行”窗口（快捷键：win-R）&quot; class=&quot;headerlink&quot; title=&quot;打开“运行”窗口（快捷键：win+R）&quot;&gt;&lt;/a&gt;打开“运行”窗口（快捷键：win+R）&lt;/h2&gt;&lt;p&gt;&lt;i</summary>
+      
+    
+    
+    
+    <category term="奇技" scheme="http://example.com/categories/%E5%A5%87%E6%8A%80/"/>
+    
+    
+    <category term="IP" scheme="http://example.com/tags/IP/"/>
+    
+    <category term="树莓派" scheme="http://example.com/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/"/>
+    
+  </entry>
   
   <entry>
     <title>windows查看局域网内所有已使用的IP</title>
