@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>windows查看局域网内所有已使用的IP</title>
+      <link href="/2023/01/18/windows%E6%9F%A5%E7%9C%8B%E5%B1%80%E5%9F%9F%E7%BD%91%E5%86%85%E6%89%80%E6%9C%89%E5%B7%B2%E4%BD%BF%E7%94%A8%E7%9A%84IP/"/>
+      <url>/2023/01/18/windows%E6%9F%A5%E7%9C%8B%E5%B1%80%E5%9F%9F%E7%BD%91%E5%86%85%E6%89%80%E6%9C%89%E5%B7%B2%E4%BD%BF%E7%94%A8%E7%9A%84IP/</url>
+      
+        <content type="html"><![CDATA[<h4 id="这篇文章的由来"><a href="#这篇文章的由来" class="headerlink" title="这篇文章的由来"></a>这篇文章的由来</h4><p>在使用树莓派的情况下没有显示屏，蹭隔壁老王家的WiFi，没有办法从后台获取树莓派的IP地址，又想远程登入，就想到用文章中的方法获取局域网下所有在线设备的IP地址，然后一个一个连接尝试登入，我真是一个大聪明</p><hr><h2 id="打开“运行”窗口（快捷键：win-R）"><a href="#打开“运行”窗口（快捷键：win-R）" class="headerlink" title="打开“运行”窗口（快捷键：win+R）"></a>打开“运行”窗口（快捷键：win+R）</h2><p><img src="https://pic.imgdb.cn/item/63c795e6be43e0d30e1acfe7.png" alt="chuankou"></p><h2 id="在窗口中输入cmd，点击确认"><a href="#在窗口中输入cmd，点击确认" class="headerlink" title="在窗口中输入cmd，点击确认"></a>在窗口中输入cmd，点击确认</h2><p><img src="https://pic.imgdb.cn/item/63c795e8be43e0d30e1ad2a3.png" alt="cmd"></p><h2 id="在cmd命令窗口输入“ipconfig”命令，回车"><a href="#在cmd命令窗口输入“ipconfig”命令，回车" class="headerlink" title="在cmd命令窗口输入“ipconfig”命令，回车"></a>在cmd命令窗口输入“ipconfig”命令，回车</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ipconfig</span><br></pre></td></tr></table></figure><p><img src="https://pic.imgdb.cn/item/63c7949dbe43e0d30e187db9.png" alt="ip"></p><h2 id="此时就可以找到自己的ip地址"><a href="#此时就可以找到自己的ip地址" class="headerlink" title="此时就可以找到自己的ip地址"></a>此时就可以找到自己的ip地址</h2><h3 id="可以看到本机ip是192-168-1-2"><a href="#可以看到本机ip是192-168-1-2" class="headerlink" title="可以看到本机ip是192.168.1.2"></a>可以看到本机ip是192.168.1.2</h3><p><img src="https://pic.imgdb.cn/item/63c794a0be43e0d30e188229.png" alt=""></p><h2 id="在cmd命令窗口输入“for-L-i-IN-1-1-254-DO-ping-w-2-n-1-192-168-1-i”，回车（注意：这里的192-168-1-是根据自己电脑的ip网段来填写的）"><a href="#在cmd命令窗口输入“for-L-i-IN-1-1-254-DO-ping-w-2-n-1-192-168-1-i”，回车（注意：这里的192-168-1-是根据自己电脑的ip网段来填写的）" class="headerlink" title="在cmd命令窗口输入“for /L %i IN (1,1,254) DO ping -w 2 -n 1 192.168.1.%i”，回车（注意：这里的192.168.1.*是根据自己电脑的ip网段来填写的）"></a>在cmd命令窗口输入“for /L %i IN (1,1,254) DO ping -w 2 -n 1 192.168.1.%i”，回车（注意：这里的192.168.1.*是根据自己电脑的ip网段来填写的）</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">for /L %i IN (1,1,254) DO ping -w 2 -n 1 192.168.1.%i</span><br></pre></td></tr></table></figure><p><img src="https://pic.imgdb.cn/item/63c79db0be43e0d30e2c0bb0.jpg" alt=""></p><h2 id="等待几分钟命令处理完成"><a href="#等待几分钟命令处理完成" class="headerlink" title="等待几分钟命令处理完成"></a>等待几分钟命令处理完成</h2><p><img src="https://pic.imgdb.cn/item/63c794a6be43e0d30e188d3a.png" alt=""></p><h2 id="在cmd命令窗口输入“arp-a”，回车"><a href="#在cmd命令窗口输入“arp-a”，回车" class="headerlink" title="在cmd命令窗口输入“arp -a”，回车"></a>在cmd命令窗口输入“arp -a”，回车</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">arp -a</span><br></pre></td></tr></table></figure><p><img src="https://pic.imgdb.cn/item/63c794a9be43e0d30e18b6bd.png" alt=""></p><h2 id="这时候就可以看见局域网内正在使用的电脑的IP地址了"><a href="#这时候就可以看见局域网内正在使用的电脑的IP地址了" class="headerlink" title="这时候就可以看见局域网内正在使用的电脑的IP地址了"></a>这时候就可以看见局域网内正在使用的电脑的IP地址了</h2><p><img src="https://pic.imgdb.cn/item/63c794acbe43e0d30e18bd73.png" alt=""></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 奇技 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> IP </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>校园卡服务</title>
+      <link href="/2022/11/26/%E6%A0%A1%E5%9B%AD%E5%8D%A1%E6%9C%8D%E5%8A%A1/"/>
+      <url>/2022/11/26/%E6%A0%A1%E5%9B%AD%E5%8D%A1%E6%9C%8D%E5%8A%A1/</url>
+      
+        <content type="html"><![CDATA[<h1 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h1><h2 id="绝不套路任何一位客户"><a href="#绝不套路任何一位客户" class="headerlink" title="绝不套路任何一位客户"></a>绝不套路任何一位客户</h2><h2 id="只卖官方正规套餐，客服，掌厅可查"><a href="#只卖官方正规套餐，客服，掌厅可查" class="headerlink" title="只卖官方正规套餐，客服，掌厅可查"></a>只卖官方正规套餐，客服，掌厅可查</h2><h2 id="不做任何套路宣传，实事求是"><a href="#不做任何套路宣传，实事求是" class="headerlink" title="不做任何套路宣传，实事求是"></a>不做任何套路宣传，实事求是</h2><hr><h1 id="三不卖"><a href="#三不卖" class="headerlink" title="三不卖"></a>三不卖</h1><h2 id="不卖黑卡（已经实名的卡），"><a href="#不卖黑卡（已经实名的卡），" class="headerlink" title="不卖黑卡（已经实名的卡），"></a>不卖黑卡（已经实名的卡），</h2><h2 id="不卖物联卡（不是三大运营商的）"><a href="#不卖物联卡（不是三大运营商的）" class="headerlink" title="不卖物联卡（不是三大运营商的）"></a>不卖物联卡（不是三大运营商的）</h2><h2 id="不卖违规加包的卡（不是说卡不好，不喜欢处理售后，所以不喜欢卖）"><a href="#不卖违规加包的卡（不是说卡不好，不喜欢处理售后，所以不喜欢卖）" class="headerlink" title="不卖违规加包的卡（不是说卡不好，不喜欢处理售后，所以不喜欢卖）"></a>不卖违规加包的卡（不是说卡不好，不喜欢处理售后，所以不喜欢卖）</h2><p><strong>感谢所有支持我的小伙伴 请往下看完！</strong> </p><hr><ul><li>所有卡全是正规校园卡，正规的三大运营商官方手机卡，官方可查只要你要求符合，全国能办（个别卡除外），全国能用。</li><li>别问靠谱吗？稳定吗？连中国移动，中国联通，中国电信的卡你都觉得不靠谱，放弃用手机卡吧。。。。</li><li>办卡只办适合自己的，一味的追求永久套餐啊啥的没意义，营业厅里面的都是永久的，你会一直用下去么？而且月租高流量少。</li><li>好卡都是 内蒙，湖南，河北，浙江这些地区，你们本地没有出优惠卡，就算出了有些卡也不会全国卖，所以我这边也就没有你所在地区的卡。</li></ul><hr><h1 id="这里推荐一个用卡组合方案"><a href="#这里推荐一个用卡组合方案" class="headerlink" title="这里推荐一个用卡组合方案"></a>这里推荐一个用卡组合方案</h1><p>老号码去改成最低月租套餐，比如移动是8元飞享套餐（联系10086客服就能改）老号码可用来接打电话，现在打电话也便宜，最高也就0.15元/分钟，然后办个流量多的外地卡，只用来上网，现在手机一般都双卡双待，2张卡无压力。</p><h1 id="九“不”要注意"><a href="#九“不”要注意" class="headerlink" title="九“不”要注意"></a>九“不”要注意</h1><hr><ul><li><p>不卖物联卡：不是三大运营商的卡，通常没有语音功能，只卖正规运营商的卡，不卖物联卡，不卖物联卡！！</p></li><li><p>不卖BUG卡：通过漏洞加的流量包或者违规加的流量卡</p></li><li><p>不能办副卡：校园卡一般不能办理副卡</p></li><li><p>不能老号改套餐：校园卡的特殊性，只能新办，不能老号改</p></li><li><p>不能携号转网到校园套餐：老号都不能改，携号转网肯定不行</p></li><li><p>不能选归属地：校园卡都是地方性的卡，归属地都是固定</p></li><li><p>不能选号：一般都是随机发，个别卡能选的会在套餐页面说明</p></li><li><p>不能过户：校园卡一般都是2年或者4年，有合约期，有优惠减免</p></li><li><p>不能续约 ：校园卡2年或者4年优惠期，到期后去销户</p></li></ul><hr><h1 id="办卡收费问题："><a href="#办卡收费问题：" class="headerlink" title="办卡收费问题："></a>办卡收费问题：</h1><h2 id="在我们这里办卡是不收费的，并且是包邮到家，个别卡是免费上门激活的，不认识字也没有关系可以放心购买"><a href="#在我们这里办卡是不收费的，并且是包邮到家，个别卡是免费上门激活的，不认识字也没有关系可以放心购买" class="headerlink" title="在我们这里办卡是不收费的，并且是包邮到家，个别卡是免费上门激活的，不认识字也没有关系可以放心购买"></a>在我们这里办卡是不收费的，并且是包邮到家，个别卡是免费上门激活的，不认识字也没有关系可以放心购买</h2><h1 id="流量问题"><a href="#流量问题" class="headerlink" title="流量问题"></a>流量问题</h1><p>套餐都有写着月租多少流量多少，这个流量是每个月都有，有些小白不知道咋想的，就比如20G的套餐，怎么可能是一年20G，肯定是每个月啊，20G一年够用么？</p><hr><h1 id="销户问题"><a href="#销户问题" class="headerlink" title="销户问题"></a>销户问题</h1><p>校园卡一般有优惠期，部分卡优惠期内不能随时销户，如果你确实想要提前销户，可以自己联系运营商客服咨询是否可以提前销户，有可能提前销户要交违约金，所有正规卡都支持异地销户，具体的咨询官方客服。</p><h1 id="网速快慢"><a href="#网速快慢" class="headerlink" title="网速快慢"></a>网速快慢</h1><p>有些人网速慢或者信号差，就说卡问题，这个取决于你所在地附近的基站信号，跟卡没关系！跟套餐没关系。全国各地用同一种卡，网速都会不一样，各种因素，信号的遮挡，基站用的人多，都会造成网速慢</p><p>没有人会给你保证说网速肯定好肯定快之类的，不现实，除非这人住你隔壁。</p><hr><h1 id="身份证件问题"><a href="#身份证件问题" class="headerlink" title="身份证件问题"></a>身份证件问题</h1><p>个别卡是官方自助上传证件资料，还有部分卡是需要发身份证件给小编，这个没有办法，你不发，卡就办不了，系统没有你的证件资料入网，就算卡发你了，也是张空卡，你也激活不了。</p><hr><h1 id="实名激活规范的严重性"><a href="#实名激活规范的严重性" class="headerlink" title="实名激活规范的严重性"></a>实名激活规范的严重性</h1><p>凡是需要传三张照片，身份证正反面+半身照的，必须拍规范，自己不确定的发我审核，如果是给你连接自己传的，发我的时候可以打码。<br>收到卡实名激活的时候，必须按照要求拍规范，视频拍规范</p><hr><h1 id="不规范的后果"><a href="#不规范的后果" class="headerlink" title="不规范的后果"></a>不规范的后果</h1><ul><li>导致实名激活失败，卡用不了</li><li>部分卡不能重新激活的，只能重新下单<br>这也是为什么，拍照要求这么严格的原因，拍规范了一次性通过，你能直接用上卡，我这边也省事。</li></ul><hr><h1 id="证件安全问题"><a href="#证件安全问题" class="headerlink" title="证件安全问题"></a>证件安全问题</h1><p>卡都是直接跟营业厅合作，可以保证证件安全，你信任就办，不信任我也没办法，你可以办其他自助官方下单的卡。</p><hr><h1 id="关于售后问题"><a href="#关于售后问题" class="headerlink" title="关于售后问题"></a>关于售后问题</h1><h2 id="办理的卡售后范围"><a href="#办理的卡售后范围" class="headerlink" title="办理的卡售后范围"></a>办理的卡售后范围</h2><p>套餐与宣传的不一致</p><p>免费卡有没有售后？</p><p>免费办理的卡，我能解决的尽量给你解决，无法解决的只能你自己联系官方运营商客服。</p><hr><h1 id="不在售后范围之内包含"><a href="#不在售后范围之内包含" class="headerlink" title="不在售后范围之内包含"></a>不在售后范围之内包含</h1><ul><li><p>你所在的地区基站问题导致网速慢</p></li><li><p>在诈骗地区使用导致被公安局停，自己联系官方客服解决</p></li><li><p>卡板人为损坏，导致用不了，自己去营业厅补卡</p></li></ul><h1 id="其余问题全部联系运营商官方售后客服解决！"><a href="#其余问题全部联系运营商官方售后客服解决！" class="headerlink" title="其余问题全部联系运营商官方售后客服解决！"></a>其余问题全部联系运营商官方售后客服解决！</h1><p>中国电信官方客服电话：10000<br>中国联通官方客服电话：10010<br>中国移动官方客服电话：10086   </p><h3 id="对套餐月租扣费有疑问的，先问运营商官方客服，如果客服核实到套餐不一致，再来我这边反馈！"><a href="#对套餐月租扣费有疑问的，先问运营商官方客服，如果客服核实到套餐不一致，再来我这边反馈！" class="headerlink" title="对套餐月租扣费有疑问的，先问运营商官方客服，如果客服核实到套餐不一致，再来我这边反馈！"></a>对套餐月租扣费有疑问的，先问运营商官方客服，如果客服核实到套餐不一致，再来我这边反馈！</h3><h1 id="扫下方二维码加微信小编"><a href="#扫下方二维码加微信小编" class="headerlink" title="扫下方二维码加微信小编"></a>扫下方二维码加微信小编</h1><hr><h3 id="微信通过后，直奔主题，发你要办理的套餐截图，再发你要咨询的问题"><a href="#微信通过后，直奔主题，发你要办理的套餐截图，再发你要咨询的问题" class="headerlink" title="微信通过后，直奔主题，发你要办理的套餐截图，再发你要咨询的问题"></a>微信通过后，直奔主题，发你要办理的套餐截图，再发你要咨询的问题</h3><p>V号：muzran</p><p><img src="https://pic.imgdb.cn/item/6381de9f16f2c2beb1b20ddc.jpg" alt="wx二维码"></p><p><strong>办卡，直接发要办理的套餐截图，然后发你要咨询的问题</strong><br>为广大网友提供校园卡优惠套餐办理，不存在跑路一说，信任就办，不要加了小编后，来一句不会是骗人的吧，跑路啥的，本公众号依法办卡，诚信至上！</p><h1 id="申请卡的地址"><a href="#申请卡的地址" class="headerlink" title="申请卡的地址"></a>申请卡的地址</h1><p> <a href="https://91haoka.cn/91haoka_platform/#/minishop?share_id=432031&amp;shop_name=%25E5%2598%25BF%25E5%2598%25BF%25E6%25B5%2581%25E9%2587%258F%25E5%258D%25A1">链接直达</a></p><h1 id="申请卡的二维码"><a href="#申请卡的二维码" class="headerlink" title="申请卡的二维码"></a>申请卡的二维码</h1><p><img src="https://pic.imgdb.cn/item/6381e01816f2c2beb1b43fd7.png" alt="请输入图片描述"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 服务 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 流量卡 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>送你一颗爱心</title>
+      <link href="/2022/11/24/%E9%80%81%E4%BD%A0%E4%B8%80%E9%A2%97%E7%88%B1%E5%BF%83/"/>
+      <url>/2022/11/24/%E9%80%81%E4%BD%A0%E4%B8%80%E9%A2%97%E7%88%B1%E5%BF%83/</url>
+      
+        <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>最近网络上出现了好多人用一些方法制作爱心，C语言、Python、HTML…甚至用CAD画爱心。当然我也不例外，平时爱琢磨的我甚至更加疯狂，一口气用网络上的各种方法制作爱心，从中发现了一个最好看的爱心。于是就有了这篇文章，把我最稀罕的爱心分享给大家，让大家少走弯路。</p><hr><h1 id="爱心展示"><a href="#爱心展示" class="headerlink" title="爱心展示"></a>爱心展示</h1><p><img src="https://pic.imgdb.cn/item/637f47c816f2c2beb1e353ae.jpg" alt="爱心"> </p><p><img src="https://pic.imgdb.cn/item/637f47d516f2c2beb1e36373.jpg" alt="爱心"></p><p><img src="https://pic.imgdb.cn/item/637f47e016f2c2beb1e373b9.jpg" alt="爱心"></p><p><img src="https://pic.imgdb.cn/item/637f47da16f2c2beb1e369ea.jpg" alt="爱心"></p><p><img src="https://pic.imgdb.cn/item/637f47e516f2c2beb1e37b1c.jpg" alt="爱心"></p><hr><h1 id="评价"><a href="#评价" class="headerlink" title="评价"></a>评价</h1><p>每一个都各有特点，如果非要让我选一个最好看的，我只能选第一个了，第一个爱心yyds，这个爱心配上背景音乐特别治愈。</p><hr><h1 id="源码分享"><a href="#源码分享" class="headerlink" title="源码分享"></a>源码分享</h1><p><a href="https://bage88.lanzoue.com/i6x4l0gs8oeb">蓝奏云下载链接  提取码:4xc2</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 奇技 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 爱心 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+    
+    
+    <entry>
+      <title>归档</title>
+      <link href="/archives/index.html"/>
+      <url>/archives/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>分类</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/css/custom.css"/>
+      <url>/css/custom.css</url>
+      
+        <content type="html"><![CDATA[/* 页脚与头图透明 */#footer {    background: transparent !important;  }  #page-header {    background: transparent !important;  }    /* 白天模式遮罩透明 */  #footer::before {    background: transparent !important;  }  #page-header::before {    background: transparent !important;  }    /* 夜间模式遮罩透明 */  [data-theme="dark"] #footer::before {    background: transparent !important;  }  [data-theme="dark"] #page-header::before {    background: transparent !important;  }  /* 一级菜单居中 */#nav .menus_items {    position: absolute !important;    width: fit-content !important;    left: 50% !important;    transform: translateX(-50%) !important;  }  /* 子菜单横向展示 */  #nav .menus_items .menus_item:hover .menus_item_child {    display: flex !important;  }  /* 这里的2是代表导航栏的第2个元素，即有子菜单的元素，可以按自己需求修改 */  .menus_items .menus_item:nth-child(5) .menus_item_child {    left: -38px;  }  /* 夜间模式菜单栏发光字 */[data-theme="dark"] #nav .site-page,[data-theme="dark"] #nav .menus_items .menus_item .menus_item_child li a {  text-shadow: 0 0 2px var(--theme-color) !important;}/* 手机端适配 */[data-theme="dark"] #sidebar #sidebar-menus .menus_items .site-page {  text-shadow: 0 0 2px var(--theme-color) !important;}/* 闪烁变动颜色连续渐变 */#site-name,#site-title,#site-subtitle,#post-info,.author-info__name,.author-info__description {  transition: text-shadow 1s linear !important;}@import "//at.alicdn.com/t/font_2264842_b004iy0kk2b.css";svg.icon {    width: 1.28em;    height: 1.28em;    vertical-align: -0.15em;    fill: currentColor;    overflow: hidden;  }  /* 文章页H1-H6图标样式效果 *//* 控制风车转动速度 4s那里可以自己调节快慢 */h1::before,h2::before,h3::before,h4::before,h5::before,h6::before {  -webkit-animation: ccc 4s linear infinite;  animation: ccc 4s linear infinite;}/* 控制风车转动方向 -1turn 为逆时针转动，1turn 为顺时针转动，相同数字部分记得统一修改 */@-webkit-keyframes ccc {  0% {    -webkit-transform: rotate(0deg);    transform: rotate(0deg);  }  to {    -webkit-transform: rotate(-1turn);    transform: rotate(-1turn);  }}@keyframes ccc {  0% {    -webkit-transform: rotate(0deg);    transform: rotate(0deg);  }  to {    -webkit-transform: rotate(-1turn);    transform: rotate(-1turn);  }}/* 设置风车颜色 */#content-inner.layout h1::before {  color: #ef50a8;  margin-left: -1.55rem;  font-size: 1.3rem;  margin-top: -0.23rem;}#content-inner.layout h2::before {  color: #fb7061;  margin-left: -1.35rem;  font-size: 1.1rem;  margin-top: -0.12rem;}#content-inner.layout h3::before {  color: #ffbf00;  margin-left: -1.22rem;  font-size: 0.95rem;  margin-top: -0.09rem;}#content-inner.layout h4::before {  color: #a9e000;  margin-left: -1.05rem;  font-size: 0.8rem;  margin-top: -0.09rem;}#content-inner.layout h5::before {  color: #57c850;  margin-left: -0.9rem;  font-size: 0.7rem;  margin-top: 0rem;}#content-inner.layout h6::before {  color: #5ec1e0;  margin-left: -0.9rem;  font-size: 0.66rem;  margin-top: 0rem;}/* s设置风车hover动效 6s那里可以自己调节快慢*/#content-inner.layout h1:hover,#content-inner.layout h2:hover,#content-inner.layout h3:hover,#content-inner.layout h4:hover,#content-inner.layout h5:hover,#content-inner.layout h6:hover {  color: var(--theme-color);}#content-inner.layout h1:hover::before,#content-inner.layout h2:hover::before,#content-inner.layout h3:hover::before,#content-inner.layout h4:hover::before,#content-inner.layout h5:hover::before,#content-inner.layout h6:hover::before {  color: var(--theme-color);  -webkit-animation: ccc 6s linear infinite;  animation: ccc 6s linear infinite;}/* 波浪css */.main-hero-waves-area {    width: 100%;    position: absolute;    left: 0;    bottom: -11px;    z-index: 5;  }  .waves-area .waves-svg {    width: 100%;    height: 5rem;  }  /* Animation */    .parallax > use {    animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;  }  .parallax > use:nth-child(1) {    animation-delay: -2s;    animation-duration: 7s;    fill: #f7f9febd;  }  .parallax > use:nth-child(2) {    animation-delay: -3s;    animation-duration: 10s;    fill: #f7f9fe82;  }  .parallax > use:nth-child(3) {    animation-delay: -4s;    animation-duration: 13s;    fill: #f7f9fe36;  }  .parallax > use:nth-child(4) {    animation-delay: -5s;    animation-duration: 20s;    fill: #f7f9fe;  }  /* 黑色模式背景 */  [data-theme="dark"] .parallax > use:nth-child(1) {    animation-delay: -2s;    animation-duration: 7s;    fill: #18171dc8;  }  [data-theme="dark"] .parallax > use:nth-child(2) {    animation-delay: -3s;    animation-duration: 10s;    fill: #18171d80;  }  [data-theme="dark"] .parallax > use:nth-child(3) {    animation-delay: -4s;    animation-duration: 13s;    fill: #18171d3e;  }  [data-theme="dark"] .parallax > use:nth-child(4) {    animation-delay: -5s;    animation-duration: 20s;    fill: #18171d;  }    @keyframes move-forever {    0% {      transform: translate3d(-90px, 0, 0);    }    100% {      transform: translate3d(85px, 0, 0);    }  }  /*Shrinking for mobile*/  @media (max-width: 768px) {    .waves-area .waves-svg {      height: 40px;      min-height: 40px;    }  }  /* 滚动条样式 */::-webkit-scrollbar {    width: 8px;    height: 8px;  }    ::-webkit-scrollbar-track {    background-color: rgba(73, 177, 245, 0.2);    border-radius: 2em;  }    ::-webkit-scrollbar-thumb {    background-color: var(--theme-color);    background-image: -webkit-linear-gradient(      45deg,      rgba(255, 255, 255, 0.4) 25%,      transparent 25%,      transparent 50%,      rgba(255, 255, 255, 0.4) 50%,      rgba(255, 255, 255, 0.4) 75%,      transparent 75%,      transparent    );    border-radius: 2em;  }    ::-webkit-scrollbar-corner {    background-color: transparent;  }    ::-moz-selection {    color: #fff;    background-color: var(--theme-color);  }  :root {    --trans-light: rgba(255, 255, 255, 0.88);    --trans-dark: rgba(25, 25, 25, 0.88);    --border-style: 1px solid rgb(169, 169, 169);    --backdrop-filter: blur(5px) saturate(150%);  }    /* 首页文章卡片 */  #recent-posts > .recent-post-item {    background: var(--trans-light);    backdrop-filter: var(--backdrop-filter);    border-radius: 25px;    border: var(--border-style);  }    /* 首页侧栏卡片 */  #aside-content .card-widget {    background: var(--trans-light);    backdrop-filter: var(--backdrop-filter);    border-radius: 18px;    border: var(--border-style);  }    /* 文章页、归档页、普通页面 */  div#post,  div#page,  div#archive {    background: var(--trans-light);    backdrop-filter: var(--backdrop-filter);    border: var(--border-style);    border-radius: 20px;  }    /* 导航栏 */  #page-header.nav-fixed #nav {    background: rgba(255, 255, 255, 0.75);    backdrop-filter: var(--backdrop-filter);  }    [data-theme="dark"] #page-header.nav-fixed #nav {    background: rgba(0, 0, 0, 0.7) !important;  }    /* 夜间模式遮罩 */  [data-theme="dark"] #recent-posts > .recent-post-item,  [data-theme="dark"] #aside-content .card-widget,  [data-theme="dark"] div#post,  [data-theme="dark"] div#archive,  [data-theme="dark"] div#page {    background: var(--trans-dark);  }      /* 夜间模式页脚页头遮罩透明 */  [data-theme="dark"] #footer::before {    background: transparent !important;  }  [data-theme="dark"] #page-header::before {    background: transparent !important;  }    /* 阅读模式 */  .read-mode #aside-content .card-widget {    background: rgba(158, 204, 171, 0.5) !important;  }  .read-mode div#post {    background: rgba(158, 204, 171, 0.5) !important;  }    /* 夜间模式下的阅读模式 */  [data-theme="dark"] .read-mode #aside-content .card-widget {    background: rgba(25, 25, 25, 0.9) !important;    color: #ffffff;  }  [data-theme="dark"] .read-mode div#post {    background: rgba(25, 25, 25, 0.9) !important;    color: #ffffff;  }/* 播放器大小 */.music-player {  width: 570px;  height: 500px;}.music-player h3{  margin: 0px 0 1px!important;}@font-face {font-family: "iconfont";  src: url('iconfont.eot?t=1537976418058'); /* IE9*/  src: url('iconfont.eot?t=1537976418058#iefix') format('embedded-opentype'), /* IE6-IE8 */  url('data:application/x-font-woff;charset=utf-8;base64,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') format('woff'),  url('iconfont.ttf?t=1537976418058') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/  url('iconfont.svg?t=1537976418058#iconfont') format('svg'); /* iOS 4.1- */}.icon-prev:before { content: "\f0069"; }.icon-next:before { content: "\f006a"; }.icon-play:before { content: "\e66a"; }.icon-pause:before { content: "\e76a"; }.icon-random:before { content: "\e622"; }.icon-muted:before { content: "\e61e"; }.icon-volume:before { content: "\e87a"; }.icon-loop:before { content: "\e66c"; }.icon-single:before { content: "\e66d"; }/* 播放器位置 */.music-player {  position: relative;  margin: 0px auto;}/* 歌曲列表 */.music-player__list {  width: 100%;  padding: 10px;  margin-top: 30px;  background: rgba(0, 0, 0, 0.5);  border-radius: 5px;  -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);}.music__list__item {  padding-left: 25px;  color: #ccc;  position: relative;  margin-bottom: 10px;  font-size: 14px;  cursor: pointer;}.music__list__item:last-of-type {  margin: 0;}.music__list__item.play {  color: #fff;}.music__list__item.play:before {  font-family: 'iconfont';  content: "\e87a";  position: absolute;  left: 0px;  top: 4px;}/* 播放器主体 */.music-player__main {  height: 180px;  padding: 25px;  box-shadow: 0 0 10px rgb(0 0 0 / 20%);  border-radius: 10px;  position: relative;  overflow: hidden;}/* 播放器主体模糊背景 */.music-player__blur {  width: 100%;  height: 100%;  position: absolute;  background-size: 100%;  left: 0;  top: 0;  z-index: -1;  -webkit-filter: blur(20px);  filter: blur(20px);}/* 播放器唱片效果 */.music-player__disc {  float: left;  width: 130px;  height: 130px;  background: url(/img/cd.png) no-repeat center;  background-size: 100%;  position: relative;}/* 唱片指针 */.music-player__pointer {  width: 25px;  position: absolute;  right: -10px;  top: 0;  -webkit-transform-origin: right top;  -ms-transform-origin: right top;  transform-origin: right top;  -webkit-transform: rotate(-15deg);  -ms-transform: rotate(-15deg);  transform: rotate(-15deg);  -webkit-transition: all 0.3s;  -o-transition: all 0.3s;  transition: all 0.3s;}/* 唱片指针播放状态 加play类名 */.music-player__pointer.play {  -webkit-transform: rotate(0deg);  -ms-transform: rotate(0deg);  transform: rotate(0deg);}/* 唱片歌曲图片 */.music-player__image {  width: 80px;  height: 80px;  border-radius: 50%;  position: absolute;  overflow: hidden;  left: 0;  right: 0;  top: 0;  bottom: 0;  margin: auto;}/* 播放器控件 */.music-player__controls {  width: 330px;  height: 130px;  float: right;}/* 歌曲信息 */.music__info {  width: 100%;  height: 50px;  margin-bottom: 15px;}.music__info .music__info--title {  color: #fff;}.music__info .music__info--title {  font-size: 16px;}/* 控件 */.player-control {  width: 100%;}.player-control__content {  overflow: hidden;}/* 播放暂停按钮 */.player-control__btns {  float: left;  overflow: hidden;}.player-control__btn {  float: left;  margin: 0 5px;  font-weight: bolder;  color: #fff;  cursor: pointer;}.player-control__volume {  float: right;  overflow: hidden;}.control__volume--progress {  float: left;  width: 100px;  position: relative;  top: 8px;}.player__song--timeProgess{  font-size: 12px;  color: #fff;  padding: 0px 3px;  background: rgba(0, 0, 0, 0.3);  border-radius: 5px;}.player-control__content .nowTime{  float: left;}.player-control__content .totalTime{  float: right;}.music-player .progress {  background: rgba(0, 0, 0, 0.3);  height: 5px;  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5) inset;  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5) inset;  overflow: hidden;  margin: 0.5rem 0!important;  border-radius: 2px;  position: relative;  cursor: pointer;}.music-player .progress .back {  width: 0px;  height: 100%;  border-radius: 2px;  background: rgb(12, 182, 212);}.music-player .progress .pointer {  width: 7px;  height: 7px;  background: #fff;  border-radius: 50%;  opacity: 0;  -webkit-transition: opacity 0.3s;  -o-transition: opacity 0.3s;  transition: opacity 0.3s;  position: absolute;  top: -1px;  left: 0;}.music-player .progress:hover .pointer {  opacity: 1;}/* 播放 画片 动画 */@-webkit-keyframes disc {  from {      -webkit-transform: rotate(0deg);      transform: rotate(0deg);  }  to {      -webkit-transform: rotate(360deg);      transform: rotate(360deg);  }}@keyframes disc {  from {      -webkit-transform: rotate(0deg);      transform: rotate(0deg);  }  to {      -webkit-transform: rotate(360deg);      transform: rotate(360deg);  }}.music-player__image.play {  -webkit-animation: disc 5s linear 0s infinite;  animation: disc 5s linear 0s infinite;}/*  播放进度  */.player__song--progress {  width: 100%;  margin-top: 15px;}.music-player h1, .music-player h2, .music-player h3,.music-player h4, .music-player h5, .music-player h6, .music-player p {  margin: 0; padding: 0;}.music-player li { list-style: none; }/* 帧率检测 */#fps {  position: fixed;  /* 指定位置 */  left: 10px;  bottom: 10px;  z-index: 1919810;}[data-theme="light"] #fps {  background-color: rgba(255, 255, 255, 0.85);  backdrop-filter: var(--backdrop-filter);  padding: 4px;  border-radius: 4px;}[data-theme="dark"] #fps {  background-color: rgba(0, 0, 0, 0.72);  backdrop-filter: var(--backdrop-filter);  padding: 4px;  border-radius: 4px;}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>留言板</title>
+      <link href="/comments/index.html"/>
+      <url>/comments/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/css/universe.css"/>
+      <url>/css/universe.css</url>
+      
+        <content type="html"><![CDATA[/* 背景宇宙星光  */#universe{    display: block;    position: fixed;    margin: 0;    padding: 0;    border: 0;    outline: 0;    left: 0;    top: 0;    width: 100%;    height: 100%;    pointer-events: none;    /* 这个是调置顶的优先级的，-1在文章页下面，背景上面，个人推荐这种 */    z-index: -1;  }]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>关于</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/css/kslink.css"/>
+      <url>/css/kslink.css</url>
+      
+        <content type="html"><![CDATA[/* 添加友链按钮 *//* 快速填写格式 */.addBtn {    display: flex;    justify-content: center;    flex-wrap: wrap;}.addBtn button {    transition: .2s;    display: flex;    margin: 5px auto;    color: var(--global-bg);    padding: 15px;    border-radius: 40px;    background: var(--search-result-title);    align-items: center;}button {    padding: 0;    outline: 0;    border: none;    background: 0 0;    cursor: pointer;    touch-action: manipulation;}.fa-solid, .fas {    font-family: "Font Awesome 6 Free";    font-weight: 900;}.addBtn i {    font-size: 1.3rem;    margin-right: 10px;}.addBtn button:hover {    background: var(--theme-color);    color: #fff;}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/js/kslink.js"/>
+      <url>/js/kslink.js</url>
+      
+        <content type="html"><![CDATA[var leonus = {    linkCom: e => {        var t = document.querySelector(".el-textarea__inner");        "bf" == e ? (t.value = "```yml\n", t.value += "- name: \n  link: \n  avatar: \n  descr: \n  siteshot: ", t.value += "\n```", t.setSelectionRange(15, 15)) : (t.value = "站点名称：\n站点地址：\n头像链接：\n站点描述：\n站点截图：", t.setSelectionRange(5, 5)), t.focus()    },    owoBig: () => {        if (!document.getElementById("post-comment") || document.body.clientWidth < 768) return;        let e = 1,            t = "",            o = document.createElement("div"),            n = document.querySelector("body");        o.id = "owo-big", n.appendChild(o), new MutationObserver((l => {            for (let a = 0; a < l.length; a++) {                let i = l[a].addedNodes,                    s = "";                if (2 == i.length && "OwO-body" == i[1].className) s = i[1];                else {                    if (1 != i.length || "tk-comment" != i[0].className) continue;                    s = i[0]                }                s.onmouseover = l => {                    e && ("OwO-body" == s.className && "IMG" == l.target.tagName || "tk-owo-emotion" == l.target.className) && (e = 0, t = setTimeout((() => {                        let e = 3 * l.path[0].clientHeight,                            t = 3 * l.path[0].clientWidth,                            a = l.x - l.offsetX - (t - l.path[0].clientWidth) / 2,                            i = l.y - l.offsetY;                        a + t > n.clientWidth && (a -= a + t - n.clientWidth + 10), a < 0 && (a = 10), o.style.cssText = `display:flex; height:${e}px; width:${t}px; left:${a}px; top:${i}px;`, o.innerHTML = `<img src="${l.target.src}">`                    }), 300))                }, s.onmouseout = () => {                    o.style.display = "none", e = 1, clearTimeout(t)                }            }        })).observe(document.getElementById("post-comment"), {            subtree: !0,            childList: !0        })    },};]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/js/light.js"/>
+      <url>/js/light.js</url>
+      
+        <content type="html"><![CDATA[// 霓虹灯效果// 颜色数组var arr = ["#39c5bb", "#f14747", "#f1a247", "#f1ee47", "#b347f1", "#1edbff", "#ed709b", "#5636ed"];// 颜色索引var idx = 0;// 切换颜色function changeColor() {    // 仅夜间模式才启用    if (document.getElementsByTagName('html')[0].getAttribute('data-theme') == 'dark') {        if (document.getElementById("site-name"))            document.getElementById("site-name").style.textShadow = arr[idx] + " 0 0 15px";        if (document.getElementById("site-title"))            document.getElementById("site-title").style.textShadow = arr[idx] + " 0 0 15px";        if (document.getElementById("site-subtitle"))            document.getElementById("site-subtitle").style.textShadow = arr[idx] + " 0 0 10px";        if (document.getElementById("post-info"))            document.getElementById("post-info").style.textShadow = arr[idx] + " 0 0 5px";        try {            document.getElementsByClassName("author-info__name")[0].style.textShadow = arr[idx] + " 0 0 12px";            document.getElementsByClassName("author-info__description")[0].style.textShadow = arr[idx] + " 0 0 12px";        } catch {                    }        idx++;        if (idx == 8) {            idx = 0;        }    } else {        // 白天模式恢复默认        if (document.getElementById("site-name"))            document.getElementById("site-name").style.textShadow = "#1e1e1ee0 1px 1px 1px";        if (document.getElementById("site-title"))            document.getElementById("site-title").style.textShadow = "#1e1e1ee0 1px 1px 1px";        if (document.getElementById("site-subtitle"))            document.getElementById("site-subtitle").style.textShadow = "#1e1e1ee0 1px 1px 1px";        if (document.getElementById("post-info"))            document.getElementById("post-info").style.textShadow = "#1e1e1ee0 1px 1px 1px";        try {            document.getElementsByClassName("author-info__name")[0].style.textShadow = "";            document.getElementsByClassName("author-info__description")[0].style.textShadow = "";        } catch {                    }    }}// 开启计时器window.onload = setInterval(changeColor, 1200);]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/js/universe.js"/>
+      <url>/js/universe.js</url>
+      
+        <content type="html"><![CDATA[function dark() {window.requestAnimationFrame=window.requestAnimationFrame||window.mozRequestAnimationFrame||window.webkitRequestAnimationFrame||window.msRequestAnimationFrame;var n,e,i,h,t=.05,s=document.getElementById("universe"),o=!0,a="180,184,240",r="226,225,142",d="226,225,224",c=[];function f(){n=window.innerWidth,e=window.innerHeight,i=.216*n,s.setAttribute("width",n),s.setAttribute("height",e)}function u(){h.clearRect(0,0,n,e);for(var t=c.length,i=0;i<t;i++){var s=c[i];s.move(),s.fadeIn(),s.fadeOut(),s.draw()}}function y(){this.reset=function(){this.giant=m(3),this.comet=!this.giant&&!o&&m(10),this.x=l(0,n-10),this.y=l(0,e),this.r=l(1.1,2.6),this.dx=l(t,6*t)+(this.comet+1-1)*t*l(50,120)+2*t,this.dy=-l(t,6*t)-(this.comet+1-1)*t*l(50,120),this.fadingOut=null,this.fadingIn=!0,this.opacity=0,this.opacityTresh=l(.2,1-.4*(this.comet+1-1)),this.do=l(5e-4,.002)+.001*(this.comet+1-1)},this.fadeIn=function(){this.fadingIn&&(this.fadingIn=!(this.opacity>this.opacityTresh),this.opacity+=this.do)},this.fadeOut=function(){this.fadingOut&&(this.fadingOut=!(this.opacity<0),this.opacity-=this.do/2,(this.x>n||this.y<0)&&(this.fadingOut=!1,this.reset()))},this.draw=function(){if(h.beginPath(),this.giant)h.fillStyle="rgba("+a+","+this.opacity+")",h.arc(this.x,this.y,2,0,2*Math.PI,!1);else if(this.comet){h.fillStyle="rgba("+d+","+this.opacity+")",h.arc(this.x,this.y,1.5,0,2*Math.PI,!1);for(var t=0;t<30;t++)h.fillStyle="rgba("+d+","+(this.opacity-this.opacity/20*t)+")",h.rect(this.x-this.dx/4*t,this.y-this.dy/4*t-2,2,2),h.fill()}else h.fillStyle="rgba("+r+","+this.opacity+")",h.rect(this.x,this.y,this.r,this.r);h.closePath(),h.fill()},this.move=function(){this.x+=this.dx,this.y+=this.dy,!1===this.fadingOut&&this.reset(),(this.x>n-n/4||this.y<0)&&(this.fadingOut=!0)},setTimeout(function(){o=!1},50)}function m(t){return Math.floor(1e3*Math.random())+1<10*t}function l(t,i){return Math.random()*(i-t)+t}f(),window.addEventListener("resize",f,!1),function(){h=s.getContext("2d");for(var t=0;t<i;t++)c[t]=new y,c[t].reset();u()}(),function t(){document.getElementsByTagName('html')[0].getAttribute('data-theme')=='dark'&&u(),window.requestAnimationFrame(t)}()};dark()]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>友链</title>
+      <link href="/link/index.html"/>
+      <url>/link/index.html</url>
+      
+        <content type="html"><![CDATA[<p><div class="addBtn"><button onclick="leonus.linkCom()"><i class="fa-solid fa-circle-plus"></i>快速申请 (默认样式)</button> <button onclick="leonus.linkCom(&quot;bf&quot;)"><i class="fa-solid fa-circle-plus"></i>快速申请 (Butterfly)</button></div></p><p><link rel="stylesheet" href="/css/kslink.css"></p><script src="/js/kslink.js"></script>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/js/fps.js"/>
+      <url>/js/fps.js</url>
+      
+        <content type="html"><![CDATA[if (window.localStorage.getItem("fpson") == undefined || window.localStorage.getItem("fpson") == "1") {    var rAF = function () {        return (            window.requestAnimationFrame ||            window.webkitRequestAnimationFrame ||            function (callback) {                window.setTimeout(callback, 1000 / 60);            }        );    }();    var frame = 0;    var allFrameCount = 0;    var lastTime = Date.now();    var lastFameTime = Date.now();    var loop = function () {        var now = Date.now();        var fs = (now - lastFameTime);        var fps = Math.round(1000 / fs);        lastFameTime = now;        // 不置 0，在动画的开头及结尾记录此值的差值算出 FPS        allFrameCount++;        frame++;        if (now > 1000 + lastTime) {            var fps = Math.round((frame * 1000) / (now - lastTime));            if (fps <= 5) {                var kd = `<span style="color:#bd0000">卡成ppt🤢</span>`            } else if (fps <= 15) {                var kd = `<span style="color:red">电竞级帧率😖</span>`            } else if (fps <= 25) {                var kd = `<span style="color:orange">有点难受😨</span>`            } else if (fps < 35) {                var kd = `<span style="color:#9338e6">不太流畅🙄</span>`            } else if (fps <= 45) {                var kd = `<span style="color:#08b7e4">还不错哦😁</span>`            } else {                var kd = `<span style="color:#39c5bb">十分流畅🤣</span>`            }            document.getElementById("fps").innerHTML = `FPS:${fps} ${kd}`;            frame = 0;            lastTime = now;        };        rAF(loop);    }    loop();} else {    document.getElementById("fps").style = "display:none!important"}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>标签</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/musics/index.html"/>
+      <url>/musics/index.html</url>
+      
+        <content type="html"><![CDATA[<!-- 播放器 --><div class="music-player"><!-- audio标签 --><audio class="music-player__audio" ></audio><!-- 播放器主体 --><div class="music-player__main"><!-- 模糊背景 --><div class="music-player__blur"></div><!-- 唱片 --><div class="music-player__disc"><!-- 唱片图片 --><div class="music-player__image"><img width="100%" src="" alt=""></div><!-- 指针 --><div class="music-player__pointer"><img width="100%" src="/img/cd_tou.png" alt=""></div></div><!-- 控件主体 --><div class="music-player__controls"><!-- 歌曲信息 --><div class="music__info"><h3 class="music__info--title">...</h3></div><!-- 控件... --><div class="player-control"><div class="player-control__content"><div class="player-control__btns"><div class="player-control__btn player-control__btn--prev"><i class="iconfont icon-prev"></i></div><div class="player-control__btn player-control__btn--play"><i class="iconfont icon-play"></i></div><div class="player-control__btn player-control__btn--next"><i class="iconfont icon-next"></i></div><div class="player-control__btn player-control__btn--mode"><i class="iconfont icon-random"></i></div></div><div class="player-control__volume"><div class="control__volume--icon player-control__btn"><i class="iconfont icon-volume"></i></div><div class="control__volume--progress progress"></div></div></div><div class="player-control__content"><div class="player__song--progress progress"></div><div class="player__song--timeProgess nowTime">00:00</div><div class="player__song--timeProgess totalTime">00:00</div></div></div></div></div><!-- 歌曲列表 --><div class="music-player__list"><ul class="music__list_content"></ul></div></div><script src="/js/utill.js"></script><script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.slim.min.js"></script><script src="/js/player.js?10"></script><div style="text-align:center;margin:-100px 0; font:normal 14px/24px 'MicroSoft YaHei';color:#ffffff"></div>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/movies/index.html"/>
+      <url>/movies/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+  
+</search>
