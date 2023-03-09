@@ -82,9 +82,9 @@
     
     
     <entry>
-      <title>关于</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
+      <title>分类</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -104,31 +104,9 @@
     
     
     <entry>
-      <title></title>
-      <link href="/css/universe.css"/>
-      <url>/css/universe.css</url>
-      
-        <content type="html"><![CDATA[/* 背景宇宙星光  */#universe{    display: block;    position: fixed;    margin: 0;    padding: 0;    border: 0;    outline: 0;    left: 0;    top: 0;    width: 100%;    height: 100%;    pointer-events: none;    /* 这个是调置顶的优先级的，-1在文章页下面，背景上面，个人推荐这种 */    z-index: -1;  }]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/css/kslink.css"/>
-      <url>/css/kslink.css</url>
-      
-        <content type="html"><![CDATA[/* 添加友链按钮 *//* 快速填写格式 */.addBtn {    display: flex;    justify-content: center;    flex-wrap: wrap;}.addBtn button {    transition: .2s;    display: flex;    margin: 5px auto;    color: var(--global-bg);    padding: 15px;    border-radius: 40px;    background: var(--search-result-title);    align-items: center;}button {    padding: 0;    outline: 0;    border: none;    background: 0 0;    cursor: pointer;    touch-action: manipulation;}.fa-solid, .fas {    font-family: "Font Awesome 6 Free";    font-weight: 900;}.addBtn i {    font-size: 1.3rem;    margin-right: 10px;}.addBtn button:hover {    background: var(--theme-color);    color: #fff;}]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>分类</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
+      <title>关于</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -149,10 +127,21 @@
     
     <entry>
       <title></title>
-      <link href="/js/fps.js"/>
-      <url>/js/fps.js</url>
+      <link href="/css/kslink.css"/>
+      <url>/css/kslink.css</url>
       
-        <content type="html"><![CDATA[if (window.localStorage.getItem("fpson") == undefined || window.localStorage.getItem("fpson") == "1") {    var rAF = function () {        return (            window.requestAnimationFrame ||            window.webkitRequestAnimationFrame ||            function (callback) {                window.setTimeout(callback, 1000 / 60);            }        );    }();    var frame = 0;    var allFrameCount = 0;    var lastTime = Date.now();    var lastFameTime = Date.now();    var loop = function () {        var now = Date.now();        var fs = (now - lastFameTime);        var fps = Math.round(1000 / fs);        lastFameTime = now;        // 不置 0，在动画的开头及结尾记录此值的差值算出 FPS        allFrameCount++;        frame++;        if (now > 1000 + lastTime) {            var fps = Math.round((frame * 1000) / (now - lastTime));            if (fps <= 5) {                var kd = `<span style="color:#bd0000">卡成ppt🤢</span>`            } else if (fps <= 15) {                var kd = `<span style="color:red">电竞级帧率😖</span>`            } else if (fps <= 25) {                var kd = `<span style="color:orange">有点难受😨</span>`            } else if (fps < 35) {                var kd = `<span style="color:#9338e6">不太流畅🙄</span>`            } else if (fps <= 45) {                var kd = `<span style="color:#08b7e4">还不错哦😁</span>`            } else {                var kd = `<span style="color:#39c5bb">十分流畅🤣</span>`            }            document.getElementById("fps").innerHTML = `FPS:${fps} ${kd}`;            frame = 0;            lastTime = now;        };        rAF(loop);    }    loop();} else {    document.getElementById("fps").style = "display:none!important"}]]></content>
+        <content type="html"><![CDATA[/* 添加友链按钮 *//* 快速填写格式 */.addBtn {    display: flex;    justify-content: center;    flex-wrap: wrap;}.addBtn button {    transition: .2s;    display: flex;    margin: 5px auto;    color: var(--global-bg);    padding: 15px;    border-radius: 40px;    background: var(--search-result-title);    align-items: center;}button {    padding: 0;    outline: 0;    border: none;    background: 0 0;    cursor: pointer;    touch-action: manipulation;}.fa-solid, .fas {    font-family: "Font Awesome 6 Free";    font-weight: 900;}.addBtn i {    font-size: 1.3rem;    margin-right: 10px;}.addBtn button:hover {    background: var(--theme-color);    color: #fff;}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/css/universe.css"/>
+      <url>/css/universe.css</url>
+      
+        <content type="html"><![CDATA[/* 背景宇宙星光  */#universe{    display: block;    position: fixed;    margin: 0;    padding: 0;    border: 0;    outline: 0;    left: 0;    top: 0;    width: 100%;    height: 100%;    pointer-events: none;    /* 这个是调置顶的优先级的，-1在文章页下面，背景上面，个人推荐这种 */    z-index: -1;  }]]></content>
       
     </entry>
     
@@ -170,33 +159,22 @@
     
     
     <entry>
+      <title></title>
+      <link href="/js/fps.js"/>
+      <url>/js/fps.js</url>
+      
+        <content type="html"><![CDATA[if (window.localStorage.getItem("fpson") == undefined || window.localStorage.getItem("fpson") == "1") {    var rAF = function () {        return (            window.requestAnimationFrame ||            window.webkitRequestAnimationFrame ||            function (callback) {                window.setTimeout(callback, 1000 / 60);            }        );    }();    var frame = 0;    var allFrameCount = 0;    var lastTime = Date.now();    var lastFameTime = Date.now();    var loop = function () {        var now = Date.now();        var fs = (now - lastFameTime);        var fps = Math.round(1000 / fs);        lastFameTime = now;        // 不置 0，在动画的开头及结尾记录此值的差值算出 FPS        allFrameCount++;        frame++;        if (now > 1000 + lastTime) {            var fps = Math.round((frame * 1000) / (now - lastTime));            if (fps <= 5) {                var kd = `<span style="color:#bd0000">卡成ppt🤢</span>`            } else if (fps <= 15) {                var kd = `<span style="color:red">电竞级帧率😖</span>`            } else if (fps <= 25) {                var kd = `<span style="color:orange">有点难受😨</span>`            } else if (fps < 35) {                var kd = `<span style="color:#9338e6">不太流畅🙄</span>`            } else if (fps <= 45) {                var kd = `<span style="color:#08b7e4">还不错哦😁</span>`            } else {                var kd = `<span style="color:#39c5bb">十分流畅🤣</span>`            }            document.getElementById("fps").innerHTML = `FPS:${fps} ${kd}`;            frame = 0;            lastTime = now;        };        rAF(loop);    }    loop();} else {    document.getElementById("fps").style = "display:none!important"}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>友链</title>
       <link href="/link/index.html"/>
       <url>/link/index.html</url>
       
         <content type="html"><![CDATA[<p><div class="addBtn"><button onclick="leonus.linkCom()"><i class="fa-solid fa-circle-plus"></i>快速申请 (默认样式)</button> <button onclick="leonus.linkCom(&quot;bf&quot;)"><i class="fa-solid fa-circle-plus"></i>快速申请 (Butterfly)</button></div></p><p><link rel="stylesheet" href="/css/kslink.css"></p><script src="/js/kslink.js"></script>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>标签</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/movies/index.html"/>
-      <url>/movies/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -215,6 +193,17 @@
     
     <entry>
       <title></title>
+      <link href="/movies/index.html"/>
+      <url>/movies/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
       <link href="/js/light.js"/>
       <url>/js/light.js</url>
       
@@ -226,10 +215,21 @@
     
     <entry>
       <title></title>
-      <link href="/js/universe.js"/>
-      <url>/js/universe.js</url>
+      <link href="/musics/index.html"/>
+      <url>/musics/index.html</url>
       
-        <content type="html"><![CDATA[function dark() {window.requestAnimationFrame=window.requestAnimationFrame||window.mozRequestAnimationFrame||window.webkitRequestAnimationFrame||window.msRequestAnimationFrame;var n,e,i,h,t=.05,s=document.getElementById("universe"),o=!0,a="180,184,240",r="226,225,142",d="226,225,224",c=[];function f(){n=window.innerWidth,e=window.innerHeight,i=.216*n,s.setAttribute("width",n),s.setAttribute("height",e)}function u(){h.clearRect(0,0,n,e);for(var t=c.length,i=0;i<t;i++){var s=c[i];s.move(),s.fadeIn(),s.fadeOut(),s.draw()}}function y(){this.reset=function(){this.giant=m(3),this.comet=!this.giant&&!o&&m(10),this.x=l(0,n-10),this.y=l(0,e),this.r=l(1.1,2.6),this.dx=l(t,6*t)+(this.comet+1-1)*t*l(50,120)+2*t,this.dy=-l(t,6*t)-(this.comet+1-1)*t*l(50,120),this.fadingOut=null,this.fadingIn=!0,this.opacity=0,this.opacityTresh=l(.2,1-.4*(this.comet+1-1)),this.do=l(5e-4,.002)+.001*(this.comet+1-1)},this.fadeIn=function(){this.fadingIn&&(this.fadingIn=!(this.opacity>this.opacityTresh),this.opacity+=this.do)},this.fadeOut=function(){this.fadingOut&&(this.fadingOut=!(this.opacity<0),this.opacity-=this.do/2,(this.x>n||this.y<0)&&(this.fadingOut=!1,this.reset()))},this.draw=function(){if(h.beginPath(),this.giant)h.fillStyle="rgba("+a+","+this.opacity+")",h.arc(this.x,this.y,2,0,2*Math.PI,!1);else if(this.comet){h.fillStyle="rgba("+d+","+this.opacity+")",h.arc(this.x,this.y,1.5,0,2*Math.PI,!1);for(var t=0;t<30;t++)h.fillStyle="rgba("+d+","+(this.opacity-this.opacity/20*t)+")",h.rect(this.x-this.dx/4*t,this.y-this.dy/4*t-2,2,2),h.fill()}else h.fillStyle="rgba("+r+","+this.opacity+")",h.rect(this.x,this.y,this.r,this.r);h.closePath(),h.fill()},this.move=function(){this.x+=this.dx,this.y+=this.dy,!1===this.fadingOut&&this.reset(),(this.x>n-n/4||this.y<0)&&(this.fadingOut=!0)},setTimeout(function(){o=!1},50)}function m(t){return Math.floor(1e3*Math.random())+1<10*t}function l(t,i){return Math.random()*(i-t)+t}f(),window.addEventListener("resize",f,!1),function(){h=s.getContext("2d");for(var t=0;t<i;t++)c[t]=new y,c[t].reset();u()}(),function t(){document.getElementsByTagName('html')[0].getAttribute('data-theme')=='dark'&&u(),window.requestAnimationFrame(t)}()};dark()]]></content>
+        <content type="html"><![CDATA[<!-- 播放器 --><div class="music-player"><!-- audio标签 --><audio class="music-player__audio" ></audio><!-- 播放器主体 --><div class="music-player__main"><!-- 模糊背景 --><div class="music-player__blur"></div><!-- 唱片 --><div class="music-player__disc"><!-- 唱片图片 --><div class="music-player__image"><img width="100%" src="" alt=""></div><!-- 指针 --><div class="music-player__pointer"><img width="100%" src="/img/cd_tou.png" alt=""></div></div><!-- 控件主体 --><div class="music-player__controls"><!-- 歌曲信息 --><div class="music__info"><h3 class="music__info--title">...</h3></div><!-- 控件... --><div class="player-control"><div class="player-control__content"><div class="player-control__btns"><div class="player-control__btn player-control__btn--prev"><i class="iconfont icon-prev"></i></div><div class="player-control__btn player-control__btn--play"><i class="iconfont icon-play"></i></div><div class="player-control__btn player-control__btn--next"><i class="iconfont icon-next"></i></div><div class="player-control__btn player-control__btn--mode"><i class="iconfont icon-random"></i></div></div><div class="player-control__volume"><div class="control__volume--icon player-control__btn"><i class="iconfont icon-volume"></i></div><div class="control__volume--progress progress"></div></div></div><div class="player-control__content"><div class="player__song--progress progress"></div><div class="player__song--timeProgess nowTime">00:00</div><div class="player__song--timeProgess totalTime">00:00</div></div></div></div></div><!-- 歌曲列表 --><div class="music-player__list"><ul class="music__list_content"></ul></div></div><script src="/js/utill.js"></script><script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.slim.min.js"></script><script src="/js/player.js?10"></script><div style="text-align:center;margin:-100px 0; font:normal 14px/24px 'MicroSoft YaHei';color:#ffffff"></div>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>标签</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -237,10 +237,10 @@
     
     <entry>
       <title></title>
-      <link href="/musics/index.html"/>
-      <url>/musics/index.html</url>
+      <link href="/js/universe.js"/>
+      <url>/js/universe.js</url>
       
-        <content type="html"><![CDATA[<!-- 播放器 --><div class="music-player"><!-- audio标签 --><audio class="music-player__audio" ></audio><!-- 播放器主体 --><div class="music-player__main"><!-- 模糊背景 --><div class="music-player__blur"></div><!-- 唱片 --><div class="music-player__disc"><!-- 唱片图片 --><div class="music-player__image"><img width="100%" src="" alt=""></div><!-- 指针 --><div class="music-player__pointer"><img width="100%" src="/img/cd_tou.png" alt=""></div></div><!-- 控件主体 --><div class="music-player__controls"><!-- 歌曲信息 --><div class="music__info"><h3 class="music__info--title">...</h3></div><!-- 控件... --><div class="player-control"><div class="player-control__content"><div class="player-control__btns"><div class="player-control__btn player-control__btn--prev"><i class="iconfont icon-prev"></i></div><div class="player-control__btn player-control__btn--play"><i class="iconfont icon-play"></i></div><div class="player-control__btn player-control__btn--next"><i class="iconfont icon-next"></i></div><div class="player-control__btn player-control__btn--mode"><i class="iconfont icon-random"></i></div></div><div class="player-control__volume"><div class="control__volume--icon player-control__btn"><i class="iconfont icon-volume"></i></div><div class="control__volume--progress progress"></div></div></div><div class="player-control__content"><div class="player__song--progress progress"></div><div class="player__song--timeProgess nowTime">00:00</div><div class="player__song--timeProgess totalTime">00:00</div></div></div></div></div><!-- 歌曲列表 --><div class="music-player__list"><ul class="music__list_content"></ul></div></div><script src="/js/utill.js"></script><script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.slim.min.js"></script><script src="/js/player.js?10"></script><div style="text-align:center;margin:-100px 0; font:normal 14px/24px 'MicroSoft YaHei';color:#ffffff"></div>]]></content>
+        <content type="html"><![CDATA[function dark() {window.requestAnimationFrame=window.requestAnimationFrame||window.mozRequestAnimationFrame||window.webkitRequestAnimationFrame||window.msRequestAnimationFrame;var n,e,i,h,t=.05,s=document.getElementById("universe"),o=!0,a="180,184,240",r="226,225,142",d="226,225,224",c=[];function f(){n=window.innerWidth,e=window.innerHeight,i=.216*n,s.setAttribute("width",n),s.setAttribute("height",e)}function u(){h.clearRect(0,0,n,e);for(var t=c.length,i=0;i<t;i++){var s=c[i];s.move(),s.fadeIn(),s.fadeOut(),s.draw()}}function y(){this.reset=function(){this.giant=m(3),this.comet=!this.giant&&!o&&m(10),this.x=l(0,n-10),this.y=l(0,e),this.r=l(1.1,2.6),this.dx=l(t,6*t)+(this.comet+1-1)*t*l(50,120)+2*t,this.dy=-l(t,6*t)-(this.comet+1-1)*t*l(50,120),this.fadingOut=null,this.fadingIn=!0,this.opacity=0,this.opacityTresh=l(.2,1-.4*(this.comet+1-1)),this.do=l(5e-4,.002)+.001*(this.comet+1-1)},this.fadeIn=function(){this.fadingIn&&(this.fadingIn=!(this.opacity>this.opacityTresh),this.opacity+=this.do)},this.fadeOut=function(){this.fadingOut&&(this.fadingOut=!(this.opacity<0),this.opacity-=this.do/2,(this.x>n||this.y<0)&&(this.fadingOut=!1,this.reset()))},this.draw=function(){if(h.beginPath(),this.giant)h.fillStyle="rgba("+a+","+this.opacity+")",h.arc(this.x,this.y,2,0,2*Math.PI,!1);else if(this.comet){h.fillStyle="rgba("+d+","+this.opacity+")",h.arc(this.x,this.y,1.5,0,2*Math.PI,!1);for(var t=0;t<30;t++)h.fillStyle="rgba("+d+","+(this.opacity-this.opacity/20*t)+")",h.rect(this.x-this.dx/4*t,this.y-this.dy/4*t-2,2,2),h.fill()}else h.fillStyle="rgba("+r+","+this.opacity+")",h.rect(this.x,this.y,this.r,this.r);h.closePath(),h.fill()},this.move=function(){this.x+=this.dx,this.y+=this.dy,!1===this.fadingOut&&this.reset(),(this.x>n-n/4||this.y<0)&&(this.fadingOut=!0)},setTimeout(function(){o=!1},50)}function m(t){return Math.floor(1e3*Math.random())+1<10*t}function l(t,i){return Math.random()*(i-t)+t}f(),window.addEventListener("resize",f,!1),function(){h=s.getContext("2d");for(var t=0;t<i;t++)c[t]=new y,c[t].reset();u()}(),function t(){document.getElementsByTagName('html')[0].getAttribute('data-theme')=='dark'&&u(),window.requestAnimationFrame(t)}()};dark()]]></content>
       
     </entry>
     
