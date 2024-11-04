@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-11-03T16:28:17.767Z</updated>
+  <updated>2024-11-04T10:47:03.157Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo使用报错合集</title>
+    <link href="http://example.com/2024/11/04/Hexo%E4%BD%BF%E7%94%A8%E6%8A%A5%E9%94%99%E5%90%88%E9%9B%86/"/>
+    <id>http://example.com/2024/11/04/Hexo%E4%BD%BF%E7%94%A8%E6%8A%A5%E9%94%99%E5%90%88%E9%9B%86/</id>
+    <published>2024-11-04T10:10:52.000Z</published>
+    <updated>2024-11-04T10:47:03.157Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="报错一：bash-hexo-command-not-found"><a href="#报错一：bash-hexo-command-not-found" class="headerlink" title="报错一：bash: hexo: command not found"></a>报错一：bash: hexo: command not found</h1><p>本着能解决问题就不重装的原则，首先检查 nodejs 和 npm 是否正常，依次输入命令 <code>node -v</code> 和 <code>npm -v</code> 看看是否有相关版本信息。</p><p>出现了版本信息就证明 nodejs 和 npm 是没有问题的，那么就应该是环境变量的配置问题了，在【此电脑】右键【属性】，依次选择【高级系统设置】-【环境变量】，选择系统变量 Path，将 node_modules 下的 .bin 文件路径添加到 Path 里面</p><p>具体步骤如下：</p><p><img src="https://pic.imgdb.cn/item/6728a1b5d29ded1a8cb6dc46.png" alt=""></p><p><img src="https://pic.imgdb.cn/item/6728a210d29ded1a8cb730b4.png" alt=""></p><p><img src="https://pic.imgdb.cn/item/6728a22fd29ded1a8cb75147.png" alt=""></p><p><img src="https://pic.imgdb.cn/item/6728a294d29ded1a8cb7da96.png" alt=""></p><p><img src="https://pic.imgdb.cn/item/6728a352d29ded1a8cb8d6da.png" alt=""></p><p><img src="https://pic.imgdb.cn/item/6728a391d29ded1a8cb9417d.png" alt=""></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;报错一：bash-hexo-command-not-found&quot;&gt;&lt;a href=&quot;#报错一：bash-hexo-command-not-found&quot; class=&quot;headerlink&quot; title=&quot;报错一：bash: hexo: command not fo</summary>
+      
+    
+    
+    
+    <category term="奇技" scheme="http://example.com/categories/%E5%A5%87%E6%8A%80/"/>
+    
+    
+    <category term="报错" scheme="http://example.com/tags/%E6%8A%A5%E9%94%99/"/>
+    
+    <category term="解决方法" scheme="http://example.com/tags/%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/"/>
+    
+  </entry>
   
   <entry>
     <title>在另一台电脑上传文章（hexo）</title>
