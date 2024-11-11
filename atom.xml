@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>子染的小窝</title>
+  
+  <subtitle>子染</subtitle>
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2024-11-04T10:47:03.157Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>Ziran</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo使用报错合集</title>
+    <link href="http://example.com/2024/11/04/Hexo%E4%BD%BF%E7%94%A8%E6%8A%A5%E9%94%99%E5%90%88%E9%9B%86/"/>
+    <id>http://example.com/2024/11/04/Hexo%E4%BD%BF%E7%94%A8%E6%8A%A5%E9%94%99%E5%90%88%E9%9B%86/</id>
+    <published>2024-11-04T10:10:52.000Z</published>
+    <updated>2024-11-04T10:47:03.157Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="报错一：bash-hexo-command-not-found"><a href="#报错一：bash-hexo-command-not-found" class="headerlink" title="报错一：bash: hexo: command not found"></a>报错一：bash: hexo: command not found</h1><p>本着能解决问题就不重装的原则，首先检查 nodejs 和 npm 是否正常，依次输入命令 <code>node -v</code> 和 <code>npm -v</code> 看看是否有相关版本信息。</p><p>出现了版本信息就证明 nodejs 和 npm 是没有问题的，那么就应该是环境变量的配置问题了，在【此电脑】右键【属性】，依次选择【高级系统设置】-【环境变量】，选择系统变量 Path，将 node_modules 下的 .bin 文件路径添加到 Path 里面</p><p>具体步骤如下：</p><p><img src="https://pic.imgdb.cn/item/6728a1b5d29ded1a8cb6dc46.png" alt=""></p><p><img src="https://pic.imgdb.cn/item/6728a210d29ded1a8cb730b4.png" alt=""></p><p><img src="https://pic.imgdb.cn/item/6728a22fd29ded1a8cb75147.png" alt=""></p><p><img src="https://pic.imgdb.cn/item/6728a294d29ded1a8cb7da96.png" alt=""></p><p><img src="https://pic.imgdb.cn/item/6728a352d29ded1a8cb8d6da.png" alt=""></p><p><img src="https://pic.imgdb.cn/item/6728a391d29ded1a8cb9417d.png" alt=""></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;报错一：bash-hexo-command-not-found&quot;&gt;&lt;a href=&quot;#报错一：bash-hexo-command-not-found&quot; class=&quot;headerlink&quot; title=&quot;报错一：bash: hexo: command not fo</summary>
+      
+    
+    
+    
+    <category term="奇技" scheme="http://example.com/categories/%E5%A5%87%E6%8A%80/"/>
+    
+    
+    <category term="报错" scheme="http://example.com/tags/%E6%8A%A5%E9%94%99/"/>
+    
+    <category term="解决方法" scheme="http://example.com/tags/%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>在另一台电脑上传文章（hexo）</title>
+    <link href="http://example.com/2024/11/02/%E5%9C%A8%E5%8F%A6%E4%B8%80%E5%8F%B0%E7%94%B5%E8%84%91%E4%B8%8A%E4%BC%A0%E6%96%87%E7%AB%A0%EF%BC%88hexo%EF%BC%89/"/>
+    <id>http://example.com/2024/11/02/%E5%9C%A8%E5%8F%A6%E4%B8%80%E5%8F%B0%E7%94%B5%E8%84%91%E4%B8%8A%E4%BC%A0%E6%96%87%E7%AB%A0%EF%BC%88hexo%EF%BC%89/</id>
+    <published>2024-11-02T14:19:05.000Z</published>
+    <updated>2024-11-03T16:28:17.767Z</updated>
+    
+    <content type="html"><![CDATA[<p>时隔一年半，在次捡起此博客，本人写这篇文章的目的是为了在忘记怎么上传文章时，可以参考这篇文章的教程顺利上传文章。该教程是只有源文件的情况下，在任意电脑可以快速上传文章。</p><hr><h1 id="第一步：环境部署"><a href="#第一步：环境部署" class="headerlink" title="第一步：环境部署"></a>第一步：环境部署</h1><h2 id="1-1安装Node-js和Git"><a href="#1-1安装Node-js和Git" class="headerlink" title="1.1安装Node.js和Git"></a>1.1安装Node.js和Git</h2><p>在使用Hexo之前，我们需要确保电脑上已经安装好以下软件：</p><ul><li><a href="http://nodejs.org/" title="Node.js">Node.js</a> (Node.js版本需不低于10.13，建议使用Node.js 12.0及以上版本)</li><li><a href="http://git-scm.com/" title="Git">Git</a></li></ul><p>关于Node.js和Git的具体安装细节自行上网搜索（除了安装时需要更改安装地址，其他都点“下一步”）</p><h2 id="1-2安装hexo"><a href="#1-2安装hexo" class="headerlink" title="1.2安装hexo"></a>1.2安装hexo</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure><p>以上命令安装的是hexo的脚手架，如果你要安装Hexo的瘦身版，自己定制Hexo，官方推荐的下载方式：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo</span><br></pre></td></tr></table></figure><p>检测是否安装成功可以输入以下命令：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo v</span><br></pre></td></tr></table></figure><h2 id="1-3GitHub添加SSH-KEYS"><a href="#1-3GitHub添加SSH-KEYS" class="headerlink" title="1.3GitHub添加SSH KEYS"></a><strong>1.3GitHub添加SSH KEYS</strong></h2><p>在GitHub的ssh keys那里再添加一个当前电脑的环境生成的key，但是可别把原来的电脑删掉了啊。</p><ul><li>设置设置用户名和邮箱</li></ul><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;GitHub 用户名&quot;</span><br><span class="line">git config --global user.email &quot;GitHub 邮箱&quot;</span><br></pre></td></tr></table></figure><ul><li>创建SSH 密匙</li></ul><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;GitHub 邮箱&quot;</span><br></pre></td></tr></table></figure><ul><li>添加SSH密钥</li></ul><p>进入[C:\Users\用户名.ssh]目录（要勾选显示“隐藏的项目”），用记事本打开公钥id_rsa.pub文件并复制里面的内容。</p><p>登入GitHub ，进入Settings页面，选择左边栏的SSH and GPG keys，点击New SSH key。</p><p>Title随便取个名字，粘贴复制的id_rsa.pub内容到Key中，点击Add SSH key完成添加。</p><ul><li>验证连接</li></ul><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure><p>出现“Are you sure……”，输入 yes 回车确认。显示“Hi xxx! You’ve successfully……” 即连接成功。</p><h1 id="第二步：上传文章"><a href="#第二步：上传文章" class="headerlink" title="第二步：上传文章"></a>第二步：上传文章</h1><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo new test</span><br><span class="line">hexo g# 生成 public 文件夹，写完文章执行</span><br><span class="line">hexo s# 启动 hexo 服务</span><br></pre></td></tr></table></figure><p>其中hexo new test表示新建一篇名为test的博文，hexo g表示生成，是hexo generate的简写，hexo s在本地运行hexo服务器，是hexo server的简写。</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean   // 清除缓存 网页正常情况下可以忽略此条命令</span><br><span class="line">hexo g       // 生成静态网页</span><br><span class="line">hexo d       // 开始部署</span><br></pre></td></tr></table></figure><p>其中hexo d表示deploy，是hexo deploy的简写，自动生成网站静态文件，并部署到设定的仓库，十分方便！</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;时隔一年半，在次捡起此博客，本人写这篇文章的目的是为了在忘记怎么上传文章时，可以参考这篇文章的教程顺利上传文章。该教程是只有源文件的情况下，在任意电脑可以快速上传文章。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&quot;第一步：环境部署&quot;&gt;&lt;a href=&quot;#第一步：环境部署&quot; class</summary>
+      
+    
+    
+    
+    <category term="奇技" scheme="http://example.com/categories/%E5%A5%87%E6%8A%80/"/>
+    
+    
+    <category term="hexo" scheme="http://example.com/tags/hexo/"/>
+    
+    <category term="上传文章" scheme="http://example.com/tags/%E4%B8%8A%E4%BC%A0%E6%96%87%E7%AB%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何快速打开Github</title>
+    <link href="http://example.com/2023/03/09/%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E6%89%93%E5%BC%80Github-md/"/>
+    <id>http://example.com/2023/03/09/%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E6%89%93%E5%BC%80Github-md/</id>
+    <published>2023-03-09T15:42:47.000Z</published>
+    <updated>2023-03-09T15:56:41.778Z</updated>
+    
+    <content type="html"><![CDATA[<p>在国内不用科学访问GitHub经常打不开</p><hr><h2 id="第一步：查询github-com目前的ip地址"><a href="#第一步：查询github-com目前的ip地址" class="headerlink" title="第一步：查询github.com目前的ip地址"></a>第一步：查询github.com目前的ip地址</h2><p>打开<a href="www.ipaddress.com">ipaddress.com</a>,然后在搜索栏搜索github.com，找到红色框圈住的就是目前的ip地址    140.82.114.4<br><img src="https://pic.imgdb.cn/item/6409ffe9f144a0100750396b.png" alt="ip"></p><h2 id="第二步：修改hosts文件"><a href="#第二步：修改hosts文件" class="headerlink" title="第二步：修改hosts文件"></a>第二步：修改hosts文件</h2><p>hosts文件路径 C:\Windows\System32\drivers\etc，打开里面的hosts文件（不带文件类型的那一个），文件末尾追加这一行<br><img src="https://pic.imgdb.cn/item/640a00a3f144a0100751847d.png" alt="hosts">\</p><h2 id="第三步：刷新DNS"><a href="#第三步：刷新DNS" class="headerlink" title="第三步：刷新DNS"></a>第三步：刷新DNS</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ipconfig/flushdns</span><br></pre></td></tr></table></figure><p><img src="https://pic.imgdb.cn/item/640a0134f144a01007528a8b.png" alt=""></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;在国内不用科学访问GitHub经常打不开&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;第一步：查询github-com目前的ip地址&quot;&gt;&lt;a href=&quot;#第一步：查询github-com目前的ip地址&quot; class=&quot;headerlink&quot; title=&quot;第一步：查询github.</summary>
+      
+    
+    
+    
+    <category term="奇技" scheme="http://example.com/categories/%E5%A5%87%E6%8A%80/"/>
+    
+    
+    <category term="Github" scheme="http://example.com/tags/Github/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>一个命令获取树莓派IP地址</title>
+    <link href="http://example.com/2023/03/09/%E4%B8%80%E4%B8%AA%E5%91%BD%E4%BB%A4%E8%8E%B7%E5%8F%96%E6%A0%91%E8%8E%93%E6%B4%BEIP%E5%9C%B0%E5%9D%80-md/"/>
+    <id>http://example.com/2023/03/09/%E4%B8%80%E4%B8%AA%E5%91%BD%E4%BB%A4%E8%8E%B7%E5%8F%96%E6%A0%91%E8%8E%93%E6%B4%BEIP%E5%9C%B0%E5%9D%80-md/</id>
+    <published>2023-03-09T14:51:22.000Z</published>
+    <updated>2023-03-09T15:41:45.553Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="打开“运行”窗口（快捷键：win-R）"><a href="#打开“运行”窗口（快捷键：win-R）" class="headerlink" title="打开“运行”窗口（快捷键：win+R）"></a>打开“运行”窗口（快捷键：win+R）</h2><p><img src="https://pic.imgdb.cn/item/63c795e6be43e0d30e1acfe7.png" alt="chuankou"></p><h2 id="在窗口中输入cmd，点击确认"><a href="#在窗口中输入cmd，点击确认" class="headerlink" title="在窗口中输入cmd，点击确认"></a>在窗口中输入cmd，点击确认</h2><p><img src="https://pic.imgdb.cn/item/63c795e8be43e0d30e1ad2a3.png" alt="cmd"></p><h2 id="在cmd命令窗口输入“ipconfig”命令，回车"><a href="#在cmd命令窗口输入“ipconfig”命令，回车" class="headerlink" title="在cmd命令窗口输入“ipconfig”命令，回车"></a>在cmd命令窗口输入“ipconfig”命令，回车</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ping -4 raspberrypi.local</span><br></pre></td></tr></table></figure><p>这样就可以获得IP地址</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;打开“运行”窗口（快捷键：win-R）&quot;&gt;&lt;a href=&quot;#打开“运行”窗口（快捷键：win-R）&quot; class=&quot;headerlink&quot; title=&quot;打开“运行”窗口（快捷键：win+R）&quot;&gt;&lt;/a&gt;打开“运行”窗口（快捷键：win+R）&lt;/h2&gt;&lt;p&gt;&lt;i</summary>
+      
+    
+    
+    
+    <category term="奇技" scheme="http://example.com/categories/%E5%A5%87%E6%8A%80/"/>
+    
+    
+    <category term="IP" scheme="http://example.com/tags/IP/"/>
+    
+    <category term="树莓派" scheme="http://example.com/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>windows查看局域网内所有已使用的IP</title>
+    <link href="http://example.com/2023/01/18/windows%E6%9F%A5%E7%9C%8B%E5%B1%80%E5%9F%9F%E7%BD%91%E5%86%85%E6%89%80%E6%9C%89%E5%B7%B2%E4%BD%BF%E7%94%A8%E7%9A%84IP/"/>
+    <id>http://example.com/2023/01/18/windows%E6%9F%A5%E7%9C%8B%E5%B1%80%E5%9F%9F%E7%BD%91%E5%86%85%E6%89%80%E6%9C%89%E5%B7%B2%E4%BD%BF%E7%94%A8%E7%9A%84IP/</id>
+    <published>2023-01-18T06:40:40.000Z</published>
+    <updated>2023-03-09T05:47:02.786Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="这篇文章的由来"><a href="#这篇文章的由来" class="headerlink" title="这篇文章的由来"></a>这篇文章的由来</h4><p>在使用树莓派的情况下没有显示屏，蹭隔壁老王家的WiFi，没有办法从后台获取树莓派的IP地址，又想远程登入，就想到用文章中的方法获取局域网下所有在线设备的IP地址，然后一个一个连接尝试登入，我真是一个大聪明</p><hr><h2 id="打开“运行”窗口（快捷键：win-R）"><a href="#打开“运行”窗口（快捷键：win-R）" class="headerlink" title="打开“运行”窗口（快捷键：win+R）"></a>打开“运行”窗口（快捷键：win+R）</h2><p><img src="https://pic.imgdb.cn/item/63c795e6be43e0d30e1acfe7.png" alt="chuankou"></p><h2 id="在窗口中输入cmd，点击确认"><a href="#在窗口中输入cmd，点击确认" class="headerlink" title="在窗口中输入cmd，点击确认"></a>在窗口中输入cmd，点击确认</h2><p><img src="https://pic.imgdb.cn/item/63c795e8be43e0d30e1ad2a3.png" alt="cmd"></p><h2 id="在cmd命令窗口输入“ipconfig”命令，回车"><a href="#在cmd命令窗口输入“ipconfig”命令，回车" class="headerlink" title="在cmd命令窗口输入“ipconfig”命令，回车"></a>在cmd命令窗口输入“ipconfig”命令，回车</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ipconfig</span><br></pre></td></tr></table></figure><p><img src="https://pic.imgdb.cn/item/63c7949dbe43e0d30e187db9.png" alt="ip"></p><h2 id="此时就可以找到自己的ip地址"><a href="#此时就可以找到自己的ip地址" class="headerlink" title="此时就可以找到自己的ip地址"></a>此时就可以找到自己的ip地址</h2><h3 id="可以看到本机ip是192-168-1-2"><a href="#可以看到本机ip是192-168-1-2" class="headerlink" title="可以看到本机ip是192.168.1.2"></a>可以看到本机ip是192.168.1.2</h3><p><img src="https://pic.imgdb.cn/item/63c794a0be43e0d30e188229.png" alt=""></p><h2 id="在cmd命令窗口输入“for-L-i-IN-1-1-254-DO-ping-w-2-n-1-192-168-1-i”，回车（注意：这里的192-168-1-是根据自己电脑的ip网段来填写的）"><a href="#在cmd命令窗口输入“for-L-i-IN-1-1-254-DO-ping-w-2-n-1-192-168-1-i”，回车（注意：这里的192-168-1-是根据自己电脑的ip网段来填写的）" class="headerlink" title="在cmd命令窗口输入“for /L %i IN (1,1,254) DO ping -w 2 -n 1 192.168.1.%i”，回车（注意：这里的192.168.1.*是根据自己电脑的ip网段来填写的）"></a>在cmd命令窗口输入“for /L %i IN (1,1,254) DO ping -w 2 -n 1 192.168.1.%i”，回车（注意：这里的192.168.1.*是根据自己电脑的ip网段来填写的）</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">for /L %i IN (1,1,254) DO ping -w 2 -n 1 192.168.1.%i</span><br></pre></td></tr></table></figure><p><img src="https://pic.imgdb.cn/item/63c79db0be43e0d30e2c0bb0.jpg" alt=""></p><h2 id="等待几分钟命令处理完成"><a href="#等待几分钟命令处理完成" class="headerlink" title="等待几分钟命令处理完成"></a>等待几分钟命令处理完成</h2><p><img src="https://pic.imgdb.cn/item/63c794a6be43e0d30e188d3a.png" alt=""></p><h2 id="在cmd命令窗口输入“arp-a”，回车"><a href="#在cmd命令窗口输入“arp-a”，回车" class="headerlink" title="在cmd命令窗口输入“arp -a”，回车"></a>在cmd命令窗口输入“arp -a”，回车</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">arp -a</span><br></pre></td></tr></table></figure><p><img src="https://pic.imgdb.cn/item/63c794a9be43e0d30e18b6bd.png" alt=""></p><h2 id="这时候就可以看见局域网内正在使用的电脑的IP地址了"><a href="#这时候就可以看见局域网内正在使用的电脑的IP地址了" class="headerlink" title="这时候就可以看见局域网内正在使用的电脑的IP地址了"></a>这时候就可以看见局域网内正在使用的电脑的IP地址了</h2><p><img src="https://pic.imgdb.cn/item/63c794acbe43e0d30e18bd73.png" alt=""></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h4 id=&quot;这篇文章的由来&quot;&gt;&lt;a href=&quot;#这篇文章的由来&quot; class=&quot;headerlink&quot; title=&quot;这篇文章的由来&quot;&gt;&lt;/a&gt;这篇文章的由来&lt;/h4&gt;&lt;p&gt;在使用树莓派的情况下没有显示屏，蹭隔壁老王家的WiFi，没有办法从后台获取树莓派的IP地址，又想远程</summary>
+      
+    
+    
+    
+    <category term="奇技" scheme="http://example.com/categories/%E5%A5%87%E6%8A%80/"/>
+    
+    
+    <category term="IP" scheme="http://example.com/tags/IP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>校园卡服务</title>
+    <link href="http://example.com/2022/11/26/%E6%A0%A1%E5%9B%AD%E5%8D%A1%E6%9C%8D%E5%8A%A1/"/>
+    <id>http://example.com/2022/11/26/%E6%A0%A1%E5%9B%AD%E5%8D%A1%E6%9C%8D%E5%8A%A1/</id>
+    <published>2022-11-26T12:01:11.000Z</published>
+    <updated>2023-03-09T05:47:28.632Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h1><h2 id="绝不套路任何一位客户"><a href="#绝不套路任何一位客户" class="headerlink" title="绝不套路任何一位客户"></a>绝不套路任何一位客户</h2><h2 id="只卖官方正规套餐，客服，掌厅可查"><a href="#只卖官方正规套餐，客服，掌厅可查" class="headerlink" title="只卖官方正规套餐，客服，掌厅可查"></a>只卖官方正规套餐，客服，掌厅可查</h2><h2 id="不做任何套路宣传，实事求是"><a href="#不做任何套路宣传，实事求是" class="headerlink" title="不做任何套路宣传，实事求是"></a>不做任何套路宣传，实事求是</h2><hr><h1 id="三不卖"><a href="#三不卖" class="headerlink" title="三不卖"></a>三不卖</h1><h2 id="不卖黑卡（已经实名的卡），"><a href="#不卖黑卡（已经实名的卡），" class="headerlink" title="不卖黑卡（已经实名的卡），"></a>不卖黑卡（已经实名的卡），</h2><h2 id="不卖物联卡（不是三大运营商的）"><a href="#不卖物联卡（不是三大运营商的）" class="headerlink" title="不卖物联卡（不是三大运营商的）"></a>不卖物联卡（不是三大运营商的）</h2><h2 id="不卖违规加包的卡（不是说卡不好，不喜欢处理售后，所以不喜欢卖）"><a href="#不卖违规加包的卡（不是说卡不好，不喜欢处理售后，所以不喜欢卖）" class="headerlink" title="不卖违规加包的卡（不是说卡不好，不喜欢处理售后，所以不喜欢卖）"></a>不卖违规加包的卡（不是说卡不好，不喜欢处理售后，所以不喜欢卖）</h2><p><strong>感谢所有支持我的小伙伴 请往下看完！</strong> </p><hr><ul><li>所有卡全是正规校园卡，正规的三大运营商官方手机卡，官方可查只要你要求符合，全国能办（个别卡除外），全国能用。</li><li>别问靠谱吗？稳定吗？连中国移动，中国联通，中国电信的卡你都觉得不靠谱，放弃用手机卡吧。。。。</li><li>办卡只办适合自己的，一味的追求永久套餐啊啥的没意义，营业厅里面的都是永久的，你会一直用下去么？而且月租高流量少。</li><li>好卡都是 内蒙，湖南，河北，浙江这些地区，你们本地没有出优惠卡，就算出了有些卡也不会全国卖，所以我这边也就没有你所在地区的卡。</li></ul><hr><h1 id="这里推荐一个用卡组合方案"><a href="#这里推荐一个用卡组合方案" class="headerlink" title="这里推荐一个用卡组合方案"></a>这里推荐一个用卡组合方案</h1><p>老号码去改成最低月租套餐，比如移动是8元飞享套餐（联系10086客服就能改）老号码可用来接打电话，现在打电话也便宜，最高也就0.15元/分钟，然后办个流量多的外地卡，只用来上网，现在手机一般都双卡双待，2张卡无压力。</p><h1 id="九“不”要注意"><a href="#九“不”要注意" class="headerlink" title="九“不”要注意"></a>九“不”要注意</h1><hr><ul><li><p>不卖物联卡：不是三大运营商的卡，通常没有语音功能，只卖正规运营商的卡，不卖物联卡，不卖物联卡！！</p></li><li><p>不卖BUG卡：通过漏洞加的流量包或者违规加的流量卡</p></li><li><p>不能办副卡：校园卡一般不能办理副卡</p></li><li><p>不能老号改套餐：校园卡的特殊性，只能新办，不能老号改</p></li><li><p>不能携号转网到校园套餐：老号都不能改，携号转网肯定不行</p></li><li><p>不能选归属地：校园卡都是地方性的卡，归属地都是固定</p></li><li><p>不能选号：一般都是随机发，个别卡能选的会在套餐页面说明</p></li><li><p>不能过户：校园卡一般都是2年或者4年，有合约期，有优惠减免</p></li><li><p>不能续约 ：校园卡2年或者4年优惠期，到期后去销户</p></li></ul><hr><h1 id="办卡收费问题："><a href="#办卡收费问题：" class="headerlink" title="办卡收费问题："></a>办卡收费问题：</h1><h2 id="在我们这里办卡是不收费的，并且是包邮到家，个别卡是免费上门激活的，不认识字也没有关系可以放心购买"><a href="#在我们这里办卡是不收费的，并且是包邮到家，个别卡是免费上门激活的，不认识字也没有关系可以放心购买" class="headerlink" title="在我们这里办卡是不收费的，并且是包邮到家，个别卡是免费上门激活的，不认识字也没有关系可以放心购买"></a>在我们这里办卡是不收费的，并且是包邮到家，个别卡是免费上门激活的，不认识字也没有关系可以放心购买</h2><h1 id="流量问题"><a href="#流量问题" class="headerlink" title="流量问题"></a>流量问题</h1><p>套餐都有写着月租多少流量多少，这个流量是每个月都有，有些小白不知道咋想的，就比如20G的套餐，怎么可能是一年20G，肯定是每个月啊，20G一年够用么？</p><hr><h1 id="销户问题"><a href="#销户问题" class="headerlink" title="销户问题"></a>销户问题</h1><p>校园卡一般有优惠期，部分卡优惠期内不能随时销户，如果你确实想要提前销户，可以自己联系运营商客服咨询是否可以提前销户，有可能提前销户要交违约金，所有正规卡都支持异地销户，具体的咨询官方客服。</p><h1 id="网速快慢"><a href="#网速快慢" class="headerlink" title="网速快慢"></a>网速快慢</h1><p>有些人网速慢或者信号差，就说卡问题，这个取决于你所在地附近的基站信号，跟卡没关系！跟套餐没关系。全国各地用同一种卡，网速都会不一样，各种因素，信号的遮挡，基站用的人多，都会造成网速慢</p><p>没有人会给你保证说网速肯定好肯定快之类的，不现实，除非这人住你隔壁。</p><hr><h1 id="身份证件问题"><a href="#身份证件问题" class="headerlink" title="身份证件问题"></a>身份证件问题</h1><p>个别卡是官方自助上传证件资料，还有部分卡是需要发身份证件给小编，这个没有办法，你不发，卡就办不了，系统没有你的证件资料入网，就算卡发你了，也是张空卡，你也激活不了。</p><hr><h1 id="实名激活规范的严重性"><a href="#实名激活规范的严重性" class="headerlink" title="实名激活规范的严重性"></a>实名激活规范的严重性</h1><p>凡是需要传三张照片，身份证正反面+半身照的，必须拍规范，自己不确定的发我审核，如果是给你连接自己传的，发我的时候可以打码。<br>收到卡实名激活的时候，必须按照要求拍规范，视频拍规范</p><hr><h1 id="不规范的后果"><a href="#不规范的后果" class="headerlink" title="不规范的后果"></a>不规范的后果</h1><ul><li>导致实名激活失败，卡用不了</li><li>部分卡不能重新激活的，只能重新下单<br>这也是为什么，拍照要求这么严格的原因，拍规范了一次性通过，你能直接用上卡，我这边也省事。</li></ul><hr><h1 id="证件安全问题"><a href="#证件安全问题" class="headerlink" title="证件安全问题"></a>证件安全问题</h1><p>卡都是直接跟营业厅合作，可以保证证件安全，你信任就办，不信任我也没办法，你可以办其他自助官方下单的卡。</p><hr><h1 id="关于售后问题"><a href="#关于售后问题" class="headerlink" title="关于售后问题"></a>关于售后问题</h1><h2 id="办理的卡售后范围"><a href="#办理的卡售后范围" class="headerlink" title="办理的卡售后范围"></a>办理的卡售后范围</h2><p>套餐与宣传的不一致</p><p>免费卡有没有售后？</p><p>免费办理的卡，我能解决的尽量给你解决，无法解决的只能你自己联系官方运营商客服。</p><hr><h1 id="不在售后范围之内包含"><a href="#不在售后范围之内包含" class="headerlink" title="不在售后范围之内包含"></a>不在售后范围之内包含</h1><ul><li><p>你所在的地区基站问题导致网速慢</p></li><li><p>在诈骗地区使用导致被公安局停，自己联系官方客服解决</p></li><li><p>卡板人为损坏，导致用不了，自己去营业厅补卡</p></li></ul><h1 id="其余问题全部联系运营商官方售后客服解决！"><a href="#其余问题全部联系运营商官方售后客服解决！" class="headerlink" title="其余问题全部联系运营商官方售后客服解决！"></a>其余问题全部联系运营商官方售后客服解决！</h1><p>中国电信官方客服电话：10000<br>中国联通官方客服电话：10010<br>中国移动官方客服电话：10086   </p><h3 id="对套餐月租扣费有疑问的，先问运营商官方客服，如果客服核实到套餐不一致，再来我这边反馈！"><a href="#对套餐月租扣费有疑问的，先问运营商官方客服，如果客服核实到套餐不一致，再来我这边反馈！" class="headerlink" title="对套餐月租扣费有疑问的，先问运营商官方客服，如果客服核实到套餐不一致，再来我这边反馈！"></a>对套餐月租扣费有疑问的，先问运营商官方客服，如果客服核实到套餐不一致，再来我这边反馈！</h3><h1 id="扫下方二维码加微信小编"><a href="#扫下方二维码加微信小编" class="headerlink" title="扫下方二维码加微信小编"></a>扫下方二维码加微信小编</h1><hr><h3 id="微信通过后，直奔主题，发你要办理的套餐截图，再发你要咨询的问题"><a href="#微信通过后，直奔主题，发你要办理的套餐截图，再发你要咨询的问题" class="headerlink" title="微信通过后，直奔主题，发你要办理的套餐截图，再发你要咨询的问题"></a>微信通过后，直奔主题，发你要办理的套餐截图，再发你要咨询的问题</h3><p>V号：muzran</p><p><img src="https://pic.imgdb.cn/item/6381de9f16f2c2beb1b20ddc.jpg" alt="wx二维码"></p><p><strong>办卡，直接发要办理的套餐截图，然后发你要咨询的问题</strong><br>为广大网友提供校园卡优惠套餐办理，不存在跑路一说，信任就办，不要加了小编后，来一句不会是骗人的吧，跑路啥的，本公众号依法办卡，诚信至上！</p><h1 id="申请卡的地址"><a href="#申请卡的地址" class="headerlink" title="申请卡的地址"></a>申请卡的地址</h1><p> <a href="https://91haoka.cn/91haoka_platform/#/minishop?share_id=432031&amp;shop_name=%25E5%2598%25BF%25E5%2598%25BF%25E6%25B5%2581%25E9%2587%258F%25E5%258D%25A1">链接直达</a></p><h1 id="申请卡的二维码"><a href="#申请卡的二维码" class="headerlink" title="申请卡的二维码"></a>申请卡的二维码</h1><p><img src="https://pic.imgdb.cn/item/6381e01816f2c2beb1b43fd7.png" alt="请输入图片描述"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;声明&quot;&gt;&lt;a href=&quot;#声明&quot; class=&quot;headerlink&quot; title=&quot;声明&quot;&gt;&lt;/a&gt;声明&lt;/h1&gt;&lt;h2 id=&quot;绝不套路任何一位客户&quot;&gt;&lt;a href=&quot;#绝不套路任何一位客户&quot; class=&quot;headerlink&quot; title=&quot;绝不套路任</summary>
+      
+    
+    
+    
+    <category term="服务" scheme="http://example.com/categories/%E6%9C%8D%E5%8A%A1/"/>
+    
+    
+    <category term="流量卡" scheme="http://example.com/tags/%E6%B5%81%E9%87%8F%E5%8D%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>送你一颗爱心</title>
+    <link href="http://example.com/2022/11/24/%E9%80%81%E4%BD%A0%E4%B8%80%E9%A2%97%E7%88%B1%E5%BF%83/"/>
+    <id>http://example.com/2022/11/24/%E9%80%81%E4%BD%A0%E4%B8%80%E9%A2%97%E7%88%B1%E5%BF%83/</id>
+    <published>2022-11-24T14:21:33.000Z</published>
+    <updated>2023-03-09T05:47:41.736Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>最近网络上出现了好多人用一些方法制作爱心，C语言、Python、HTML…甚至用CAD画爱心。当然我也不例外，平时爱琢磨的我甚至更加疯狂，一口气用网络上的各种方法制作爱心，从中发现了一个最好看的爱心。于是就有了这篇文章，把我最稀罕的爱心分享给大家，让大家少走弯路。</p><hr><h1 id="爱心展示"><a href="#爱心展示" class="headerlink" title="爱心展示"></a>爱心展示</h1><p><img src="https://pic.imgdb.cn/item/637f47c816f2c2beb1e353ae.jpg" alt="爱心"> </p><p><img src="https://pic.imgdb.cn/item/637f47d516f2c2beb1e36373.jpg" alt="爱心"></p><p><img src="https://pic.imgdb.cn/item/637f47e016f2c2beb1e373b9.jpg" alt="爱心"></p><p><img src="https://pic.imgdb.cn/item/637f47da16f2c2beb1e369ea.jpg" alt="爱心"></p><p><img src="https://pic.imgdb.cn/item/637f47e516f2c2beb1e37b1c.jpg" alt="爱心"></p><hr><h1 id="评价"><a href="#评价" class="headerlink" title="评价"></a>评价</h1><p>每一个都各有特点，如果非要让我选一个最好看的，我只能选第一个了，第一个爱心yyds，这个爱心配上背景音乐特别治愈。</p><hr><h1 id="源码分享"><a href="#源码分享" class="headerlink" title="源码分享"></a>源码分享</h1><p><a href="https://bage88.lanzoue.com/i6x4l0gs8oeb">蓝奏云下载链接  提取码:4xc2</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;最近网络上出现了好多人用一些方法制作爱心，C语言、Python、HTML…甚至用CAD画爱心。当然我也不例外，平时爱琢磨的我甚至更加疯狂，一</summary>
+      
+    
+    
+    
+    <category term="奇技" scheme="http://example.com/categories/%E5%A5%87%E6%8A%80/"/>
+    
+    
+    <category term="爱心" scheme="http://example.com/tags/%E7%88%B1%E5%BF%83/"/>
+    
+  </entry>
+  
+</feed>
