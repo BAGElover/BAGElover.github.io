@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-12-19T12:41:03.983Z</updated>
+  <updated>2024-12-19T15:04:55.719Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>七牛云图床使用HTTPS协议</title>
+    <link href="http://example.com/2024/12/19/%E4%B8%83%E7%89%9B%E4%BA%91%E5%9B%BE%E5%BA%8A%E4%BD%BF%E7%94%A8HTTPS%E5%8D%8F%E8%AE%AE/"/>
+    <id>http://example.com/2024/12/19/%E4%B8%83%E7%89%9B%E4%BA%91%E5%9B%BE%E5%BA%8A%E4%BD%BF%E7%94%A8HTTPS%E5%8D%8F%E8%AE%AE/</id>
+    <published>2024-12-19T12:47:41.000Z</published>
+    <updated>2024-12-19T15:04:55.719Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="一、方法一（七牛云提供、推荐）"><a href="#一、方法一（七牛云提供、推荐）" class="headerlink" title="一、方法一（七牛云提供、推荐）"></a>一、方法一（七牛云提供、推荐）</h1><p>该方法使用七牛云提供的免费SSL、有效期为90天</p><h2 id="第一步：登入网站并进入“控制台”"><a href="#第一步：登入网站并进入“控制台”" class="headerlink" title="第一步：登入网站并进入“控制台”"></a>第一步：登入网站并进入“控制台”</h2><p><img src="https://imagebed.sbsb.life/ec9abe8d0ca5861bc5b3045d9d8a3ab.png" alt=""></p><h2 id="第二步：点击“加速域名”"><a href="#第二步：点击“加速域名”" class="headerlink" title="第二步：点击“加速域名”"></a>第二步：点击“加速域名”</h2><p><img src="https://imagebed.sbsb.life/1624f68eaef0df4936063dc8335f8b6.png" alt=""></p><h1 id="第三步：点击“配置”"><a href="#第三步：点击“配置”" class="headerlink" title="第三步：点击“配置”"></a>第三步：点击“配置”</h1><p><img src="https://imagebed.sbsb.life/e2a93ba7b6f222cd8d4ebdd1d4c2a6a.png" alt=""></p><h2 id="第四步：下拉找到“HTTPS配置”、点击右边的“修改配置”"><a href="#第四步：下拉找到“HTTPS配置”、点击右边的“修改配置”" class="headerlink" title="第四步：下拉找到“HTTPS配置”、点击右边的“修改配置”"></a>第四步：下拉找到“HTTPS配置”、点击右边的“修改配置”</h2><p><img src="https://imagebed.sbsb.life/a4441b59d844078638ccd131cb7879a.png" alt=""></p><h2 id="第五步：点击“免费证书“，然后确认，等待15分钟作用就可以获得SSL证书"><a href="#第五步：点击“免费证书“，然后确认，等待15分钟作用就可以获得SSL证书" class="headerlink" title="第五步：点击“免费证书“，然后确认，等待15分钟作用就可以获得SSL证书"></a>第五步：点击“免费证书“，然后确认，等待15分钟作用就可以获得SSL证书</h2><p><img src="https://imagebed.sbsb.life/d7f10419b193782e427c2ad5ed03d00.png" alt=""></p><h1 id="二、方法二（腾讯云）"><a href="#二、方法二（腾讯云）" class="headerlink" title="二、方法二（腾讯云）"></a>二、方法二（腾讯云）</h1><p>该方法稍微复杂移动，有效期也为90天</p><h2 id="第一步：登入腾讯云网站、搜索“SSL证书”并进入"><a href="#第一步：登入腾讯云网站、搜索“SSL证书”并进入" class="headerlink" title="第一步：登入腾讯云网站、搜索“SSL证书”并进入"></a>第一步：登入腾讯云网站、搜索“SSL证书”并进入</h2><p><img src="https://imagebed.sbsb.life/aa1366aeda08e4018bb2aece51442c8.png" alt=""></p><h2 id="第二步：点击“申请免费证书”"><a href="#第二步：点击“申请免费证书”" class="headerlink" title="第二步：点击“申请免费证书”"></a>第二步：点击“申请免费证书”</h2><p><img src="https://imagebed.sbsb.life/bcf7673072bb5da712d9c3f1c834ef8.png" alt="img"></p><p><img src="https://imagebed.sbsb.life/7ab0409813729207c6c3186c7dd71f7.png" alt=""></p><h2 id="第三步：填写域名并提交申请"><a href="#第三步：填写域名并提交申请" class="headerlink" title="第三步：填写域名并提交申请"></a>第三步：填写域名并提交申请</h2><p><img src="https://imagebed.sbsb.life/1a584ca7509091c1cfdff6bde3261d4.png" alt=""></p><h2 id="第四步：等待几分钟后就会申请成功、点击右侧的下载"><a href="#第四步：等待几分钟后就会申请成功、点击右侧的下载" class="headerlink" title="第四步：等待几分钟后就会申请成功、点击右侧的下载"></a>第四步：等待几分钟后就会申请成功、点击右侧的下载</h2><p><img src="https://imagebed.sbsb.life/3155aacdf761e7339872aefa766435c.png" alt=""></p><h2 id="第五步：下载pem文件格式"><a href="#第五步：下载pem文件格式" class="headerlink" title="第五步：下载pem文件格式"></a>第五步：下载pem文件格式</h2><p><img src="https://imagebed.sbsb.life/c1e339676f684812b567aeda3893d09.png" alt=""></p><h2 id="第六步：根据方法一找到七牛云中的HTTPS配置、选择本地证书、并点击上传证书"><a href="#第六步：根据方法一找到七牛云中的HTTPS配置、选择本地证书、并点击上传证书" class="headerlink" title="第六步：根据方法一找到七牛云中的HTTPS配置、选择本地证书、并点击上传证书"></a>第六步：根据方法一找到七牛云中的HTTPS配置、选择本地证书、并点击上传证书</h2><p><img src="https://imagebed.sbsb.life/8fcd21bcc1b765942fc51338ae26f84.png" alt=""></p><h2 id="第七步：上传证书内容和私钥、证书内容和私钥在刚刚下载的文件中（sbsb-life-bundle-crt证书内容、sbsb-life-key密钥），然后即配置成功"><a href="#第七步：上传证书内容和私钥、证书内容和私钥在刚刚下载的文件中（sbsb-life-bundle-crt证书内容、sbsb-life-key密钥），然后即配置成功" class="headerlink" title="第七步：上传证书内容和私钥、证书内容和私钥在刚刚下载的文件中（sbsb.life_bundle.crt证书内容、sbsb.life.key密钥），然后即配置成功"></a>第七步：上传证书内容和私钥、证书内容和私钥在刚刚下载的文件中（sbsb.life_bundle.crt证书内容、sbsb.life.key密钥），然后即配置成功</h2><p><img src="https://imagebed.sbsb.life/9b96be419bd6357add2d989c76b4873.png" alt=""></p><p><img src="https://imagebed.sbsb.life/6f19bdf22d3ff6e31295b71c7580f58.png" alt=""></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;一、方法一（七牛云提供、推荐）&quot;&gt;&lt;a href=&quot;#一、方法一（七牛云提供、推荐）&quot; class=&quot;headerlink&quot; title=&quot;一、方法一（七牛云提供、推荐）&quot;&gt;&lt;/a&gt;一、方法一（七牛云提供、推荐）&lt;/h1&gt;&lt;p&gt;该方法使用七牛云提供的免费SSL、有</summary>
+      
+    
+    
+    
+    <category term="奇技" scheme="http://example.com/categories/%E5%A5%87%E6%8A%80/"/>
+    
+    
+    <category term="七牛云图床" scheme="http://example.com/tags/%E4%B8%83%E7%89%9B%E4%BA%91%E5%9B%BE%E5%BA%8A/"/>
+    
+    <category term="HTTP协议" scheme="http://example.com/tags/HTTP%E5%8D%8F%E8%AE%AE/"/>
+    
+  </entry>
+  
+  <entry>
     <title>关于使用自建七牛云图床的图片链接有时不显示问题</title>
     <link href="http://example.com/2024/12/19/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8%E8%87%AA%E5%BB%BA%E4%B8%83%E7%89%9B%E4%BA%91%E5%9B%BE%E5%BA%8A%E7%9A%84%E5%9B%BE%E7%89%87%E9%93%BE%E6%8E%A5%E6%9C%89%E6%97%B6%E4%B8%8D%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/"/>
     <id>http://example.com/2024/12/19/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8%E8%87%AA%E5%BB%BA%E4%B8%83%E7%89%9B%E4%BA%91%E5%9B%BE%E5%BA%8A%E7%9A%84%E5%9B%BE%E7%89%87%E9%93%BE%E6%8E%A5%E6%9C%89%E6%97%B6%E4%B8%8D%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/</id>
     <published>2024-12-19T12:15:03.000Z</published>
-    <updated>2024-12-19T12:41:03.983Z</updated>
+    <updated>2024-12-19T12:44:41.936Z</updated>
     
     <content type="html"><![CDATA[<h1 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h1><p>数月前，我购入了一台索尼A6400半画幅微单相机，每天都带着无比激动的心情外出捕捉光影。我拍摄了一些自认为颇具艺术感的作品，并在我的个人笔记中创建了一个“摄影作品”页面。我按照常规流程，将照片上传至七牛云图床，并在页面上附上了七牛云图床生成的链接。然而，奇怪的是，这些照片在电脑上无法显示，而在手机上查看却一切正常。我进行了广泛的搜索，试图找到解决方案，但始终按照Hexo出现bug的思路去处理，却始终未能找到答案。</p><p>直到一个多月后的今天，我在上传《基于MATLAB的指纹识别系统》的笔记时，意外地发现笔记中所有来自七牛云图床的图片都无法显示，而其他图床的图片却显示正常。这时，我才意识到问题可能出在七牛云图床本身。经过一番深入的搜索和排查，我终于发现问题的根源在于没有强制使用HTTPS协议。解决了这个小插曲后，我的“摄影作品”页面终于能够在各种设备上完美展示了。</p><h1 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h1><p>强制使用HTTPS协议</p><h1 id="HTTPS协议概念"><a href="#HTTPS协议概念" class="headerlink" title="HTTPS协议概念"></a>HTTPS协议概念</h1><p>HTTPS（HyperText Transfer Protocol Secure）是 HTTP 协议的安全版本。HTTP 是用于客户端与服务器之间传输网页数据的协议，而 HTTPS 在 HTTP 协议的基础上添加了一层 SSL/TLS 加密协议，使得传输的数据在网络中不易被窃取或篡改。HTTPS 通常用于传输敏感信息，如登录凭证、支付信息、个人数据等。</p><p>与 HTTP 协议不同，HTTPS 在数据传输过程中会对信息进行加密，确保数据在传输过程中不被第三方监听或修改。这就是 HTTPS 被广泛应用于现代互联网服务，特别是涉及金融和隐私的应用场景中的原因。</p>]]></content>
     
@@ -33,12 +59,12 @@
     
     
     
-    <category term="奇技" scheme="http://example.com/categories/%E5%A5%87%E6%8A%80/"/>
+    <category term="问题" scheme="http://example.com/categories/%E9%97%AE%E9%A2%98/"/>
     
     
-    <category term="课程作业" scheme="http://example.com/tags/%E8%AF%BE%E7%A8%8B%E4%BD%9C%E4%B8%9A/"/>
+    <category term="报错" scheme="http://example.com/tags/%E6%8A%A5%E9%94%99/"/>
     
-    <category term="MATLAB" scheme="http://example.com/tags/MATLAB/"/>
+    <category term="七牛云图床" scheme="http://example.com/tags/%E4%B8%83%E7%89%9B%E4%BA%91%E5%9B%BE%E5%BA%8A/"/>
     
   </entry>
   
@@ -73,7 +99,7 @@
     <link href="http://example.com/2024/11/04/Hexo%E4%BD%BF%E7%94%A8%E6%8A%A5%E9%94%99%E5%90%88%E9%9B%86/"/>
     <id>http://example.com/2024/11/04/Hexo%E4%BD%BF%E7%94%A8%E6%8A%A5%E9%94%99%E5%90%88%E9%9B%86/</id>
     <published>2024-11-04T10:10:52.000Z</published>
-    <updated>2024-11-04T10:47:03.157Z</updated>
+    <updated>2024-12-19T12:45:10.333Z</updated>
     
     <content type="html"><![CDATA[<h1 id="报错一：bash-hexo-command-not-found"><a href="#报错一：bash-hexo-command-not-found" class="headerlink" title="报错一：bash: hexo: command not found"></a>报错一：bash: hexo: command not found</h1><p>本着能解决问题就不重装的原则，首先检查 nodejs 和 npm 是否正常，依次输入命令 <code>node -v</code> 和 <code>npm -v</code> 看看是否有相关版本信息。</p><p>出现了版本信息就证明 nodejs 和 npm 是没有问题的，那么就应该是环境变量的配置问题了，在【此电脑】右键【属性】，依次选择【高级系统设置】-【环境变量】，选择系统变量 Path，将 node_modules 下的 .bin 文件路径添加到 Path 里面</p><p>具体步骤如下：</p><p><img src="https://pic.imgdb.cn/item/6728a1b5d29ded1a8cb6dc46.png" alt=""></p><p><img src="https://pic.imgdb.cn/item/6728a210d29ded1a8cb730b4.png" alt=""></p><p><img src="https://pic.imgdb.cn/item/6728a22fd29ded1a8cb75147.png" alt=""></p><p><img src="https://pic.imgdb.cn/item/6728a294d29ded1a8cb7da96.png" alt=""></p><p><img src="https://pic.imgdb.cn/item/6728a352d29ded1a8cb8d6da.png" alt=""></p><p><img src="https://pic.imgdb.cn/item/6728a391d29ded1a8cb9417d.png" alt=""></p>]]></content>
     
@@ -85,7 +111,7 @@
     
     
     
-    <category term="奇技" scheme="http://example.com/categories/%E5%A5%87%E6%8A%80/"/>
+    <category term="问题" scheme="http://example.com/categories/%E9%97%AE%E9%A2%98/"/>
     
     
     <category term="报错" scheme="http://example.com/tags/%E6%8A%A5%E9%94%99/"/>
