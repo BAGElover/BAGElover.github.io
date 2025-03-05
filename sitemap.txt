@@ -1,3 +1,4 @@
+http://example.com/2025/03/05/DeepSeek-RAGFlow%E6%9E%84%E5%BB%BA%E6%9C%AC%E5%9C%B0%E7%9F%A5%E8%AF%86%E5%BA%93/
 http://example.com/gallery/index.html
 http://example.com/about/index.html
 http://example.com/2024/12/25/%E5%9F%BA%E4%BA%8EST89C52%E5%8D%95%E7%89%87%E6%9C%BA%E7%9A%84%E5%85%AB%E8%B7%AF%E7%AB%9E%E8%B5%9B%E6%8A%A2%E7%AD%94%E5%99%A8%E7%B3%BB%E7%BB%9F/
@@ -36,6 +37,10 @@ http://example.com/tags/txt/
 http://example.com/tags/xml/
 http://example.com/tags/%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2/
 http://example.com/tags/%E5%8D%95%E7%89%87%E6%9C%BA/
+http://example.com/tags/Deepseek/
+http://example.com/tags/RAGFlow/
+http://example.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B/
 http://example.com/categories/%E5%A5%87%E6%8A%80/
 http://example.com/categories/%E9%97%AE%E9%A2%98/
 http://example.com/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/
+http://example.com/categories/%E5%A4%A7%E6%A8%A1%E5%9E%8B/
