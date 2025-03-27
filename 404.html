@@ -192,7 +192,7 @@ document.addEventListener('pjax:error', (e) => {
     }
 })</script><!-- google adsense--><!-- search--><!-- music--></body></html>
         <script>
-            const posts = ["Butterfly主题更换至Solitude主题/","图片批量命名/","外接深度相机拍照和录制视频/","DeepSeek-RAGFlow构建本地知识库/","基于ST89C52单片机的八路竞赛抢答器系统/","深度学习训练数据集标注格式转换：txt转xml/","七牛云图床使用HTTPS协议/","关于使用自建七牛云图床的图片链接有时不显示问题/","基于MATLAB的指纹识别系统/","Hexo使用报错合集/","在另一台电脑上传文章（hexo）/","如何快速打开Github-md/","一个命令获取树莓派IP地址-md/","windows查看局域网内所有已使用的IP/","校园卡服务/","送你一颗爱心/"];
+            const posts = ["Hexo使用报错合集/","windows查看局域网内所有已使用的IP/","七牛云图床使用HTTPS协议/","一个命令获取树莓派IP地址-md/","关于使用自建七牛云图床的图片链接有时不显示问题/","在另一台电脑上传文章（hexo）/","基于MATLAB的指纹识别系统/","基于ST89C52单片机的八路竞赛抢答器系统/","外接深度相机拍照和录制视频/","校园卡服务/","如何快速打开Github-md/","深度学习训练数据集标注格式转换：txt转xml/","送你一颗爱心/","DeepSeek-RAGFlow构建本地知识库/","图片批量命名/","Butterfly主题更换至Solitude主题/"];
             function toRandomPost() {
                 const randomPost = posts[Math.floor(Math.random() * posts.length)];
                 pjax.loadUrl(GLOBAL_CONFIG.root + randomPost);
