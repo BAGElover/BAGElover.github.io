@@ -904,7 +904,7 @@ window.refreshFn = () => {
   const { runtime, lazyload, lightbox, randomlink, covercolor, lure, expire } =
     GLOBAL_CONFIG;
   const timeSelector =
-    (is_home || is_page
+    (is_home
       ? ".post-meta-date time"
       : is_post
       ? ".post-meta-date time"
