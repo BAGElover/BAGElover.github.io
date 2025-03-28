@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>Hexo使用报错合集</title>
-    <url>/Hexo%E4%BD%BF%E7%94%A8%E6%8A%A5%E9%94%99%E5%90%88%E9%9B%86/</url>
+    <url>/2024/11/04/Hexo%E4%BD%BF%E7%94%A8%E6%8A%A5%E9%94%99%E5%90%88%E9%9B%86/</url>
     <content><![CDATA[<h3 id="报错一：bash-hexo-command-not-found"><a href="#报错一：bash-hexo-command-not-found" class="headerlink" title="报错一：bash: hexo: command not found"></a>报错一：bash: hexo: command not found</h3><p>本着能解决问题就不重装的原则，首先检查<code>nodejs</code>和<code>npm</code>是否正常，依次输入命令<code>node -v</code>和<code>npm -v</code>看看是否有相关版本信息。</p>
 <p>出现了版本信息就证明<code>nodejs</code>和<code>npm</code>是没有问题的，那么就应该是环境变量的配置问题了，在【此电脑】右键【属性】，依次选择【高级系统设置】-【环境变量】，选择系统变量 Path，将<code>node_modules</code>下的<code> .bin</code>文件路径添加到<code>Path</code>里面</p>
 <p>具体步骤如下：</p>
@@ -23,7 +23,7 @@
   </entry>
   <entry>
     <title>Windows系统查看局域网内所有已使用的IP</title>
-    <url>/windows%E6%9F%A5%E7%9C%8B%E5%B1%80%E5%9F%9F%E7%BD%91%E5%86%85%E6%89%80%E6%9C%89%E5%B7%B2%E4%BD%BF%E7%94%A8%E7%9A%84IP/</url>
+    <url>/2023/01/18/windows%E6%9F%A5%E7%9C%8B%E5%B1%80%E5%9F%9F%E7%BD%91%E5%86%85%E6%89%80%E6%9C%89%E5%B7%B2%E4%BD%BF%E7%94%A8%E7%9A%84IP/</url>
     <content><![CDATA[<h3 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h3><p>在使用树莓派的情况下没有显示屏，蹭隔壁老王家的WiFi，没有办法从后台获取树莓派的IP地址，又想远程登入，就想到用文章中的方法获取局域网下所有在线设备的IP地址，然后一个一个连接尝试登入，我真是一个大聪明</p>
 <hr>
 <h3 id="一、打开“运行”窗口（快捷键：win-R）"><a href="#一、打开“运行”窗口（快捷键：win-R）" class="headerlink" title="一、打开“运行”窗口（快捷键：win+R）"></a>一、打开“运行”窗口（快捷键：win+R）</h3><p><img src="https://pic.imgdb.cn/item/63c795e6be43e0d30e1acfe7.png" alt="chuankou"></p>
@@ -50,7 +50,7 @@
   </entry>
   <entry>
     <title>七牛云图床使用HTTPS协议</title>
-    <url>/%E4%B8%83%E7%89%9B%E4%BA%91%E5%9B%BE%E5%BA%8A%E4%BD%BF%E7%94%A8HTTPS%E5%8D%8F%E8%AE%AE/</url>
+    <url>/2024/12/19/%E4%B8%83%E7%89%9B%E4%BA%91%E5%9B%BE%E5%BA%8A%E4%BD%BF%E7%94%A8HTTPS%E5%8D%8F%E8%AE%AE/</url>
     <content><![CDATA[<h3 id="一、方法一（七牛云提供、推荐）"><a href="#一、方法一（七牛云提供、推荐）" class="headerlink" title="一、方法一（七牛云提供、推荐）"></a>一、方法一（七牛云提供、推荐）</h3><p>该方法使用七牛云提供的免费SSL、<strong><u>有效期为90天</u></strong></p>
 <h4 id="第一步：登入网站并进入“控制台”"><a href="#第一步：登入网站并进入“控制台”" class="headerlink" title="第一步：登入网站并进入“控制台”"></a>第一步：登入网站并进入“控制台”</h4><p><img src="https://imagebed.sbsb.life/ec9abe8d0ca5861bc5b3045d9d8a3ab.png"></p>
 <h4 id="第二步：点击“加速域名”"><a href="#第二步：点击“加速域名”" class="headerlink" title="第二步：点击“加速域名”"></a>第二步：点击“加速域名”</h4><p><img src="https://imagebed.sbsb.life/1624f68eaef0df4936063dc8335f8b6.png"></p>
@@ -78,7 +78,7 @@
   </entry>
   <entry>
     <title>一个命令获取树莓派IP地址</title>
-    <url>/%E4%B8%80%E4%B8%AA%E5%91%BD%E4%BB%A4%E8%8E%B7%E5%8F%96%E6%A0%91%E8%8E%93%E6%B4%BEIP%E5%9C%B0%E5%9D%80-md/</url>
+    <url>/2023/03/09/%E4%B8%80%E4%B8%AA%E5%91%BD%E4%BB%A4%E8%8E%B7%E5%8F%96%E6%A0%91%E8%8E%93%E6%B4%BEIP%E5%9C%B0%E5%9D%80-md/</url>
     <content><![CDATA[<h3 id="打开“运行”窗口（快捷键：win-R）"><a href="#打开“运行”窗口（快捷键：win-R）" class="headerlink" title="打开“运行”窗口（快捷键：win+R）"></a>打开“运行”窗口（快捷键：win+R）</h3><p><img src="https://pic.imgdb.cn/item/63c795e6be43e0d30e1acfe7.png" alt="chuankou"></p>
 <h3 id="在窗口中输入cmd，点击确认"><a href="#在窗口中输入cmd，点击确认" class="headerlink" title="在窗口中输入cmd，点击确认"></a>在窗口中输入cmd，点击确认</h3><p><img src="https://pic.imgdb.cn/item/63c795e8be43e0d30e1ad2a3.png" alt="cmd"></p>
 <h3 id="在cmd命令窗口输入“ipconfig”命令，回车"><a href="#在cmd命令窗口输入“ipconfig”命令，回车" class="headerlink" title="在cmd命令窗口输入“ipconfig”命令，回车"></a>在cmd命令窗口输入“ipconfig”命令，回车</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ping -4 raspberrypi.local</span><br></pre></td></tr></table></figure>
@@ -94,7 +94,7 @@
   </entry>
   <entry>
     <title>关于使用自建七牛云图床的图片链接有时不显示问题</title>
-    <url>/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8%E8%87%AA%E5%BB%BA%E4%B8%83%E7%89%9B%E4%BA%91%E5%9B%BE%E5%BA%8A%E7%9A%84%E5%9B%BE%E7%89%87%E9%93%BE%E6%8E%A5%E6%9C%89%E6%97%B6%E4%B8%8D%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/</url>
+    <url>/2024/12/19/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8%E8%87%AA%E5%BB%BA%E4%B8%83%E7%89%9B%E4%BA%91%E5%9B%BE%E5%BA%8A%E7%9A%84%E5%9B%BE%E7%89%87%E9%93%BE%E6%8E%A5%E6%9C%89%E6%97%B6%E4%B8%8D%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>数月前，我购入了一台索尼A6400半画幅微单相机，每天都带着无比激动的心情外出捕捉光影。我拍摄了一些自认为颇具艺术感的作品，并在我的个人笔记中创建了一个“摄影作品”页面。我按照常规流程，将照片上传至七牛云图床，并在页面上附上了七牛云图床生成的链接。然而，奇怪的是，这些照片在电脑上无法显示，而在手机上查看却一切正常。我进行了广泛的搜索，试图找到解决方案，但始终按照Hexo出现bug的思路去处理，却始终未能找到答案。</p>
 <p>直到一个多月后的今天，我在上传《基于MATLAB的指纹识别系统》的笔记时，意外地发现笔记中所有来自七牛云图床的图片都无法显示，而其他图床的图片却显示正常。这时，我才意识到问题可能出在七牛云图床本身。经过一番深入的搜索和排查，我终于发现问题的根源在于没有强制使用HTTPS协议。解决了这个小插曲后，我的“摄影作品”页面终于能够在各种设备上完美展示了。</p>
 <h3 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h3><p>强制使用HTTPS协议</p>
@@ -111,7 +111,7 @@
   </entry>
   <entry>
     <title>在另一台电脑上传文章（hexo）</title>
-    <url>/%E5%9C%A8%E5%8F%A6%E4%B8%80%E5%8F%B0%E7%94%B5%E8%84%91%E4%B8%8A%E4%BC%A0%E6%96%87%E7%AB%A0%EF%BC%88hexo%EF%BC%89/</url>
+    <url>/2024/11/02/%E5%9C%A8%E5%8F%A6%E4%B8%80%E5%8F%B0%E7%94%B5%E8%84%91%E4%B8%8A%E4%BC%A0%E6%96%87%E7%AB%A0%EF%BC%88hexo%EF%BC%89/</url>
     <content><![CDATA[<h3 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h3><p>时隔一年半，在次捡起此博客，本人写这篇文章的目的是为了在忘记怎么上传文章时，可以参考这篇文章的教程顺利上传文章。该教程是只有源文件的情况下，在任意电脑可以快速上传文章。</p>
 <hr>
 <h3 id="一、环境部署"><a href="#一、环境部署" class="headerlink" title="一、环境部署"></a>一、环境部署</h3><h4 id="1-1安装Node-js和Git"><a href="#1-1安装Node-js和Git" class="headerlink" title="1.1安装Node.js和Git"></a>1.1安装Node.js和Git</h4><p>在使用Hexo之前，我们需要确保电脑上已经安装好以下软件：</p>
@@ -168,7 +168,7 @@
   </entry>
   <entry>
     <title>基于MATLAB的指纹识别系统</title>
-    <url>/%E5%9F%BA%E4%BA%8EMATLAB%E7%9A%84%E6%8C%87%E7%BA%B9%E8%AF%86%E5%88%AB%E7%B3%BB%E7%BB%9F/</url>
+    <url>/2024/12/01/%E5%9F%BA%E4%BA%8EMATLAB%E7%9A%84%E6%8C%87%E7%BA%B9%E8%AF%86%E5%88%AB%E7%B3%BB%E7%BB%9F/</url>
     <content><![CDATA[<p><strong>摘要：</strong> 本文设计并实现了一个基于MATLAB的指纹识别系统，旨在为指纹身份验证提供高效、可靠的解决方案。系统的主要功能包括指纹图像的采集、特征提取、数据库管理和指纹匹配。在系统的实现过程中，首先通过图像预处理对采集到的指纹图像进行二值化和骨架化，提取出指纹的骨架结构作为特征。然后，将提取的指纹特征以特定格式保存到数据库中，为后续的匹配过程提供依据。在匹配阶段，系统通过计算输入指纹与数据库中存储指纹特征之间的欧氏距离，判定是否存在匹配的指纹。通过该系统，用户可以轻松完成指纹的录入和比对，验证其身份信息。实验结果表明，系统具有较高的识别率和稳定性，能够有效地进行指纹身份验证。该指纹识别系统可广泛应用于门禁系统、金融安全等领域，为安全防护提供有力保障。</p>
 <p><strong>关键词：</strong> 指纹识别；特征提取；欧氏距离；MATLAB；图像处理；身份验证</p>
 <h3 id="一、设计任务、目的和要求"><a href="#一、设计任务、目的和要求" class="headerlink" title="一、设计任务、目的和要求"></a>一、设计任务、目的和要求</h3><p>指纹识别是一种基于生物特征的身份认证技术。近年来，伴随着嵌入式计算技术的迅速发展及其价格优势的不断提升，指纹识别应用日益广泛，不仅可用于手机、笔记本电脑等各种数字设备，也应用于刑侦、IT、医疗、金融等众多领域。</p>
@@ -219,7 +219,7 @@
   </entry>
   <entry>
     <title>基于ST89C52单片机的八路竞赛抢答器系统</title>
-    <url>/%E5%9F%BA%E4%BA%8EST89C52%E5%8D%95%E7%89%87%E6%9C%BA%E7%9A%84%E5%85%AB%E8%B7%AF%E7%AB%9E%E8%B5%9B%E6%8A%A2%E7%AD%94%E5%99%A8%E7%B3%BB%E7%BB%9F/</url>
+    <url>/2024/12/25/%E5%9F%BA%E4%BA%8EST89C52%E5%8D%95%E7%89%87%E6%9C%BA%E7%9A%84%E5%85%AB%E8%B7%AF%E7%AB%9E%E8%B5%9B%E6%8A%A2%E7%AD%94%E5%99%A8%E7%B3%BB%E7%BB%9F/</url>
     <content><![CDATA[<p>摘要：本设计提出了一个基于ST89C52单片机的八路竞赛抢答器系统，旨在为各类知识竞赛活动提供一个高效、准确的抢答解决方案。该系统具备八个独立的抢答输入通道，允许八组参赛队伍参与竞赛。系统核心采用ST89C52单片机，通过与外部电路的集成实现其功能。每个抢答按键连接到微控制器的输入端口，确保任一按键被按下时，信号能迅速传递至ST89C52单片机。内部程序根据预设逻辑快速响应，通过锁存电路锁定首个有效抢答，防止后续按键操作干扰结果。同时，系统能够迅速驱动数码管显示抢答成功的队伍信息倒计时时间，确保现场人员能够即时了解抢答结果。此外，系统还集成了蜂鸣器提示模块，以在抢答成功时发出提示音，增强现场的互动性和反馈效果。该抢答器系统的设计不仅提高了竞赛的公正性和透明度，还通过即时反馈提升了竞赛的观赏性和参与感。<br>关键词：单片机；ST89C52；抢答器</p>
 <h3 id="一、设计任务、目的和要求"><a href="#一、设计任务、目的和要求" class="headerlink" title="一、设计任务、目的和要求"></a>一、设计任务、目的和要求</h3><p>本设计任务的核心目标是构建一个高效、可靠的八路竞赛抢答器系统，该系统基于微控制器技术，能够为八组参赛者提供独立的抢答输入通道。系统的主要功能包括实时监测抢答按键状态、准确识别首个有效抢答、通过显示模块实时展示结果以及发出声音提示以增强现场氛围。此外，系统设计还特别强调了抗干扰能力，确保在多个按键几乎同时被按下的情况下，只有第一次有效的抢答会被系统锁定和响应，从而避免后续的误判。本设计追求的不仅是技术的先进性和功能的完善性，还包括系统的稳定性、未来功能的可扩展性、操作的安全性以及整体成本的经济性。通过这些综合的设计要求，我们旨在提供一个不仅能满足当前竞赛需求，而且具备未来发展潜力的抢答器系统，以期在各类知识竞赛中发挥关键作用，提升竞赛的公正性、透明度和观赏性。</p>
 <h3 id="二、总体方案设计"><a href="#二、总体方案设计" class="headerlink" title="二、总体方案设计"></a>二、总体方案设计</h3><p>该系统以ST89C52单片机为核心，构建了输入、输出、存储、显示和声音提示五大模块，旨在实现快速响应、准确显示和声音反馈等功能。如图1所示，硬件设计涵盖了微控制器的选型、输入通道的独立性、显示与声音模块的清晰度以及电源的稳定性。软件设计包括主控制程序、抢答检测算法、显示控制程序、声音控制程序和锁存电路控制程序的开发。此外，系统的抗干扰设计通过硬件和软件滤波确保了在复杂电磁环境下的稳定性。最后，系统测试通过单元测试、集成测试和现场测试验证了设计的有效性和可靠性，确保了系统能够满足实际竞赛活动中对抢答器的严格要求。</p>
@@ -257,7 +257,7 @@
   </entry>
   <entry>
     <title>外接英特尔深度相机拍照与视频录制测试程序</title>
-    <url>/%E5%A4%96%E6%8E%A5%E6%B7%B1%E5%BA%A6%E7%9B%B8%E6%9C%BA%E6%8B%8D%E7%85%A7%E5%92%8C%E5%BD%95%E5%88%B6%E8%A7%86%E9%A2%91/</url>
+    <url>/2025/03/15/%E5%A4%96%E6%8E%A5%E6%B7%B1%E5%BA%A6%E7%9B%B8%E6%9C%BA%E6%8B%8D%E7%85%A7%E5%92%8C%E5%BD%95%E5%88%B6%E8%A7%86%E9%A2%91/</url>
     <content><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>该程序为外接英特尔深度相机拍照测试和视频录制测试程序</p>
 <h3 id="一、拍照程序"><a href="#一、拍照程序" class="headerlink" title="一、拍照程序"></a>一、拍照程序</h3><ol>
 <li>按下<code>s</code>键表示保存图片</li>
@@ -277,7 +277,7 @@
   </entry>
   <entry>
     <title>校园卡服务</title>
-    <url>/%E6%A0%A1%E5%9B%AD%E5%8D%A1%E6%9C%8D%E5%8A%A1/</url>
+    <url>/2022/11/26/%E6%A0%A1%E5%9B%AD%E5%8D%A1%E6%9C%8D%E5%8A%A1/</url>
     <content><![CDATA[<h3 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h3><h4 id="绝不套路任何一位客户"><a href="#绝不套路任何一位客户" class="headerlink" title="绝不套路任何一位客户"></a>绝不套路任何一位客户</h4><h4 id="只卖官方正规套餐，客服，掌厅可查"><a href="#只卖官方正规套餐，客服，掌厅可查" class="headerlink" title="只卖官方正规套餐，客服，掌厅可查"></a>只卖官方正规套餐，客服，掌厅可查</h4><h4 id="不做任何套路宣传，实事求是"><a href="#不做任何套路宣传，实事求是" class="headerlink" title="不做任何套路宣传，实事求是"></a>不做任何套路宣传，实事求是</h4><hr>
 <h3 id="三不卖"><a href="#三不卖" class="headerlink" title="三不卖"></a>三不卖</h3><h4 id="不卖黑卡（已经实名的卡），"><a href="#不卖黑卡（已经实名的卡），" class="headerlink" title="不卖黑卡（已经实名的卡），"></a>不卖黑卡（已经实名的卡），</h4><h4 id="不卖物联卡（不是三大运营商的）"><a href="#不卖物联卡（不是三大运营商的）" class="headerlink" title="不卖物联卡（不是三大运营商的）"></a>不卖物联卡（不是三大运营商的）</h4><h4 id="不卖违规加包的卡（不是说卡不好，不喜欢处理售后，所以不喜欢卖）"><a href="#不卖违规加包的卡（不是说卡不好，不喜欢处理售后，所以不喜欢卖）" class="headerlink" title="不卖违规加包的卡（不是说卡不好，不喜欢处理售后，所以不喜欢卖）"></a>不卖违规加包的卡（不是说卡不好，不喜欢处理售后，所以不喜欢卖）</h4><p><strong>感谢所有支持我的小伙伴 请往下看完！</strong> </p>
 <hr>
@@ -358,7 +358,7 @@
   </entry>
   <entry>
     <title>如何快速打开Github</title>
-    <url>/%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E6%89%93%E5%BC%80Github-md/</url>
+    <url>/2023/03/09/%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E6%89%93%E5%BC%80Github-md/</url>
     <content><![CDATA[<p>在国内不用科学访问GitHub经常打不开</p>
 <hr>
 <h3 id="第一步：查询github-com目前的ip地址"><a href="#第一步：查询github-com目前的ip地址" class="headerlink" title="第一步：查询github.com目前的ip地址"></a>第一步：查询github.com目前的ip地址</h3><p>打开<a href="www.ipaddress.com">ipaddress.com</a>,然后在搜索栏搜索<code>github.com</code>，找到红色框圈住的就是目前的ip地址<code>140.82.114.4</code><br><img src="https://pic.imgdb.cn/item/6409ffe9f144a0100750396b.png" alt="ip"></p>
@@ -375,7 +375,7 @@
   </entry>
   <entry>
     <title>深度学习训练数据集标注格式转换：txt转xml</title>
-    <url>/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E8%AE%AD%E7%BB%83%E6%95%B0%E6%8D%AE%E9%9B%86%E6%A0%87%E6%B3%A8%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2%EF%BC%9Atxt%E8%BD%ACxml/</url>
+    <url>/2024/12/22/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E8%AE%AD%E7%BB%83%E6%95%B0%E6%8D%AE%E9%9B%86%E6%A0%87%E6%B3%A8%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2%EF%BC%9Atxt%E8%BD%ACxml/</url>
     <content><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>您在深度学习领域的探索已经持续了半年时间，最初您选择了YOLOv8模型作为起点。在开始阶段，您亲自采集了数千张图像，并制作了一个数据集，所有的标注都以txt格式保存。随着学习的深入，您萌生了对比YOLOv8与SSD、RCNN等其他模型性能的想法。然而，SSD和RCNN模型需要的是xml格式的标注文件。</p>
 <p>面对这一挑战，您意识到重新标注所有图像不仅耗时耗力，而且新的标注很难与原有标注完全一致，这将影响到实验结果的可比性和严谨性。因此，您决定将原有的txt标注文件转换为xml格式，以保持数据的一致性，从而确保实验的准确性和可靠性。</p>
 <p>通过这样的转换，您不仅能够充分利用已有的数据集，还能在保持数据一致性的前提下，对不同模型的性能进行公正的比较。这无疑是一个既高效又严谨的解决方案。</p>
@@ -419,7 +419,7 @@
   </entry>
   <entry>
     <title>送你一颗爱心</title>
-    <url>/%E9%80%81%E4%BD%A0%E4%B8%80%E9%A2%97%E7%88%B1%E5%BF%83/</url>
+    <url>/2022/11/24/%E9%80%81%E4%BD%A0%E4%B8%80%E9%A2%97%E7%88%B1%E5%BF%83/</url>
     <content><![CDATA[<h3 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h3><p>最近网络上出现了好多人用一些方法制作爱心，C语言、Python、HTML…甚至用CAD画爱心。当然我也不例外，平时爱琢磨的我甚至更加疯狂，一口气用网络上的各种方法制作爱心，从中发现了一个最好看的爱心。于是就有了这篇文章，把我最稀罕的爱心分享给大家，让大家少走弯路。</p>
 <hr>
 <h3 id="爱心展示"><a href="#爱心展示" class="headerlink" title="爱心展示"></a>爱心展示</h3><p><img src="https://pic.imgdb.cn/item/637f47c816f2c2beb1e353ae.jpg" alt="爱心"> </p>
@@ -442,7 +442,7 @@
   </entry>
   <entry>
     <title>DeepSeek+RAGFlow构建本地知识库</title>
-    <url>/DeepSeek-RAGFlow%E6%9E%84%E5%BB%BA%E6%9C%AC%E5%9C%B0%E7%9F%A5%E8%AF%86%E5%BA%93/</url>
+    <url>/2025/03/05/DeepSeek-RAGFlow%E6%9E%84%E5%BB%BA%E6%9C%AC%E5%9C%B0%E7%9F%A5%E8%AF%86%E5%BA%93/</url>
     <content><![CDATA[<h3 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h3><p>在 AI 领域，RAG（Retrieval-Augmented Generation，检索增强生成）技术被广泛用于增强大语言模型（LLM）的知识能力。本文将介绍如何使用 <strong>DeepSeek</strong> 与 <strong>RAGFlow</strong> 搭建本地知识库，实现高效的知识检索与增强。</p>
 <p>本教程基于以下设备进行测试：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">处理器：13th Gen Intel(R) Core(TM) i5-13400F 2.50 GHz</span><br><span class="line">内存：32.0 GB</span><br><span class="line">显卡：NVIDIA GTX 1070 Ti（8G）</span><br><span class="line">操作系统：windows11</span><br></pre></td></tr></table></figure>
@@ -569,7 +569,7 @@
   </entry>
   <entry>
     <title>图片批量重命名</title>
-    <url>/%E5%9B%BE%E7%89%87%E6%89%B9%E9%87%8F%E5%91%BD%E5%90%8D/</url>
+    <url>/2025/03/16/%E5%9B%BE%E7%89%87%E6%89%B9%E9%87%8F%E5%91%BD%E5%90%8D/</url>
     <content><![CDATA[<p>前言</p>
 <p>该程序为图片批量重命名</p>
 <p>一、程序</p>
@@ -585,7 +585,7 @@
   </entry>
   <entry>
     <title>Butterfly主题更换至Solitude主题</title>
-    <url>/Butterfly%E4%B8%BB%E9%A2%98%E6%9B%B4%E6%8D%A2%E8%87%B3Solitude%E4%B8%BB%E9%A2%98/</url>
+    <url>/2025/03/16/Butterfly%E4%B8%BB%E9%A2%98%E6%9B%B4%E6%8D%A2%E8%87%B3Solitude%E4%B8%BB%E9%A2%98/</url>
     <content><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>再次十分感谢Butterfly主题和Solitude主题的作者和辅助开发的参与者</p>
 <h3 id="相关网址"><a href="#相关网址" class="headerlink" title="相关网址"></a>相关网址</h3><p><strong>Butterfly主题：</strong><a href="">Butterfly - A Simple and Card UI Design theme for Hexo</a></p>
 <p><strong>张洪Heo：</strong><a href="https://blog.zhheo.com/">张洪Heo - 分享设计与科技生活</a></p>
@@ -609,7 +609,7 @@
   </entry>
   <entry>
     <title>主题美化记录</title>
-    <url>/BlogsClub%20-%20%E5%8D%9A%E5%AE%A2%E6%89%80%E6%9C%89%E6%9D%83%E8%AE%A4%E8%AF%81/</url>
+    <url>/2025/03/28/BlogsClub%20-%20%E5%8D%9A%E5%AE%A2%E6%89%80%E6%9C%89%E6%9D%83%E8%AE%A4%E8%AF%81/</url>
     <content><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>Tannerの笔记 - <a href="https://sbsb.life/">https://sbsb.life</a></p>
 <h3 id="BlogsClub-博客俱乐部的初衷"><a href="#BlogsClub-博客俱乐部的初衷" class="headerlink" title="BlogsClub 博客俱乐部的初衷"></a>BlogsClub 博客俱乐部的初衷</h3><p>我们的初衷是通过 BlogsClub 打造一个独立的个人博客集结地，旨在为博主们提供一个互相交流、学习和进步的空间，让博主们能够在这里共同分享彼此的经验和知识，共同进步。</p>
 <h3 id="关于-BlogsClub-博客俱乐部"><a href="#关于-BlogsClub-博客俱乐部" class="headerlink" title="关于 BlogsClub 博客俱乐部"></a>关于 BlogsClub 博客俱乐部</h3><h4 id="BlogsClub-是什么？"><a href="#BlogsClub-是什么？" class="headerlink" title="BlogsClub 是什么？"></a>BlogsClub 是什么？</h4><p>许多人或许都怀揣着这样的疑问：如何让自己的博客能够脱颖而出，获得更多的关注与展示？BlogsClub 正是这样一个为你量身打造的博客聚合俱乐部，致力于为每一位博主提供一个展示自我、互动交流的绝佳平台。<br>一旦你成为 BlogsClub 的一员，你的博客将有机会展现在众多博主的眼前。我们的平台汇聚了来自五湖四海的优质博客，让每一位成员的佳作都能得到充分的展示机会。这意味着，你的独特视角和精彩内容将不再局限于自己的小圈子，而是能够吸引更多志同道合的朋友前来品味分享。<br>BlogsClub 通过 feed 聚合技术，让你能够在“订阅列表”中轻松查看加入的博主们最近发布的文章。这不仅节省了你四处搜寻的时间，还能让你第一时间捕捉到行业内的最新动态和精彩观点。在这个信息爆炸的时代，能够迅速获取有价值的信息无疑是一种宝贵的能力。<br>更值得一提的是，我们的平台还提供了便捷的传送门功能。只需轻轻一点，你便能随机访问其他博主的博客站点，深入了解他们的创作理念和心得体会。这种即时的互动交流不仅能够拓宽你的视野，还能激发你的创作灵感，让你在博客的道路上越走越远。<br>此外，BlogsClub 还致力于打造一个和谐友善的交流环境。在这里，博主们可以互相拜访、畅所欲言，分享彼此的经验教训，共同进步。我们相信，在这样的氛围中，每个人都能找到属于自己的那片星空，绽放出最耀眼的光芒。<br>总之，加入 BlogsClub 将为你开启一段全新的博客之旅。在这里，你将有机会展示自己的才华，结识志同道合的朋友，共同探索博客世界的无限可能</p>
@@ -617,8 +617,19 @@
 <h4 id="BlogsClub-是为爱发电吗？"><a href="#BlogsClub-是为爱发电吗？" class="headerlink" title="BlogsClub 是为爱发电吗？"></a>BlogsClub 是为爱发电吗？</h4><p>是的，从建立到现在，一直都是为爱发电。</p>
 <h3 id="如何加入-BlogsClub-博客俱乐部"><a href="#如何加入-BlogsClub-博客俱乐部" class="headerlink" title="如何加入 BlogsClub 博客俱乐部"></a>如何加入 BlogsClub 博客俱乐部</h3><p>我们诚挚的邀请您加入到 BlogsClub 博客俱乐部中来，与其他博主分享您的建站经验和建站故事。<br>若有意愿加入，请前请先阅读<a href="https://www.blogsclub.org/clubsTreaty.html">俱乐部条约</a>然后<a href="https://www.blogsclub.org/apply.html?inviteCode=0025fdaa">点我填写申请表</a></p>
 <p><strong>[哈喽！Tannerの笔记](<a href="https://www.blogsclub.org/blog/229.html">Tannerの笔记 - BlogsClub</a>)期待与您在 BlogsClub 博客俱乐部相遇</strong></p>
-<h3 id="联系-BlogsClub-博客俱乐部"><a href="#联系-BlogsClub-博客俱乐部" class="headerlink" title="联系 BlogsClub 博客俱乐部"></a>联系 BlogsClub 博客俱乐部</h3><p><strong>您可以通过以下方式联系到我们</strong><br>Email : <a href="mailto:&#x68;&#101;&#x6c;&#112;&#x40;&#x62;&#108;&#x6f;&#x67;&#115;&#x63;&#x6c;&#x75;&#x62;&#x2e;&#111;&#x72;&#x67;">help@blogsclub.org</a><br>QQ 群 : 957197421</p>
-<a href="https://www.blogsclub.org/" title="" target="">BlogsClub BlogsClub个人博客俱乐部</a>
+<h3 id="联系-BlogsClub-博客俱乐部"><a href="#联系-BlogsClub-博客俱乐部" class="headerlink" title="联系 BlogsClub 博客俱乐部"></a>联系 BlogsClub 博客俱乐部</h3><p><strong>您可以通过以下方式联系到我们</strong><br>Email : <a href="mailto:&#104;&#x65;&#x6c;&#x70;&#64;&#98;&#108;&#x6f;&#103;&#115;&#99;&#108;&#x75;&#98;&#46;&#111;&#x72;&#x67;">help@blogsclub.org</a><br>QQ 群 : 957197421</p>
+<a class="tag-link" href="https://www.blogsclub.org/" target="_blank">
+    <div class="tag-link-tips">引用站外链接</div>
+    <div class="tag-link-bottom">
+        <div class="tag-link-left">
+          <i class="solitude fas fa-link"></i>
+        </div>
+        <div class="tag-link-right">
+            <div class="tag-link-title">BlogsClub</div>
+            <div class="tag-link-sitename">BlogsClub个人博客俱乐部</div>
+        </div>
+        <i class="solitude fas fa-chevron-right"></i>
+    </div></a>
 
 ]]></content>
       <categories>
@@ -626,6 +637,47 @@
       </categories>
       <tags>
         <tag>BlogsClub</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>主题美化记录</title>
+    <url>/2025/03/28/%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<details open><summary>永久链接简短格式</summary><h3 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-abbrlink --save</span><br></pre></td></tr></table></figure>
+
+<h3 id="config-yml更改与添加"><a href="#config-yml更改与添加" class="headerlink" title="_config.yml更改与添加"></a><strong>_config.yml更改与添加</strong></h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 更改permalink:</span><br><span class="line">permalink: posts/:abbrlink.html</span><br><span class="line"></span><br><span class="line"># 添加以下内容</span><br><span class="line"># 文章链接转数字或字母：https://github.com/rozbo/hexo-abbrlink</span><br><span class="line">abbrlink:</span><br><span class="line">    alg: crc16   #算法： crc16(default) and crc32</span><br><span class="line">    rep: hex     #进制： dec(default) and hex: dec #输出进制：十进制和十六进制，默认为10进制。丨dec为十进制，hex为十六进制</span><br></pre></td></tr></table></figure></details>
+
+
+
+<details open><summary>本地搜索</summary><h3 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure></details>
+
+
+
+<details open><summary>数字统计</summary><h3 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-wordcount --save</span><br></pre></td></tr></table></figure></details>
+
+
+
+<details open><summary>Post Front-matter</summary><h3 id="Post-Front-matter"><a href="#Post-Front-matter" class="headerlink" title="Post Front-matter"></a>Post Front-matter</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title:       #文章标题</span><br><span class="line">date:        #创建日期</span><br><span class="line">updated:     #更新日期</span><br><span class="line">tags:        #标签</span><br><span class="line">  - 标签名称</span><br><span class="line">categories:  #分类</span><br><span class="line">description: #文章描述</span><br><span class="line">comment:     #显示文章评论，默认开启</span><br><span class="line">cover:       #文章封面，某些特殊文章必须</span><br><span class="line">avatar:      #作者头像</span><br><span class="line">author:      #作者名称</span><br><span class="line">reprint:     #是否为转载，默认为 false</span><br><span class="line">desc:        #转载说明</span><br><span class="line">katex:       #启用 katex</span><br><span class="line">aside:       #侧边栏</span><br><span class="line">ai_text:     #本地AI摘要</span><br><span class="line">recommend: true #首页轮播推荐</span><br></pre></td></tr></table></figure></details>
+
+
+
+<details open><summary>Solitude外挂标签</summary><h3 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-solitude-tag</span><br></pre></td></tr></table></figure></details>
+
+
+
+<details open><summary>RSS</summary><h3 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-feed --save</span><br></pre></td></tr></table></figure></details>
+
+
+
+<details open><summary>Sitemap</summary><h3 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-sitemap --save</span><br></pre></td></tr></table></figure>
+
+<h3 id="congig-yml添加配置内容"><a href="#congig-yml添加配置内容" class="headerlink" title="_congig.yml添加配置内容"></a>_congig.yml添加配置内容</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># https://github.com/hexojs/hexo-generator-sitemap</span><br><span class="line">sitemap:</span><br><span class="line">  path: sitemap.xml</span><br><span class="line">  tags: true</span><br><span class="line">  categories: true</span><br></pre></td></tr></table></figure></details>
+]]></content>
+      <categories>
+        <category>网站建设</category>
+      </categories>
+      <tags>
+        <tag>笔记</tag>
+        <tag>主题美化</tag>
       </tags>
   </entry>
 </search>
