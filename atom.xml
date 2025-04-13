@@ -6,7 +6,7 @@
   <link href="https://sbsb.life/atom.xml" rel="self"/>
   
   <link href="https://sbsb.life/"/>
-  <updated>2025-04-13T08:49:14.588Z</updated>
+  <updated>2025-04-13T08:53:15.199Z</updated>
   <id>https://sbsb.life/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://sbsb.life/2025/04/12/Labelimg%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/"/>
     <id>https://sbsb.life/2025/04/12/Labelimg%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/</id>
     <published>2025-04-12T06:15:03.000Z</published>
-    <updated>2025-04-13T08:49:14.588Z</updated>
+    <updated>2025-04-13T08:53:15.199Z</updated>
     
     <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p> Label是一款免费的<strong>图像标注</strong>软件，可以以<strong>矩形框</strong>的形式对图像中的物体进行标记，常用于<strong>分类和目标检测</strong>。</p><hr><h3 id="一、下载labelimg压缩包"><a href="#一、下载labelimg压缩包" class="headerlink" title="一、下载labelimg压缩包"></a>一、下载labelimg压缩包</h3><p><a href="https://github.com/tzutalin/labelImg">https://github.com/tzutalin/labelImg</a></p><h3 id="二、解压压缩包"><a href="#二、解压压缩包" class="headerlink" title="二、解压压缩包"></a>二、解压压缩包</h3><p>在菜单中找到<code>Anaconda Prompt</code></p><p>进入到放置labelimg的文件夹中解压</p><h3 id="三、安装pyqt5"><a href="#三、安装pyqt5" class="headerlink" title="三、安装pyqt5"></a>三、安装pyqt5</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda install pyqt=5</span><br></pre></td></tr></table></figure><p>安装完成后，执行命令：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pyrcc5 -o libs/resources.py resources.qrc</span><br></pre></td></tr></table></figure><p>执行完后不会返回任何结果</p><h3 id="四、启动标注软件"><a href="#四、启动标注软件" class="headerlink" title="四、启动标注软件"></a>四、启动标注软件</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">labelimg</span><br></pre></td></tr></table></figure>]]></content>
     
