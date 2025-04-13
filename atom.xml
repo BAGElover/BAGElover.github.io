@@ -6,7 +6,7 @@
   <link href="https://sbsb.life/atom.xml" rel="self"/>
   
   <link href="https://sbsb.life/"/>
-  <updated>2025-04-09T16:30:44.340Z</updated>
+  <updated>2025-04-13T08:49:14.588Z</updated>
   <id>https://sbsb.life/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Labelimg使用笔记</title>
+    <link href="https://sbsb.life/2025/04/12/Labelimg%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/"/>
+    <id>https://sbsb.life/2025/04/12/Labelimg%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/</id>
+    <published>2025-04-12T06:15:03.000Z</published>
+    <updated>2025-04-13T08:49:14.588Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p> Label是一款免费的<strong>图像标注</strong>软件，可以以<strong>矩形框</strong>的形式对图像中的物体进行标记，常用于<strong>分类和目标检测</strong>。</p><hr><h3 id="一、下载labelimg压缩包"><a href="#一、下载labelimg压缩包" class="headerlink" title="一、下载labelimg压缩包"></a>一、下载labelimg压缩包</h3><p><a href="https://github.com/tzutalin/labelImg">https://github.com/tzutalin/labelImg</a></p><h3 id="二、解压压缩包"><a href="#二、解压压缩包" class="headerlink" title="二、解压压缩包"></a>二、解压压缩包</h3><p>在菜单中找到<code>Anaconda Prompt</code></p><p>进入到放置labelimg的文件夹中解压</p><h3 id="三、安装pyqt5"><a href="#三、安装pyqt5" class="headerlink" title="三、安装pyqt5"></a>三、安装pyqt5</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda install pyqt=5</span><br></pre></td></tr></table></figure><p>安装完成后，执行命令：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pyrcc5 -o libs/resources.py resources.qrc</span><br></pre></td></tr></table></figure><p>执行完后不会返回任何结果</p><h3 id="四、启动标注软件"><a href="#四、启动标注软件" class="headerlink" title="四、启动标注软件"></a>四、启动标注软件</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">labelimg</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h3&gt;&lt;p&gt; Label是一款免费的&lt;strong&gt;图像标注&lt;/strong&gt;软件，可以以&lt;strong&gt;矩形框&lt;/strong&gt;的形式对图像中的物体进</summary>
+      
+    
+    
+    
+    <category term="编程学习" scheme="https://sbsb.life/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="labelimg" scheme="https://sbsb.life/tags/labelimg/"/>
+    
+  </entry>
   
   <entry>
     <title>Miniconde初次使用笔记</title>
@@ -521,33 +545,6 @@
     
     
     <category term="爱心" scheme="https://sbsb.life/tags/%E7%88%B1%E5%BF%83/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python学习笔记（十一）</title>
-    <link href="https://sbsb.life/2022/07/29/Python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%8D%81%E4%B8%80%EF%BC%89/"/>
-    <id>https://sbsb.life/2022/07/29/Python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%8D%81%E4%B8%80%EF%BC%89/</id>
-    <published>2022-07-29T10:51:03.000Z</published>
-    <updated>2025-04-04T09:36:47.904Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="集合要点"><a href="#集合要点" class="headerlink" title="集合要点"></a>集合要点</h1><p><strong>形式</strong></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">s = &#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>&#125;</span><br></pre></td></tr></table></figure><ol><li>元素是不可变型</li><li>元素排列无序</li><li>元素不重复</li></ol><p><strong>空集合</strong></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">s = <span class="built_in">set</span>()</span><br></pre></td></tr></table></figure><h1 id="类型转换"><a href="#类型转换" class="headerlink" title="类型转换"></a>类型转换</h1><p><strong>交集</strong></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">friends1 = &#123;<span class="string">&#x27;bage&#x27;</span>, <span class="string">&#x27;bage1&#x27;</span>, <span class="string">&#x27;bage2&#x27;</span>, <span class="string">&#x27;bage3&#x27;</span>&#125;</span><br><span class="line">friends2 = &#123;<span class="string">&#x27;bage&#x27;</span>, <span class="string">&#x27;bage9&#x27;</span>, <span class="string">&#x27;bage2&#x27;</span>, <span class="string">&#x27;bage6&#x27;</span>&#125;</span><br><span class="line"><span class="comment"># 交集</span></span><br><span class="line"><span class="built_in">print</span>(friends1 &amp; friends2)</span><br><span class="line"><span class="built_in">print</span>(friends1.intersection(friends2))</span><br></pre></td></tr></table></figure><p><strong>差集</strong></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 差集，有顺序</span></span><br><span class="line">friends1 = &#123;<span class="string">&#x27;bage&#x27;</span>, <span class="string">&#x27;bage1&#x27;</span>, <span class="string">&#x27;bage2&#x27;</span>, <span class="string">&#x27;bage3&#x27;</span>&#125;</span><br><span class="line">friends2 = &#123;<span class="string">&#x27;bage&#x27;</span>, <span class="string">&#x27;bage9&#x27;</span>, <span class="string">&#x27;bage2&#x27;</span>, <span class="string">&#x27;bage6&#x27;</span>&#125;</span><br><span class="line"><span class="built_in">print</span>(friends1 - friends2)  <span class="comment"># &#123;&#x27;bage3&#x27;, &#x27;bage1&#x27;&#125;</span></span><br><span class="line"><span class="built_in">print</span>(friends1.difference(friends2))  <span class="comment"># &#123;&#x27;bage3&#x27;, &#x27;bage1&#x27;&#125;</span></span><br><span class="line"><span class="built_in">print</span>(friends2 - friends1)  <span class="comment"># &#123;&#x27;bage9&#x27;, &#x27;bage6&#x27;&#125;</span></span><br><span class="line"><span class="built_in">print</span>(friends2.difference(friends1))  <span class="comment"># &#123;&#x27;bage9&#x27;, &#x27;bage6&#x27;&#125;</span></span><br></pre></td></tr></table></figure><p><strong>对称差集</strong></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 对称差集 两个好友独有 去掉共同的好友</span></span><br><span class="line"><span class="built_in">print</span>(friends1 ^ friends2)  <span class="comment"># &#123;&#x27;bage3&#x27;, &#x27;bage9&#x27;, &#x27;bage6&#x27;, &#x27;bage1&#x27;&#125;</span></span><br><span class="line"><span class="built_in">print</span>(friends1.symmetric_difference(friends2))  <span class="comment"># &#123;&#x27;bage3&#x27;, &#x27;bage9&#x27;, &#x27;bage6&#x27;, &#x27;bage1&#x27;&#125;</span></span><br></pre></td></tr></table></figure><p><strong>并集</strong></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 并集</span></span><br><span class="line"><span class="built_in">print</span>(friends1 | friends2)  <span class="comment"># &#123;&#x27;bage6&#x27;, &#x27;bage9&#x27;, &#x27;bage&#x27;, &#x27;bage3&#x27;, &#x27;bage2&#x27;, &#x27;bage1&#x27;&#125;</span></span><br><span class="line"><span class="built_in">print</span>(friends1.union(friends2))  <span class="comment"># &#123;&#x27;bage6&#x27;, &#x27;bage9&#x27;, &#x27;bage&#x27;, &#x27;bage3&#x27;, &#x27;bage2&#x27;, &#x27;bage1&#x27;&#125;</span></span><br></pre></td></tr></table></figure><p><strong>父子集</strong></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 父子集</span></span><br><span class="line">s1 = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>&#125;</span><br><span class="line">s2 = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>&#125;</span><br><span class="line"><span class="built_in">print</span>(s1 &gt; s2)  <span class="comment"># False</span></span><br><span class="line"><span class="built_in">print</span>(s1.issuperset(s2))  <span class="comment"># False</span></span><br><span class="line"><span class="built_in">print</span>(s1 &lt; s2)  <span class="comment"># True</span></span><br><span class="line"><span class="built_in">print</span>(s1.issubset(s2))  <span class="comment"># True</span></span><br><span class="line"><span class="built_in">print</span>(s2 &gt;= s1)  <span class="comment"># True</span></span><br></pre></td></tr></table></figure><h1 id="discard"><a href="#discard" class="headerlink" title="discard"></a>discard</h1><p> <strong>删除discard删除没有的元素不会报错，而remove会报错</strong></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">s = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">34</span>,<span class="number">5</span>&#125;</span><br><span class="line">s.discard(<span class="number">1</span>)</span><br><span class="line">s.discard(<span class="number">9</span>)</span><br><span class="line"><span class="built_in">print</span>(s)</span><br><span class="line">s.remove(<span class="number">7</span>)</span><br><span class="line"><span class="built_in">print</span>(s)  <span class="comment"># 报错</span></span><br></pre></td></tr></table></figure><h1 id="长度"><a href="#长度" class="headerlink" title="长度"></a>长度</h1><p><strong>略</strong></p><h1 id="成员运算"><a href="#成员运算" class="headerlink" title="成员运算"></a>成员运算</h1><p><strong>略</strong></p><h1 id="去重"><a href="#去重" class="headerlink" title="去重"></a>去重</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 去重</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">set</span>([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>]))</span><br><span class="line">l = [<span class="number">1</span>,<span class="number">23</span>,<span class="number">12</span>,<span class="number">3</span>]</span><br><span class="line">l = <span class="built_in">set</span>(l)</span><br><span class="line">l = <span class="built_in">list</span>(l)</span><br><span class="line"><span class="built_in">print</span>(l)</span><br></pre></td></tr></table></figure><h1 id="isdisjoint"><a href="#isdisjoint" class="headerlink" title="isdisjoint"></a>isdisjoint</h1><p><strong>当两个集合不是交集，没有相同的元素，结果为True</strong></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">s = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">34</span>,<span class="number">5</span>&#125;</span><br><span class="line">res = s.isdisjoint(&#123;<span class="number">9</span>,<span class="number">8</span>,<span class="number">76</span>,<span class="number">0</span>&#125;)</span><br><span class="line"><span class="built_in">print</span>(res)  <span class="comment"># True</span></span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;集合要点&quot;&gt;&lt;a href=&quot;#集合要点&quot; class=&quot;headerlink&quot; title=&quot;集合要点&quot;&gt;&lt;/a&gt;集合要点&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;形式&lt;/strong&gt;&lt;/p&gt;
-&lt;figure class=&quot;highlight python&quot;&gt;&lt;tabl</summary>
-      
-    
-    
-    
-    <category term="编程学习" scheme="https://sbsb.life/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-    <category term="Python" scheme="https://sbsb.life/tags/Python/"/>
-    
-    <category term="学习笔记" scheme="https://sbsb.life/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
