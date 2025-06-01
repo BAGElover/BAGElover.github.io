@@ -1,0 +1,270 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><title>流量卡介绍 | Tannerの笔记</title><noscript>开启JavaScript才能访问本站哦~</noscript><link rel="icon" href="https://imagebed.sbsb.life/8faf481e57d7a5abb191173a05e8e86.png"><!-- index.css--><link rel="stylesheet" href="/css/index.css?v=3.0.15"><!-- inject head--><link rel="canonical" href="https://sbsb.life/2022/11/26/%E6%A0%A1%E5%9B%AD%E5%8D%A1%E6%9C%8D%E5%8A%A1/index.html"><link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css"><!-- aplayer--><link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css"><!-- swiper--><!-- fancybox ui--><!-- katex--><!-- Open Graph--><meta name="description" content="声明绝不套路任何一位客户只卖官方正规套餐，客服，掌厅可查不做任何套路宣传，实事求是 三不卖不卖黑卡（已经实名的卡），不卖物联卡（不是三大运营商的）不卖违规加包的卡（不是说卡不好，不喜欢处理售后，所以不喜欢卖）感谢所有支持我的小伙伴 请往下看完！ 所有卡全是正规校园卡，正规的三大运营商官方手机卡，"><!-- pwa--><meta name="apple-mobile-web-app-capable" content="Tannerの笔记"><meta name="theme-color" content="var(--efu-main)"><meta name="apple-mobile-web-app-status-bar-style" content="var(--efu-main)"><link rel="bookmark" href="https://imagebed.sbsb.life/8faf481e57d7a5abb191173a05e8e86.png"><link rel="apple-touch-icon" href="https://imagebed.sbsb.life/8faf481e57d7a5abb191173a05e8e86.png" sizes="180x180"><script>console.log(' %c Solitude %c ' + '3.0.15' + ' %c https://github.com/everfu/hexo-theme-solitude',
+    'background:#35495e ; padding: 1px; border-radius: 3px 0 0 3px;  color: #fff',
+    'background:#ff9a9a ; padding: 1px; border-radius: 0 3px 3px 0;  color: #fff',
+    'background:unset ; padding: 1px; border-radius: 0 3px 3px 0;  color: #fff')
+</script><script>let mdate = "7-7,9-18,12-13";
+mdate = (mdate.split(","));
+let ndate = new Date();
+for (let i of mdate) {
+    if (i === (ndate.getMonth()+1) + "-" + (ndate.getDate())) {
+        document.documentElement.classList.add('memorial');
+    }
+}
+</script><script>(()=>{
+        const saveToLocal = {
+            set: function setWithExpiry(key, value, ttl) {
+                if (ttl === 0)
+                    return
+                const now = new Date()
+                const expiryDay = ttl * 86400000
+                const item = {
+                    value: value,
+                    expiry: now.getTime() + expiryDay
+                }
+                localStorage.setItem(key, JSON.stringify(item))
+            },
+            get: function getWithExpiry(key) {
+                const itemStr = localStorage.getItem(key)
+
+                if (!itemStr) {
+                    return undefined
+                }
+                const item = JSON.parse(itemStr)
+                const now = new Date()
+
+                if (now.getTime() > item.expiry) {
+                    localStorage.removeItem(key)
+                    return undefined
+                }
+                return item.value
+            }
+        };
+        window.utils = {
+            saveToLocal: saveToLocal,
+            getCSS: (url, id = false) => new Promise((resolve, reject) => {
+              const link = document.createElement('link')
+              link.rel = 'stylesheet'
+              link.href = url
+              if (id) link.id = id
+              link.onerror = reject
+              link.onload = link.onreadystatechange = function() {
+                const loadState = this.readyState
+                if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+                link.onload = link.onreadystatechange = null
+                resolve()
+              }
+              document.head.appendChild(link)
+            }),
+            getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+              const script = document.createElement('script')
+              script.src = url
+              script.async = true
+              script.onerror = reject
+              script.onload = script.onreadystatechange = function() {
+                const loadState = this.readyState
+                if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+                script.onload = script.onreadystatechange = null
+                resolve()
+              }
+
+              Object.keys(attr).forEach(key => {
+                script.setAttribute(key, attr[key])
+              })
+
+              document.head.appendChild(script)
+            }),
+            addGlobalFn: (key, fn, name = false, parent = window) => {
+                const globalFn = parent.globalFn || {}
+                const keyObj = globalFn[key] || {}
+
+                if (name && keyObj[name]) return
+
+                name = name || Object.keys(keyObj).length
+                keyObj[name] = fn
+                globalFn[key] = keyObj
+                parent.globalFn = globalFn
+            },
+            addEventListenerPjax: (ele, event, fn, option = false) => {
+              ele.addEventListener(event, fn, option)
+              utils.addGlobalFn('pjax', () => {
+                  ele.removeEventListener(event, fn, option)
+              })
+          },
+        }
+    })()</script><!-- theme--><script>initTheme = () => {
+    let isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+    const cachedMode = utils.saveToLocal.get('theme');
+    if (cachedMode === undefined) {
+        const nowMode =
+            isDarkMode ? 'dark' : 'light'
+        document.documentElement.setAttribute('data-theme', nowMode);
+    } else {
+        document.documentElement.setAttribute('data-theme', cachedMode);
+    }
+    typeof rm === 'object' && rm.mode(cachedMode === 'dark' && isDarkMode)
+}
+initTheme()</script><!-- global head--><script>const GLOBAL_CONFIG = {
+    root: '/',
+    algolia: undefined,
+    localsearch: undefined,
+    runtime: '2022-10-01 00:00:00',
+    lazyload: {
+        enable: false,
+        error: '/img/error_load.avif'
+    },
+    copyright: false,
+    highlight: {"limit":200,"expand":true,"copy":true,"syntax":"highlight.js"},
+    randomlink: false,
+    lang: {"theme":{"dark":"已切换至深色模式","light":"已切换至浅色模式"},"copy":{"success":"复制成功","error":"复制失败"},"backtop":"返回顶部","time":{"day":"天前","hour":"小时前","just":"刚刚","min":"分钟前","month":"个月前"},"day":" 天","f12":"开发者模式已打开，请遵循GPL协议。","totalk":"无需删除空行，直接输入评论即可"},
+    aside: {
+        state: {
+            morning: "✨ 早上好，新的一天开始了",
+            noon: "🍲 午餐时间",
+            afternoon: "🌞 下午好",
+            night: "早点休息",
+            goodnight: "晚安 😴",
+        },
+        witty_words: ["你可以的","你一定可以的","祝你好运，陌生人"],
+        witty_comment: {
+            prefix: '好久不见，',
+            back: '欢迎再次回来，',
+        },
+    },
+    covercolor: {
+        enable: false
+    },
+    comment: false,
+    lightbox: 'null',
+    right_menu: false,
+    translate: {"translateDelay":0,"defaultEncoding":2},
+    lure: false,
+    expire: false,
+};</script><!-- page-config head--><script id="config-diff">var PAGE_CONFIG = {
+    is_post: true,
+    is_page: false,
+    is_home: false,
+    page: '',
+    toc: true,
+    comment: false,
+    ai_text: false,
+    color: false,
+}</script><meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="Tannerの笔记" type="application/atom+xml">
+</head><body id="body"><!-- universe--><canvas id="universe"></canvas><!-- background img--><!-- loading--><!-- console--><div id="console"><div class="close-btn" onclick="sco.hideConsole()"><i class="solitude fas fa-xmark"></i></div><div class="console-card-group"><div class="console-card-group-right"><div class="console-card tags" onclick="sco.hideConsole()"><div class="card-content"><div class="author-content-item-tips">标签</div><div class="author-content-item-title">寻找感兴趣的领域</div></div><div class="card-tag-cloud"><a href="/tags/BlogsClub/">BlogsClub<sup>1</sup></a><a href="/tags/%E5%8D%9A%E5%AE%A2/">博客<sup>1</sup></a><a href="/tags/%E4%B8%BB%E9%A2%98/">主题<sup>1</sup></a><a href="/tags/Deepseek/">Deepseek<sup>1</sup></a><a href="/tags/RAGFlow/">RAGFlow<sup>1</sup></a><a href="/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B/">大模型<sup>1</sup></a><a href="/tags/%E6%8A%A5%E9%94%99/">报错<sup>1</sup></a><a href="/tags/%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/">解决方法<sup>1</sup></a><a href="/tags/labelimg/">labelimg<sup>1</sup></a><a href="/tags/Manjaro/">Manjaro<sup>1</sup></a><a href="/tags/Miniconde/">Miniconde<sup>1</sup></a><a href="/tags/Python/">Python<sup>14</sup></a><a href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记<sup>11</sup></a><a href="/tags/IP/">IP<sup>2</sup></a><a href="/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/">树莓派<sup>1</sup></a><a href="/tags/%E4%B8%83%E7%89%9B%E4%BA%91%E5%9B%BE%E5%BA%8A/">七牛云图床<sup>1</sup></a><a href="/tags/HTTP%E5%8D%8F%E8%AE%AE/">HTTP协议<sup>1</sup></a><a href="/tags/%E8%AF%BE%E7%A8%8B%E4%BD%9C%E4%B8%9A/">课程作业<sup>3</sup></a><a href="/tags/MATLAB/">MATLAB<sup>2</sup></a><a href="/tags/%E5%9B%BE%E7%89%87/">图片<sup>1</sup></a><a href="/tags/%E7%BC%96%E7%A8%8B/">编程<sup>1</sup></a><a href="/tags/hexo/">hexo<sup>1</sup></a><a href="/tags/%E4%B8%8A%E4%BC%A0%E6%96%87%E7%AB%A0/">上传文章<sup>1</sup></a><a href="/tags/%E6%B7%B1%E5%BA%A6%E7%9B%B8%E6%9C%BA/">深度相机<sup>1</sup></a><a href="/tags/%E5%8D%95%E7%89%87%E6%9C%BA/">单片机<sup>1</sup></a><a href="/tags/Github/">Github<sup>1</sup></a><a href="/tags/%E6%9C%BA%E6%A2%B0%E8%87%82/">机械臂<sup>1</sup></a><a href="/tags/%E8%B7%AF%E5%BE%84%E8%A7%84%E5%88%92/">路径规划<sup>1</sup></a><a href="/tags/Dijkstra%E7%AE%97%E6%B3%95/">Dijkstra算法<sup>1</sup></a><a href="/tags/A-%E7%AE%97%E6%B3%95/">A*算法<sup>1</sup></a><a href="/tags/DFS/">DFS<sup>1</sup></a><a href="/tags/BFS/">BFS<sup>1</sup></a><a href="/tags/%E6%B5%81%E9%87%8F%E5%8D%A1/">流量卡<sup>1</sup></a><a href="/tags/txt/">txt<sup>1</sup></a><a href="/tags/xml/">xml<sup>1</sup></a><a href="/tags/%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2/">格式转换<sup>1</sup></a><a href="/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/">深度学习<sup>1</sup></a><a href="/tags/%E7%88%B1%E5%BF%83/">爱心<sup>1</sup></a></div></div><div class="console-card history" onclick="sco.hideConsole()"><ul class="card-archive-list"><li class="item"><a href="/archives/2025/05/"><span class="date">2025/05</span><div class="count-group"><span class="count">1</span><span class="unit">篇</span></div></a></li><li class="item"><a href="/archives/2025/04/"><span class="date">2025/04</span><div class="count-group"><span class="count">3</span><span class="unit">篇</span></div></a></li><li class="item"><a href="/archives/2025/03/"><span class="date">2025/03</span><div class="count-group"><span class="count">5</span><span class="unit">篇</span></div></a></li><li class="item"><a href="/archives/2024/12/"><span class="date">2024/12</span><div class="count-group"><span class="count">5</span><span class="unit">篇</span></div></a></li><li class="item"><a href="/archives/2024/11/"><span class="date">2024/11</span><div class="count-group"><span class="count">2</span><span class="unit">篇</span></div></a></li><li class="item"><a href="/archives/2023/03/"><span class="date">2023/03</span><div class="count-group"><span class="count">2</span><span class="unit">篇</span></div></a></li><li class="item"><a href="/archives/2023/01/"><span class="date">2023/01</span><div class="count-group"><span class="count">1</span><span class="unit">篇</span></div></a></li><li class="item"><a href="/archives/2022/11/"><span class="date">2022/11</span><div class="count-group"><span class="count">2</span><span class="unit">篇</span></div></a></li><li class="item"><a href="/archives/2022/07/"><span class="date">2022/07</span><div class="count-group"><span class="count">11</span><span class="unit">篇</span></div></a></li><li class="item"><a href="/archives/"><span class="date">全部文章</span><div class="count-group"><span class="count">32</span><span class="unit">篇</span></div></a></li></ul></div></div></div><div class="button-group"><div class="console-btn-item"><span class="darkmode_switchbutton" onclick="sco.switchDarkMode()" title="昼夜切换"><i class="solitude fas fa-circle-half-stroke"></i></span></div><div class="console-btn-item" id="consoleHideAside"><span class="asideSwitch" onclick="sco.switchHideAside()" title="边栏显示控制"><i class="solitude fas fa-arrows-left-right-to-line"></i></span></div></div><div class="console-mask" onclick="sco.hideConsole()"></div></div><!-- sidebar--><div id="sidebar" style="zoom: 1;"><div id="menu-mask" style="display: none;"></div><div id="sidebar-menus"><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">32</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">38</div></a></div></div></div><span class="sidebar-menu-item-title">功能</span><div class="sidebar-menu-item"><span class="darkmode_switchbutton menu-child" onclick="sco.switchDarkMode()"><i class="solitude fas fa-circle-half-stroke"></i><span>显示模式</span></span></div><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">业务</div><div class="back-menu-list"><a class="back-menu-item" href="https://sbsb.life/" title="博客"><img class="nolazyload back-menu-item-icon" src="https://imagebed.sbsb.life/8faf481e57d7a5abb191173a05e8e86.png" alt="博客"><span class="back-menu-item-text">博客</span></a><a class="back-menu-item" target="_blank" rel="noopener" href="http://hh.youzihaoka.cn/" title="流量卡"><img class="nolazyload back-menu-item-icon" src="https://imagebed.sbsb.life/de66b976a5ffcb43741bb54d2314b3d.jpg" alt="流量卡"><span class="back-menu-item-text">流量卡</span></a></div></div></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><span>首页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span>文库</span></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="solitude  fas fa-folder-closed"></i><span>全部文章</span></a></li><li><a class="site-page child" href="/categories/"><i class="solitude  fas fa-clone"></i><span>全部分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="solitude  fas fa-tags"></i><span>全部标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span>我的</span></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="solitude  fas fa-music"></i><span>我的音乐</span></a></li><li><a class="site-page child" href="/equipment/"><i class="solitude  fas fa-laptop"></i><span>我的装备</span></a></li><li><a class="site-page child" href="/gallery/"><i class="solitude  fas fa-image"></i><span>相册</span></a></li><li><a class="site-page child" href="/love/"><i class="solitude  fas fa-heartbeat"></i><span>恋爱</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span>其他</span></a><ul class="menus_item_child"><li><a class="site-page child" href="/links/"><i class="solitude  fas fa-user-group"></i><span>友情链接</span></a></li><li><a class="site-page child" href="/about/"><i class="solitude  fas fa-address-card"></i><span>关于本站</span></a></li><li><a class="site-page child" href="/performance/"><i class="solitude  fas fa-battery-three-quarters"></i><span>履约证书</span></a></li></ul></div></div><span class="sidebar-menu-item-title">标签</span><div class="card-tags"><div class="card-tag-cloud"><a href="/tags/BlogsClub/">BlogsClub<sup>1</sup></a><a href="/tags/%E5%8D%9A%E5%AE%A2/">博客<sup>1</sup></a><a href="/tags/%E4%B8%BB%E9%A2%98/">主题<sup>1</sup></a><a href="/tags/Deepseek/">Deepseek<sup>1</sup></a><a href="/tags/RAGFlow/">RAGFlow<sup>1</sup></a><a href="/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B/">大模型<sup>1</sup></a><a href="/tags/%E6%8A%A5%E9%94%99/">报错<sup>1</sup></a><a href="/tags/%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/">解决方法<sup>1</sup></a><a href="/tags/labelimg/">labelimg<sup>1</sup></a><a href="/tags/Manjaro/">Manjaro<sup>1</sup></a><a href="/tags/Miniconde/">Miniconde<sup>1</sup></a><a href="/tags/Python/">Python<sup>14</sup></a><a href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记<sup>11</sup></a><a href="/tags/IP/">IP<sup>2</sup></a><a href="/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/">树莓派<sup>1</sup></a><a href="/tags/%E4%B8%83%E7%89%9B%E4%BA%91%E5%9B%BE%E5%BA%8A/">七牛云图床<sup>1</sup></a><a href="/tags/HTTP%E5%8D%8F%E8%AE%AE/">HTTP协议<sup>1</sup></a><a href="/tags/%E8%AF%BE%E7%A8%8B%E4%BD%9C%E4%B8%9A/">课程作业<sup>3</sup></a><a href="/tags/MATLAB/">MATLAB<sup>2</sup></a><a href="/tags/%E5%9B%BE%E7%89%87/">图片<sup>1</sup></a><a href="/tags/%E7%BC%96%E7%A8%8B/">编程<sup>1</sup></a><a href="/tags/hexo/">hexo<sup>1</sup></a><a href="/tags/%E4%B8%8A%E4%BC%A0%E6%96%87%E7%AB%A0/">上传文章<sup>1</sup></a><a href="/tags/%E6%B7%B1%E5%BA%A6%E7%9B%B8%E6%9C%BA/">深度相机<sup>1</sup></a><a href="/tags/%E5%8D%95%E7%89%87%E6%9C%BA/">单片机<sup>1</sup></a><a href="/tags/Github/">Github<sup>1</sup></a><a href="/tags/%E6%9C%BA%E6%A2%B0%E8%87%82/">机械臂<sup>1</sup></a><a href="/tags/%E8%B7%AF%E5%BE%84%E8%A7%84%E5%88%92/">路径规划<sup>1</sup></a><a href="/tags/Dijkstra%E7%AE%97%E6%B3%95/">Dijkstra算法<sup>1</sup></a><a href="/tags/A-%E7%AE%97%E6%B3%95/">A*算法<sup>1</sup></a><a href="/tags/DFS/">DFS<sup>1</sup></a><a href="/tags/BFS/">BFS<sup>1</sup></a><a href="/tags/%E6%B5%81%E9%87%8F%E5%8D%A1/">流量卡<sup>1</sup></a><a href="/tags/txt/">txt<sup>1</sup></a><a href="/tags/xml/">xml<sup>1</sup></a><a href="/tags/%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2/">格式转换<sup>1</sup></a><a href="/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/">深度学习<sup>1</sup></a><a href="/tags/%E7%88%B1%E5%BF%83/">爱心<sup>1</sup></a></div></div><span class="sidebar-menu-item-title">网站信息</span><div class="webinfo"><div class="webinfo-item"><div class="item-name">全站字数 :</div><div class="item-count">26.9k</div></div></div></div></div><!-- keyboard--><!-- righhtside--><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav class="show" id="nav"><div id="nav-group"><div id="blog_name"><div class="back-home-button" tabindex="-1"><i class="back-home-button-icon solitude fas fa-bars-progress"></i><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">业务</div><div class="back-menu-list"><a class="back-menu-item" href="https://sbsb.life/" title="博客"><img class="nolazyload back-menu-item-icon" src="https://imagebed.sbsb.life/8faf481e57d7a5abb191173a05e8e86.png" alt="博客"><span class="back-menu-item-text">博客</span></a><a class="back-menu-item" target="_blank" rel="noopener" href="http://hh.youzihaoka.cn/" title="流量卡"><img class="nolazyload back-menu-item-icon" src="https://imagebed.sbsb.life/de66b976a5ffcb43741bb54d2314b3d.jpg" alt="流量卡"><span class="back-menu-item-text">流量卡</span></a></div></div></div></div><a id="site-name" href="/" title="返回博客主页"><span class="title">Tannerの笔记</span><i class="solitude fas fa-home"></i></a></div><div id="page-name-mask"><div id="page-name"><a id="page-name-text" onclick="sco.toTop()">流量卡介绍</a></div></div><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><span>首页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span>文库</span></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="solitude  fas fa-folder-closed"></i><span>全部文章</span></a></li><li><a class="site-page child" href="/categories/"><i class="solitude  fas fa-clone"></i><span>全部分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="solitude  fas fa-tags"></i><span>全部标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span>我的</span></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="solitude  fas fa-music"></i><span>我的音乐</span></a></li><li><a class="site-page child" href="/equipment/"><i class="solitude  fas fa-laptop"></i><span>我的装备</span></a></li><li><a class="site-page child" href="/gallery/"><i class="solitude  fas fa-image"></i><span>相册</span></a></li><li><a class="site-page child" href="/love/"><i class="solitude  fas fa-heartbeat"></i><span>恋爱</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span>其他</span></a><ul class="menus_item_child"><li><a class="site-page child" href="/links/"><i class="solitude  fas fa-user-group"></i><span>友情链接</span></a></li><li><a class="site-page child" href="/about/"><i class="solitude  fas fa-address-card"></i><span>关于本站</span></a></li><li><a class="site-page child" href="/performance/"><i class="solitude  fas fa-battery-three-quarters"></i><span>履约证书</span></a></li></ul></div></div></div><div id="nav-left"></div><div id="nav-right"><div class="nav-button" id="travellings_button"><a class="site-page" target="_blank" rel="noopener" href="https://www.travellings.cn/go.html" title=""><i class="solitude fas fa-train"></i></a></div><div class="nav-button" id="travellings_button"><a class="site-page" target="_blank" rel="noopener" href="https://foreverblog.cn/go.html" title=""><i class="solitude fas fa-paper-plane"></i></a></div><div class="nav-button" id="nav-console"><a class="console_switchbutton" onclick="sco.showConsole()" title="中控台" href="javascript:void(0);"><label><i class="left"></i><i class="center"></i><i class="right"></i></label></a></div><div class="nav-button" id="nav-totop" onclick="sco.toTop()"><a class="totopbtn"><i class="solitude fas fa-arrow-up"></i><span id="percent">0</span></a></div><div id="toggle-menu"><a class="site-page"><i class="solitude fas fa-bars"></i></a></div></div></div></nav><div class="coverdiv" id="coverdiv"><img class="nolazyload" id="post-cover" src="https://imagebed.sbsb.life/Canvas-Ruom11.webp" alt="流量卡介绍"></div><div id="post-info"><div id="post-firstinfo"><div class="meta-firstline"><a class="post-meta-original" title="该文章为原创文章，注意版权协议">原创</a><span class="post-meta-categories"><a class="post-meta-categories" href="/categories/%E5%85%B6%E4%BB%96/">其他</a></span><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%B5%81%E9%87%8F%E5%8D%A1/"><span class="tags-name tags-punctuation"><i class="solitude fas fa-hashtag"></i>流量卡</span></a></div></div></div></div><h1 class="post-title">流量卡介绍</h1><div id="post-meta"><div class="meta-secondline"><span class="post-meta-date" title="发布于 2022-11-26 20:01:11"><i class="post-meta-icon solitude fas fa-calendar-days"></i><time datetime="2022-11-26T12:01:11.000Z">2022-11-26T12:01:11.000Z</time></span><span class="post-meta-date" title="最后更新于 2025-04-08 11:57:48"><i class="post-meta-icon solitude fas fa-arrows-rotate"></i><time datetime="2025-04-08T03:57:48.000Z">2025-04-08T03:57:48.000Z</time></span><span class="post-meta-wordcount"><i class="post-meta-icon solitude fas fa-file-word" title="文章字数"></i><span class="word-count">1.6k</span><span class="post-meta-separator"></span><i class="post-meta-icon solitude fas fa-clock" title="阅读耗时"></i><span>5 分钟</span></span><span class="post-meta-position" title="作者IP归属地为新疆·阿克苏市"><i class="post-meta-icon solitude fas fa-location-dot"></i><span>新疆·阿克苏市</span></span></div></div></div><div id="post-info-bottom"></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content article-container"><h3 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h3><h4 id="绝不套路任何一位客户"><a href="#绝不套路任何一位客户" class="headerlink" title="绝不套路任何一位客户"></a>绝不套路任何一位客户</h4><h4 id="只卖官方正规套餐，客服，掌厅可查"><a href="#只卖官方正规套餐，客服，掌厅可查" class="headerlink" title="只卖官方正规套餐，客服，掌厅可查"></a>只卖官方正规套餐，客服，掌厅可查</h4><h4 id="不做任何套路宣传，实事求是"><a href="#不做任何套路宣传，实事求是" class="headerlink" title="不做任何套路宣传，实事求是"></a>不做任何套路宣传，实事求是</h4><hr>
+<h3 id="三不卖"><a href="#三不卖" class="headerlink" title="三不卖"></a>三不卖</h3><h4 id="不卖黑卡（已经实名的卡），"><a href="#不卖黑卡（已经实名的卡），" class="headerlink" title="不卖黑卡（已经实名的卡），"></a>不卖黑卡（已经实名的卡），</h4><h4 id="不卖物联卡（不是三大运营商的）"><a href="#不卖物联卡（不是三大运营商的）" class="headerlink" title="不卖物联卡（不是三大运营商的）"></a>不卖物联卡（不是三大运营商的）</h4><h4 id="不卖违规加包的卡（不是说卡不好，不喜欢处理售后，所以不喜欢卖）"><a href="#不卖违规加包的卡（不是说卡不好，不喜欢处理售后，所以不喜欢卖）" class="headerlink" title="不卖违规加包的卡（不是说卡不好，不喜欢处理售后，所以不喜欢卖）"></a>不卖违规加包的卡（不是说卡不好，不喜欢处理售后，所以不喜欢卖）</h4><p><strong>感谢所有支持我的小伙伴 请往下看完！</strong></p>
+<hr>
+<ul>
+<li>所有卡全是正规校园卡，正规的三大运营商官方手机卡，官方可查只要你要求符合，全国能办（个别卡除外），全国能用。</li>
+<li>别问靠谱吗？稳定吗？连中国移动，中国联通，中国电信的卡你都觉得不靠谱，放弃用手机卡吧。。。。</li>
+<li>办卡只办适合自己的，一味的追求永久套餐啊啥的没意义，营业厅里面的都是永久的，你会一直用下去么？而且月租高流量少。</li>
+<li>好卡都是 内蒙，湖南，河北，浙江这些地区，你们本地没有出优惠卡，就算出了有些卡也不会全国卖，所以我这边也就没有你所在地区的卡。</li>
+</ul>
+<hr>
+<h3 id="这里推荐一个用卡组合方案"><a href="#这里推荐一个用卡组合方案" class="headerlink" title="这里推荐一个用卡组合方案"></a>这里推荐一个用卡组合方案</h3><p>老号码去改成最低月租套餐，比如移动是8元飞享套餐（联系10086客服就能改）老号码可用来接打电话，现在打电话也便宜，最高也就0.15元&#x2F;分钟，然后办个流量多的外地卡，只用来上网，现在手机一般都双卡双待，2张卡无压力。</p>
+<h3 id="九“不”要注意"><a href="#九“不”要注意" class="headerlink" title="九“不”要注意"></a>九“不”要注意</h3><hr>
+<ul>
+<li>不卖物联卡：不是三大运营商的卡，通常没有语音功能，只卖正规运营商的卡，不卖物联卡，不卖物联卡！！</li>
+<li>不卖BUG卡：通过漏洞加的流量包或者违规加的流量卡</li>
+<li>不能办副卡：校园卡一般不能办理副卡</li>
+<li>不能老号改套餐：校园卡的特殊性，只能新办，不能老号改</li>
+<li>不能携号转网到校园套餐：老号都不能改，携号转网肯定不行</li>
+<li>不能选归属地：校园卡都是地方性的卡，归属地都是固定</li>
+<li>不能选号：一般都是随机发，个别卡能选的会在套餐页面说明</li>
+<li>不能过户：校园卡一般都是2年或者4年，有合约期，有优惠减免</li>
+<li>不能续约 ：校园卡2年或者4年优惠期，到期后去销户</li>
+</ul>
+<hr>
+<h3 id="办卡收费问题："><a href="#办卡收费问题：" class="headerlink" title="办卡收费问题："></a>办卡收费问题：</h3><p><strong>在我们这里办卡是不收费的，并且是包邮到家，个别卡是免费上门激活的，不认识字也没有关系可以放心购买</strong></p>
+<h4 id="流量问题"><a href="#流量问题" class="headerlink" title="流量问题"></a>流量问题</h4><p>套餐都有写着月租多少流量多少，这个流量是每个月都有，有些小白不知道咋想的，就比如20G的套餐，怎么可能是一年20G，肯定是每个月啊，20G一年够用么？</p>
+<hr>
+<h4 id="销户问题"><a href="#销户问题" class="headerlink" title="销户问题"></a>销户问题</h4><p>校园卡一般有优惠期，部分卡优惠期内不能随时销户，如果你确实想要提前销户，可以自己联系运营商客服咨询是否可以提前销户，有可能提前销户要交违约金，所有正规卡都支持异地销户，具体的咨询官方客服。</p>
+<h4 id="网速快慢"><a href="#网速快慢" class="headerlink" title="网速快慢"></a>网速快慢</h4><p>有些人网速慢或者信号差，就说卡问题，这个取决于你所在地附近的基站信号，跟卡没关系！跟套餐没关系。全国各地用同一种卡，网速都会不一样，各种因素，信号的遮挡，基站用的人多，都会造成网速慢</p>
+<p>没有人会给你保证说网速肯定好肯定快之类的，不现实，除非这人住你隔壁。</p>
+<hr>
+<h4 id="身份证件问题"><a href="#身份证件问题" class="headerlink" title="身份证件问题"></a>身份证件问题</h4><p>个别卡是官方自助上传证件资料，还有部分卡是需要发身份证件给小编，这个没有办法，你不发，卡就办不了，系统没有你的证件资料入网，就算卡发你了，也是张空卡，你也激活不了。</p>
+<hr>
+<h4 id="实名激活规范的严重性"><a href="#实名激活规范的严重性" class="headerlink" title="实名激活规范的严重性"></a>实名激活规范的严重性</h4><p>凡是需要传三张照片，身份证正反面+半身照的，必须拍规范，自己不确定的发我审核，如果是给你连接自己传的，发我的时候可以打码。<br>收到卡实名激活的时候，必须按照要求拍规范，视频拍规范</p>
+<hr>
+<h5 id="不规范的后果"><a href="#不规范的后果" class="headerlink" title="不规范的后果"></a>不规范的后果</h5><ul>
+<li>导致实名激活失败，卡用不了</li>
+<li>部分卡不能重新激活的，只能重新下单<br>这也是为什么，拍照要求这么严格的原因，拍规范了一次性通过，你能直接用上卡，我这边也省事。</li>
+</ul>
+<hr>
+<h4 id="证件安全问题"><a href="#证件安全问题" class="headerlink" title="证件安全问题"></a>证件安全问题</h4><p>卡都是直接跟营业厅合作，可以保证证件安全，你信任就办，不信任我也没办法，你可以办其他自助官方下单的卡。</p>
+<hr>
+<h3 id="关于售后问题"><a href="#关于售后问题" class="headerlink" title="关于售后问题"></a>关于售后问题</h3><h4 id="办理的卡售后范围"><a href="#办理的卡售后范围" class="headerlink" title="办理的卡售后范围"></a>办理的卡售后范围</h4><p>套餐与宣传的不一致</p>
+<p>免费卡有没有售后？</p>
+<p>免费办理的卡，我能解决的尽量给你解决，无法解决的只能你自己联系官方运营商客服。</p>
+<hr>
+<h4 id="不在售后范围之内包含"><a href="#不在售后范围之内包含" class="headerlink" title="不在售后范围之内包含"></a>不在售后范围之内包含</h4><ul>
+<li>你所在的地区基站问题导致网速慢</li>
+<li>在诈骗地区使用导致被公安局停，自己联系官方客服解决</li>
+<li>卡板人为损坏，导致用不了，自己去营业厅补卡</li>
+</ul>
+<h3 id="其余问题全部联系运营商官方售后客服解决！"><a href="#其余问题全部联系运营商官方售后客服解决！" class="headerlink" title="其余问题全部联系运营商官方售后客服解决！"></a>其余问题全部联系运营商官方售后客服解决！</h3><p>中国电信官方客服电话：10000<br>中国联通官方客服电话：10010<br>中国移动官方客服电话：10086</p>
+<h4 id="对套餐月租扣费有疑问的，先问运营商官方客服，如果客服核实到套餐不一致，再来我这边反馈！"><a href="#对套餐月租扣费有疑问的，先问运营商官方客服，如果客服核实到套餐不一致，再来我这边反馈！" class="headerlink" title="对套餐月租扣费有疑问的，先问运营商官方客服，如果客服核实到套餐不一致，再来我这边反馈！"></a>对套餐月租扣费有疑问的，先问运营商官方客服，如果客服核实到套餐不一致，再来我这边反馈！</h4><h3 id="扫下方二维码加微信小编"><a href="#扫下方二维码加微信小编" class="headerlink" title="扫下方二维码加微信小编"></a>扫下方二维码加微信小编</h3><hr>
+<p><strong>微信通过后，直奔主题，发你要办理的套餐截图，再发你要咨询的问题</strong></p>
+<p>V号：muzran</p>
+<p><img src="https://pic.imgdb.cn/item/6381de9f16f2c2beb1b20ddc.jpg" alt="wx二维码"></p>
+<p><strong>办卡，直接发要办理的套餐截图，然后发你要咨询的问题</strong><br>为广大网友提供校园卡优惠套餐办理，不存在跑路一说，信任就办，不要加了小编后，来一句不会是骗人的吧，跑路啥的，本公众号依法办卡，诚信至上！</p>
+<h3 id="申请卡的地址"><a href="#申请卡的地址" class="headerlink" title="申请卡的地址"></a>申请卡的地址</h3><h3 id="链接直达"><a href="#链接直达" class="headerlink" title="链接直达"></a><a target="_blank" rel="noopener" href="http://hh.youzihaoka.cn/">链接直达</a></h3><h4 id="申请卡的二维码"><a href="#申请卡的二维码" class="headerlink" title="申请卡的二维码"></a>申请卡的二维码</h4><p><img src="https://imagebed.sbsb.life/82d826a44365cb6005bbf41e18f7382.png" alt="82d826a44365cb6005bbf41e18f7382"></p>
+</article><div class="post-copyright"><div class="post-copyright__author_group"><div class="post-copyright__author_img"><img class="post-copyright__author_img_front" src="https://imagebed.sbsb.life/8faf481e57d7a5abb191173a05e8e86.png"></div><div class="post-copyright__author_name">Tanner</div><div class="post-copyright__author_desc">坚持记录</div></div><div class="post-tools" id="post-tools"><div class="post-tools-left"><div id="quit-box" onclick="RemoveRewardMask()"></div></div></div><div class="social-share"><a class="social-share-ico icon-qq" target="_blank" rel="noopener" href="https://connect.qq.com/widget/shareqq/index.html?url=https%3A%2F%2Fsbsb.life%2F2022%2F11%2F26%2F%25E6%25A0%25A1%25E5%259B%25AD%25E5%258D%25A1%25E6%259C%258D%25E5%258A%25A1%2F&amp;title=%E6%B5%81%E9%87%8F%E5%8D%A1%E4%BB%8B%E7%BB%8D&amp;desc=undefined&amp;summary=undefined&amp;site=%E6%B5%81%E9%87%8F%E5%8D%A1%E4%BB%8B%E7%BB%8D&amp;pics=https%3A%2F%2Fimagebed.sbsb.life%2FCanvas-Ruom11.webp" title="分享到QQ"><i class="solitude fab fa-qq"></i></a><a class="social-share-ico icon-weibo" target="_blank" rel="noopener" href="http://service.weibo.com/share/share.php?url=https%3A%2F%2Fsbsb.life%2F2022%2F11%2F26%2F%25E6%25A0%25A1%25E5%259B%25AD%25E5%258D%25A1%25E6%259C%258D%25E5%258A%25A1%2F&amp;title=%E6%B5%81%E9%87%8F%E5%8D%A1%E4%BB%8B%E7%BB%8D&amp;pic=https%3A%2F%2Fimagebed.sbsb.life%2FCanvas-Ruom11.webp" title="分享到微博"><i class="solitude fab fa-weibo"></i></a><a class="social-share-ico icon-twitter" target="_blank" rel="noopener" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fsbsb.life%2F2022%2F11%2F26%2F%25E6%25A0%25A1%25E5%259B%25AD%25E5%258D%25A1%25E6%259C%258D%25E5%258A%25A1%2F&amp;text=%E6%B5%81%E9%87%8F%E5%8D%A1%E4%BB%8B%E7%BB%8D" title="分享到Twitter"><i class="solitude fab fa-twitter"></i></a><a class="social-share-ico icon-facebook" target="_blank" rel="noopener" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsbsb.life%2F2022%2F11%2F26%2F%25E6%25A0%25A1%25E5%259B%25AD%25E5%258D%25A1%25E6%259C%258D%25E5%258A%25A1%2F" title="分享到Facebook"><i class="solitude fab fa-facebook"></i></a><a class="social-share-ico icon-telegram" target="_blank" rel="noopener" href="https://t.me/share/url?url=https%3A%2F%2Fsbsb.life%2F2022%2F11%2F26%2F%25E6%25A0%25A1%25E5%259B%25AD%25E5%258D%25A1%25E6%259C%258D%25E5%258A%25A1%2F&amp;text=%E6%B5%81%E9%87%8F%E5%8D%A1%E4%BB%8B%E7%BB%8D" title="分享到Telegram"><i class="solitude fab fa-telegram"></i></a><a class="social-share-ico icon-whatsapp" target="_blank" rel="noopener" href="https://api.whatsapp.com/send?text=%E6%B5%81%E9%87%8F%E5%8D%A1%E4%BB%8B%E7%BB%8D https%3A%2F%2Fsbsb.life%2F2022%2F11%2F26%2F%25E6%25A0%25A1%25E5%259B%25AD%25E5%258D%25A1%25E6%259C%258D%25E5%258A%25A1%2F" title="分享到WhatsApp"><i class="solitude fab fa-whatsapp"></i></a><a class="social-share-ico icon-linkedin" target="_blank" rel="noopener" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fsbsb.life%2F2022%2F11%2F26%2F%25E6%25A0%25A1%25E5%259B%25AD%25E5%258D%25A1%25E6%259C%258D%25E5%258A%25A1%2F&amp;title=%E6%B5%81%E9%87%8F%E5%8D%A1%E4%BB%8B%E7%BB%8D&amp;summary=undefined&amp;source=%E6%B5%81%E9%87%8F%E5%8D%A1%E4%BB%8B%E7%BB%8D" title="分享到LinkedIn"><i class="solitude fab fa-linkedin"></i></a><div class="social-share-ico icon-link" onclick="utils.copy(&quot;https://sbsb.life/2022/11/26/%E6%A0%A1%E5%9B%AD%E5%8D%A1%E6%9C%8D%E5%8A%A1/&quot;)" title="复制文章链接"><i class="solitude fas fa-link"></i></div><div class="social-share-ico icon-qrcode" title="使用手机扫码阅读这篇文章"><i class="solitude fas fa-qrcode"></i><div class="share-main"><div class="share-main-all"><div id="qrcode"></div><div class="reward-dec">使用手机扫码阅读这篇文章</div></div></div><script pjax>typeof QRCode === 'function' && new QRCode(document.getElementById("qrcode"), {
+    text: 'https://sbsb.life/2022/11/26/%E6%A0%A1%E5%9B%AD%E5%8D%A1%E6%9C%8D%E5%8A%A1/',
+    correctLevel : QRCode.CorrectLevel.L
+});
+window.addEventListener('DOMContentLoaded', () => {
+    new QRCode(document.getElementById("qrcode"), {
+        text: 'https://sbsb.life/2022/11/26/%E6%A0%A1%E5%9B%AD%E5%8D%A1%E6%9C%8D%E5%8A%A1/',
+        correctLevel : QRCode.CorrectLevel.L
+    });
+});
+</script></div></div><div class="post-copyright__notice"><span class="post-copyright-info">本文是原创文章，采用<a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>协议，完整转载请注明来自<a href="/">Tannerの笔记</a></span></div></div><div class="post-tools-right"><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%B5%81%E9%87%8F%E5%8D%A1/"><span class="tags-punctuation"><i class="solitude fas fa-hashtag"></i>流量卡<span class="tagsPageCount">1</span></span></a></div></div></div><nav class="needEndHide pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2023/01/18/windows%E6%9F%A5%E7%9C%8B%E5%B1%80%E5%9F%9F%E7%BD%91%E5%86%85%E6%89%80%E6%9C%89%E5%B7%B2%E4%BD%BF%E7%94%A8%E7%9A%84IP/"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">Windows系统查看局域网内所有已使用的IP</div></div></a></div><div class="next-post pull-right"><a href="/2022/11/24/%E9%80%81%E4%BD%A0%E4%B8%80%E9%A2%97%E7%88%B1%E5%BF%83/"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">送你一颗爱心</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><div class="top-group"><div class="sayhi" id="sayhi" onclick="sco.changeWittyWord()"></div></div></div><div class="avatar"><img alt="头像" src="https://imagebed.sbsb.life/8faf481e57d7a5abb191173a05e8e86.png"></div><div class="description">This is my Blog</div><div class="bottom-group"><span class="left"><div class="name">Tanner</div><div class="desc">坚持记录，<br>完成十年之约。</div></span><div class="social-icons is-center"><a class="social-icon" target="_blank" rel="noopener" href="https://github.com/BAGELover" title="Github"><i class="solitude  fab fa-github"></i></a><a class="social-icon" href="mailto:tanner966@qq.com" title="QQ邮箱"><i class="solitude  fas fa-envelope"></i></a></div></div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="solitude fas fa-bars"></i><span>文章目录</span></div><div class="toc-content" id="toc-content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A3%B0%E6%98%8E"><span class="toc-text">声明</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BB%9D%E4%B8%8D%E5%A5%97%E8%B7%AF%E4%BB%BB%E4%BD%95%E4%B8%80%E4%BD%8D%E5%AE%A2%E6%88%B7"><span class="toc-text">绝不套路任何一位客户</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8F%AA%E5%8D%96%E5%AE%98%E6%96%B9%E6%AD%A3%E8%A7%84%E5%A5%97%E9%A4%90%EF%BC%8C%E5%AE%A2%E6%9C%8D%EF%BC%8C%E6%8E%8C%E5%8E%85%E5%8F%AF%E6%9F%A5"><span class="toc-text">只卖官方正规套餐，客服，掌厅可查</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%8D%E5%81%9A%E4%BB%BB%E4%BD%95%E5%A5%97%E8%B7%AF%E5%AE%A3%E4%BC%A0%EF%BC%8C%E5%AE%9E%E4%BA%8B%E6%B1%82%E6%98%AF"><span class="toc-text">不做任何套路宣传，实事求是</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E4%B8%8D%E5%8D%96"><span class="toc-text">三不卖</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%8D%E5%8D%96%E9%BB%91%E5%8D%A1%EF%BC%88%E5%B7%B2%E7%BB%8F%E5%AE%9E%E5%90%8D%E7%9A%84%E5%8D%A1%EF%BC%89%EF%BC%8C"><span class="toc-text">不卖黑卡（已经实名的卡），</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%8D%E5%8D%96%E7%89%A9%E8%81%94%E5%8D%A1%EF%BC%88%E4%B8%8D%E6%98%AF%E4%B8%89%E5%A4%A7%E8%BF%90%E8%90%A5%E5%95%86%E7%9A%84%EF%BC%89"><span class="toc-text">不卖物联卡（不是三大运营商的）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%8D%E5%8D%96%E8%BF%9D%E8%A7%84%E5%8A%A0%E5%8C%85%E7%9A%84%E5%8D%A1%EF%BC%88%E4%B8%8D%E6%98%AF%E8%AF%B4%E5%8D%A1%E4%B8%8D%E5%A5%BD%EF%BC%8C%E4%B8%8D%E5%96%9C%E6%AC%A2%E5%A4%84%E7%90%86%E5%94%AE%E5%90%8E%EF%BC%8C%E6%89%80%E4%BB%A5%E4%B8%8D%E5%96%9C%E6%AC%A2%E5%8D%96%EF%BC%89"><span class="toc-text">不卖违规加包的卡（不是说卡不好，不喜欢处理售后，所以不喜欢卖）</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%99%E9%87%8C%E6%8E%A8%E8%8D%90%E4%B8%80%E4%B8%AA%E7%94%A8%E5%8D%A1%E7%BB%84%E5%90%88%E6%96%B9%E6%A1%88"><span class="toc-text">这里推荐一个用卡组合方案</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B9%9D%E2%80%9C%E4%B8%8D%E2%80%9D%E8%A6%81%E6%B3%A8%E6%84%8F"><span class="toc-text">九“不”要注意</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8A%9E%E5%8D%A1%E6%94%B6%E8%B4%B9%E9%97%AE%E9%A2%98%EF%BC%9A"><span class="toc-text">办卡收费问题：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B5%81%E9%87%8F%E9%97%AE%E9%A2%98"><span class="toc-text">流量问题</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%94%80%E6%88%B7%E9%97%AE%E9%A2%98"><span class="toc-text">销户问题</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BD%91%E9%80%9F%E5%BF%AB%E6%85%A2"><span class="toc-text">网速快慢</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BA%AB%E4%BB%BD%E8%AF%81%E4%BB%B6%E9%97%AE%E9%A2%98"><span class="toc-text">身份证件问题</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%9E%E5%90%8D%E6%BF%80%E6%B4%BB%E8%A7%84%E8%8C%83%E7%9A%84%E4%B8%A5%E9%87%8D%E6%80%A7"><span class="toc-text">实名激活规范的严重性</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%B8%8D%E8%A7%84%E8%8C%83%E7%9A%84%E5%90%8E%E6%9E%9C"><span class="toc-text">不规范的后果</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%81%E4%BB%B6%E5%AE%89%E5%85%A8%E9%97%AE%E9%A2%98"><span class="toc-text">证件安全问题</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B3%E4%BA%8E%E5%94%AE%E5%90%8E%E9%97%AE%E9%A2%98"><span class="toc-text">关于售后问题</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8A%9E%E7%90%86%E7%9A%84%E5%8D%A1%E5%94%AE%E5%90%8E%E8%8C%83%E5%9B%B4"><span class="toc-text">办理的卡售后范围</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%8D%E5%9C%A8%E5%94%AE%E5%90%8E%E8%8C%83%E5%9B%B4%E4%B9%8B%E5%86%85%E5%8C%85%E5%90%AB"><span class="toc-text">不在售后范围之内包含</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B6%E4%BD%99%E9%97%AE%E9%A2%98%E5%85%A8%E9%83%A8%E8%81%94%E7%B3%BB%E8%BF%90%E8%90%A5%E5%95%86%E5%AE%98%E6%96%B9%E5%94%AE%E5%90%8E%E5%AE%A2%E6%9C%8D%E8%A7%A3%E5%86%B3%EF%BC%81"><span class="toc-text">其余问题全部联系运营商官方售后客服解决！</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AF%B9%E5%A5%97%E9%A4%90%E6%9C%88%E7%A7%9F%E6%89%A3%E8%B4%B9%E6%9C%89%E7%96%91%E9%97%AE%E7%9A%84%EF%BC%8C%E5%85%88%E9%97%AE%E8%BF%90%E8%90%A5%E5%95%86%E5%AE%98%E6%96%B9%E5%AE%A2%E6%9C%8D%EF%BC%8C%E5%A6%82%E6%9E%9C%E5%AE%A2%E6%9C%8D%E6%A0%B8%E5%AE%9E%E5%88%B0%E5%A5%97%E9%A4%90%E4%B8%8D%E4%B8%80%E8%87%B4%EF%BC%8C%E5%86%8D%E6%9D%A5%E6%88%91%E8%BF%99%E8%BE%B9%E5%8F%8D%E9%A6%88%EF%BC%81"><span class="toc-text">对套餐月租扣费有疑问的，先问运营商官方客服，如果客服核实到套餐不一致，再来我这边反馈！</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%89%AB%E4%B8%8B%E6%96%B9%E4%BA%8C%E7%BB%B4%E7%A0%81%E5%8A%A0%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%BC%96"><span class="toc-text">扫下方二维码加微信小编</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%B3%E8%AF%B7%E5%8D%A1%E7%9A%84%E5%9C%B0%E5%9D%80"><span class="toc-text">申请卡的地址</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%93%BE%E6%8E%A5%E7%9B%B4%E8%BE%BE"><span class="toc-text">链接直达</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%94%B3%E8%AF%B7%E5%8D%A1%E7%9A%84%E4%BA%8C%E7%BB%B4%E7%A0%81"><span class="toc-text">申请卡的二维码</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="solitude fas fa-map"></i><span>最近发布</span></div><div class="aside-list"><a class="aside-list-item" href="/2025/05/09/Manjaro%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/" title="Manjaro常用软件安装"><div class="thumbnail"><img alt="Manjaro常用软件安装" src="https://imagebed.sbsb.life/Manjaro常用软件安装.webp"></div><div class="content"><span class="title" href="/2025/05/09/Manjaro%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/" title="Manjaro常用软件安装">Manjaro常用软件安装</span><span class="categories" href="/2025/05/09/Manjaro%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/">编程学习</span></div></a><a class="aside-list-item" href="/2025/04/12/Labelimg%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/" title="Labelimg使用笔记"><div class="thumbnail"><img alt="Labelimg使用笔记" src="https://imagebed.sbsb.life/Labelimg使用笔记.webp"></div><div class="content"><span class="title" href="/2025/04/12/Labelimg%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/" title="Labelimg使用笔记">Labelimg使用笔记</span><span class="categories" href="/2025/04/12/Labelimg%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/">编程学习</span></div></a><a class="aside-list-item" href="/2025/04/10/Miniconde%E5%88%9D%E6%AC%A1%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/" title="Miniconde初次使用笔记"><div class="thumbnail"><img alt="Miniconde初次使用笔记" src="https://imagebed.sbsb.life/sfsgdfshsfh.webp"></div><div class="content"><span class="title" href="/2025/04/10/Miniconde%E5%88%9D%E6%AC%A1%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/" title="Miniconde初次使用笔记">Miniconde初次使用笔记</span><span class="categories" href="/2025/04/10/Miniconde%E5%88%9D%E6%AC%A1%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/">编程学习</span></div></a><a class="aside-list-item" href="/2025/04/04/%E6%9C%BA%E6%A2%B0%E8%87%82%E8%B7%AF%E5%BE%84%E8%A7%84%E5%88%92%E7%AE%97%E6%B3%95(%E4%B8%80)/" title="机械臂路径规划算法(一)"><div class="thumbnail"><img alt="机械臂路径规划算法(一)" src="https://imagebed.sbsb.life/sdshjdfs.webp"></div><div class="content"><span class="title" href="/2025/04/04/%E6%9C%BA%E6%A2%B0%E8%87%82%E8%B7%AF%E5%BE%84%E8%A7%84%E5%88%92%E7%AE%97%E6%B3%95(%E4%B8%80)/" title="机械臂路径规划算法(一)">机械臂路径规划算法(一)</span><span class="categories" href="/2025/04/04/%E6%9C%BA%E6%A2%B0%E8%87%82%E8%B7%AF%E5%BE%84%E8%A7%84%E5%88%92%E7%AE%97%E6%B3%95(%E4%B8%80)/">编程学习</span></div></a><a class="aside-list-item" href="/2025/03/28/BlogsClub%20-%20%E5%8D%9A%E5%AE%A2%E6%89%80%E6%9C%89%E6%9D%83%E8%AE%A4%E8%AF%81/" title="加入BlogsClub 博客俱乐部"><div class="thumbnail"><img alt="加入BlogsClub 博客俱乐部" src="https://imagebed.sbsb.life/Canvas-Ruom14.webp"></div><div class="content"><span class="title" href="/2025/03/28/BlogsClub%20-%20%E5%8D%9A%E5%AE%A2%E6%89%80%E6%9C%89%E6%9D%83%E8%AE%A4%E8%AF%81/" title="加入BlogsClub 博客俱乐部">加入BlogsClub 博客俱乐部</span><span class="categories" href="/2025/03/28/BlogsClub%20-%20%E5%8D%9A%E5%AE%A2%E6%89%80%E6%9C%89%E6%9D%83%E8%AE%A4%E8%AF%81/">网站建设</span></div></a></div></div></div></div></main><footer id="footer"><div id="footer-bar"><div class="footer-bar-links"><div class="footer-bar-left"><div class="copyright">© 2022 - 2025 By&nbsp;<a class="footer-bar-link" href="/"><img class="author-avatar" src="https://imagebed.sbsb.life/8faf481e57d7a5abb191173a05e8e86.png">Tanner</a></div><div class="beian-group"><a class="footer-bar-link" target="_blank" rel="noopener" href="https://beian.mps.gov.cn/#/query/webSearch" title="豫公网安备41152802000174号"><img class="beian-icon" src="https://beian.mps.gov.cn/img/logo01.dd7ff50e.png" alt="豫公网安备41152802000174号"></a><span class="beian-name">豫公网安备41152802000174号</span><a class="footer-bar-link" target="_blank" rel="noopener" href="https://icp.gov.moe/?keyword=20252015" title="萌ICP备20252015号"></a><span class="beian-name">萌ICP备20252015号</span><a class="footer-bar-link" target="_blank" rel="noopener" href="https://hexo.io/">框架：Hexo</a><a class="footer-bar-link" target="_blank" rel="noopener" href="https://github.com/everfu/hexo-theme-solitude">主题：Solitude</a></div></div><div class="footer-bar-right"><a class="footer-bar-link" target="_blank" rel="noopener" href="https://beian.miit.gov.cn/s" alt="豫ICP备2022026741号">豫ICP备2022026741号</a><a class="footer-bar-link" href="/atom.xml" alt="订阅">订阅</a></div></div></div></footer></div><!-- right_menu--><!-- inject body--><div><script src="/js/utils.js?v=3.0.15"></script><script src="/js/main.js?v=3.0.15"></script><script src="/js/third_party/waterfall.min.js?v=3.0.15"></script><script src="https://fastly.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script><script src="https://fastly.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script><script src="https://fastly.jsdelivr.net/npm/typeit@8.8.7/dist/index.umd.min.js"></script><script src="/js/third_party/universe.min.js?v=3.0.15"></script><script>dark()
+</script><script src="/js/tw_cn.js?v=3.0.15"></script><script src="https://fastly.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.js"></script><script src="/js/post_ai.js?v=3.0.15"></script><script>var meting_api = 'https://meting.qjqq.cn/?server=:server&type=:type&id=:id&auth=:auth&r=:r';</script><script src="https://fastly.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script><script src="https://fastly.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script><script>window.paceOptions = {
+  restartOnPushState: false
+}
+
+utils.addGlobalFn('pjaxSend', () => {
+  Pace.restart()
+}, 'pace_restart')
+</script><script src="https://fastly.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><div class="js-pjax"></div></div><!-- pjax--><script>const pjax = new Pjax({
+    elements: 'a:not([target="_blank"])',
+    selectors: ["title","#body-wrap","#site-config","meta[name=\"description\"]",".js-pjax","meta[property^=\"og:\"]","#config-diff",".rs_show",".rs_hide"],
+    cacheBust: false,
+    analytics: false,
+    scrollRestoration: false
+})
+
+document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+})
+
+document.addEventListener('pjax:complete', () => {
+    window.refreshFn()
+
+    document.querySelectorAll('script[data-pjax]').forEach(item => {
+        const newScript = document.createElement('script')
+        const content = item.text || item.textContent || item.innerHTML || ""
+        Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+        newScript.appendChild(document.createTextNode(content))
+        item.parentNode.replaceChild(newScript, item)
+    })
+
+    GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+})
+
+document.addEventListener('pjax:error', (e) => {
+    if (e.request.status === 404) {
+        pjax.loadUrl('/404.html')
+    }
+})</script><!-- google adsense--><!-- search--><!-- music--></body></html>
+        <script>
+            const posts = ["2025/05/09/Manjaro常用软件安装/","2025/04/12/Labelimg使用笔记/","2025/04/10/Miniconde初次使用笔记/","2025/04/04/机械臂路径规划算法(一)/","2025/03/28/BlogsClub - 博客所有权认证/","2025/03/16/Butterfly主题更换至Solitude主题/","2025/03/16/图片批量命名/","2025/03/15/外接深度相机拍照和录制视频/","2025/03/05/DeepSeek-RAGFlow构建本地知识库/","2024/12/25/基于ST89C52单片机的八路竞赛抢答器系统/","2024/12/22/深度学习训练数据集标注格式转换：txt转xml/","2024/12/19/七牛云图床使用HTTPS协议/","2024/12/19/关于使用自建七牛云图床的图片链接有时不显示问题/","2024/12/01/基于MATLAB的指纹识别系统/","2024/11/04/Hexo使用报错合集/","2024/11/02/在另一台电脑上传文章（hexo）/","2023/03/09/如何快速打开Github-md/","2023/03/09/一个命令获取树莓派IP地址-md/","2023/01/18/windows查看局域网内所有已使用的IP/","2022/11/26/校园卡服务/","2022/11/24/送你一颗爱心/","2022/07/29/Python学习笔记（十一）/","2022/07/28/Python学习笔记（十）/","2022/07/27/Python学习笔记（九）/","2022/07/26/Python学习笔记（八）/","2022/07/25/Python学习笔记（七）/","2022/07/24/Python学习笔记（六）/","2022/07/23/Python学习笔记（五）/","2022/07/22/Python学习笔记（四）/","2022/07/21/Python学习笔记（三）/","2022/07/20/Python学习笔记（二）/","2022/07/19/Python学习笔记（一）/"];
+            function toRandomPost() {
+                const randomPost = posts[Math.floor(Math.random() * posts.length)];
+                pjax.loadUrl(GLOBAL_CONFIG.root + randomPost);
+            }
+        </script>
